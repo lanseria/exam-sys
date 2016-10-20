@@ -1,0 +1,259 @@
+            <link rel="stylesheet" href="__PUBLIC__/assets/css/datepicker.css" />
+            <link rel="stylesheet" href="__PUBLIC__/assets/css/bootstrap-timepicker.css" />
+            <div class="main-content">
+              <div class="breadcrumbs" id="breadcrumbs">
+                <script type="text/javascript">
+                  try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+                </script>
+
+                <ul class="breadcrumb">
+                  <li>
+                    <i class="icon-home home-icon"></i>
+                    <a href="#">Dashboard</a>
+                  </li>
+                  <li class="active">开始出题</li>
+                </ul><!-- .breadcrumb -->
+
+                <div class="nav-search" id="nav-search">
+                  <form class="form-search">
+                    <span class="input-icon">
+                      <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                      <i class="icon-search nav-search-icon"></i>
+                    </span>
+                  </form>
+                </div><!-- #nav-search -->
+              </div>
+
+              <div class="page-content">
+                <div class="page-header">
+                  <h1>
+                    开始出题
+                    <small>
+                      <i class="icon-double-angle-right"></i>
+                      2.确定题目类型
+                    </small>
+                    <div class="btn-group">
+                      <button data-toggle="dropdown" class="btn btn-inverse btn-xs dropdown-toggle">
+                        <present name="Oneexam">
+                          {$Oneexam.etitle}
+                          <else />
+                          如果中断意外退出，请选择相应考卷
+                          <span class="icon-caret-down icon-on-right"></span>
+                        </present>
+                      </button>
+                      <ul class="dropdown-menu dropdown-inverse">
+                        <volist name="exam" id="vo">
+                          <li>
+                            <a href="__ACTION__.html?eid={$vo.eid}">{$vo.etitle}</a>
+                          </li>
+                        </volist>
+                      </ul>
+                    </div>
+                  </h1>
+                </div><!-- /.page-header -->
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <!-- PAGE CONTENT BEGINS -->
+                    <div class="hr dotted"></div>
+                    <div class="">
+                      <div id="user-profile-3" class="user-profile row">
+                        <div class="col-sm-offset-1 col-sm-10">
+                          <div class="well well-sm">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            &nbsp;
+                            <div class="inline middle blue bigger-110"> 填写你的考试中的题型，分值说明，做一下简单描述 </div>
+
+                            &nbsp; &nbsp; &nbsp;
+                            <div style="width:200px;" data-percent="70%" class="inline middle no-margin progress progress-striped active">
+                              <div class="progress-bar progress-bar-success" style="width:70%"></div>
+                            </div>
+                          </div><!-- /well -->
+
+                          <div class="space"></div>
+
+                          <form class="form-horizontal" id="MyForm" action="__SELF__" enctype="multipart/form-data" method="post">
+                            <input type="hidden" name="uid" id="uid" value="{$usermsg.uid}" />
+                            <input type="hidden" name="eid" id="eid" value="{$eid}" />
+                            <input type="hidden" name="gname" id="gname" value="" />
+                            <input type="hidden" name="gdescription" id="gdescription" value="" />
+                            <input type="hidden" name="gorder" id="gorder" value="" />
+                            <div class="tabbable">
+                              <ul class="nav nav-tabs padding-16">
+                                <li class="active">
+                                  <a data-toggle="tab" href="#edit-Group-1">
+                                    <i class="blue icon-key bigger-125"></i>
+                                    Group_1
+                                  </a>
+                                </li>
+                                <li class="">
+                                  <a data-toggle="tab" href="#edit-Group-2">
+                                    <i class="blue icon-key bigger-125"></i>
+                                    Group_2
+                                  </a>
+                                </li>
+                                <li class="">
+                                  <a data-toggle="tab" href="#edit-Group-3">
+                                    <i class="blue icon-key bigger-125"></i>
+                                    Group_3
+                                  </a>
+                                </li>
+                              </ul>
+
+                              <div class="tab-content profile-edit-tab-content">
+                                <div id="edit-Group-1" class="tab-pane in active">
+                                  <div class="space-10"></div>
+
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass1">分组名:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" id="form-field-gname1" value="一、选择题" />
+                                    </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组描述:</label>
+                                    <div class="col-sm-8">
+                                      <textarea class="form-control autosize-transition" id="autosize1">（请将你认为正确的答案的英文代码填写在相应题的括号内，每题只有一个正确答案，共30题，每题1.5分，共45分）</textarea>
+                                    </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组排序:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" id="form-field-gorder1" value="1" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div id="edit-Group-2" class="tab-pane">
+                                  <div class="space-10"></div>
+
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass1">分组名:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" id="form-field-gname2" value="二、填空题" />
+                                    </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组描述:</label>
+                                    <div class="col-sm-8">
+                                      <textarea class="form-control autosize-transition" id="autosize2">（请将答案填写在相应的横线上，每空1分，20个空，共20分）</textarea>
+                                    </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组排序:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" id="form-field-gorder2" value="2" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div id="edit-Group-3" class="tab-pane">
+                                  <div class="space-10"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass1">分组名:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" id="form-field-gname3" value="三、简答题" />
+                                    </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组描述:</label>
+                                    <div class="col-sm-8">
+                                      <textarea class="form-control autosize-transition" id="autosize3">（第一、二题各5分，第三题10分，第四题15分）</textarea>
+                                    </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组排序:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" id="form-field-gorder3" value="3" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="clearfix form-actions">
+                              <div class="col-md-offset-3 col-md-9">
+                                <button class="btn btn-info" type="submit">
+                                  <i class="icon-ok bigger-110"></i>
+                                  Save
+                                </button>
+                                &nbsp; &nbsp;
+                                <button class="btn" type="reset">
+                                  <i class="icon-undo bigger-110"></i>
+                                  Reset
+                                </button>
+                                &nbsp; &nbsp;
+                                <button class="btn" type="button" id="btn-add" onclick="AddGroup();">
+                                  <i class="icon-plus bigger-110"></i>
+                                  ADD
+                                </button>
+                                &nbsp; &nbsp;
+                                <button class="btn" type="button" id="btn-minus" onclick="MinusGroup();">
+                                  <i class="icon-minus bigger-110"></i>
+                                  minus
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div><!-- /span -->
+                      </div><!-- /user-profile -->
+                    </div>
+
+                    <!-- PAGE CONTENT ENDS -->
+                  </div><!-- /.col -->
+                </div><!-- /.row -->
+              </div><!-- /.page-content -->
+            </div><!-- /.main-content -->
+            <!-- inline scripts related to this page -->
+            <script type="text/javascript" src="__PUBLIC__/js/jquery.autosize.min.js"></script>
+            <script src="__PUBLIC__/assets/js/date-time/bootstrap-datepicker.min.js"></script>
+            <script src="__PUBLIC__/assets/js/date-time/bootstrap-timepicker.min.js"></script>
+            <script src="__PUBLIC__/assets/js/ace-elements.min.js"></script>
+            <script type="text/javascript">
+              var now = 3;
+              function AddGroup(){
+                if(now<0){
+                  now = 0;
+                }
+                now++;
+                var myli='<li class=""><a data-toggle="tab" href="#edit-Group-'+now+'"><i class="blue icon-key bigger-125"></i>Group_'+now+'</a></li>';
+                $('ul.nav-tabs').append(myli);
+                var mydiv='<div id="edit-Group-'+now+'" class="tab-pane"><div class="space-10"></div><div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-pass1">分组名:</label><div class="col-sm-10"><input type="text" id="form-field-gname'+now+'" value="" /></div></div><div class="space-4"></div><div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组描述:</label><div class="col-sm-8"><textarea class="form-control autosize-transition" id="autosize'+now+'"></textarea></div></div><div class="space-4"></div><div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组排序:</label><div class="col-sm-10"><input type="text" id="form-field-gorder'+now+'" value="'+now+'" /></div></div></div>';
+                $('div.profile-edit-tab-content').append(mydiv);
+                $("ul.nav-tabs li:last a").click();
+              }
+              function MinusGroup(){
+                if(now<0){
+                  now = 0;
+                }
+                $("ul.nav-tabs li:last").remove();
+                $('#edit-Group-'+now).remove();
+                now--;
+                $("ul.nav-tabs li:last a").click();
+              }
+              jQuery(function($) {
+                $('textarea[class*=autosize]').autosize({append: "\n"});
+                $("form#MyForm").submit(function(e){
+                  var gname = '';var gdescription = '';var gorder = '';
+                  for(var i = 0; i < now; i++){
+                    gname += $('#form-field-gname'+(i+1)).val()+';';
+                    gdescription += $('#autosize'+(i+1)).html()+';';
+                    gorder += $('#form-field-gorder'+(i+1)).val()+';';
+                  }
+                  gname = gname.substring(0, gname.length-1);
+                  gdescription = gdescription.substring(0, gdescription.length-1);
+                  gorder = gorder.substring(0, gorder.length-1);
+                  $("input[name='gname']").val(gname);
+                  $("input[name='gdescription']").val(gdescription);
+                  $("input[name='gorder']").val(gorder);
+                  if(gname==''||gdescription==''||gorder==''){
+                    alert('是否填入完整？');
+                    return ;
+                  }
+                });
+              });
+            </script>

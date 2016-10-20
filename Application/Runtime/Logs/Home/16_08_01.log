@@ -1,0 +1,136 @@
+[ 2016-08-01T16:49:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.057797s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.057871s ]
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.108874s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.108937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.142945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.143011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.051419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.051517s ]
+
+[ 2016-08-01T16:49:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.057289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.057352s ]
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.108845s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.108911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.142967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.143044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.051419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.051524s ]
+
+[ 2016-08-01T16:49:58+08:00 ] 127.0.0.1 /Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `es_user` [ RunTime:0.0887s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `es_user` WHERE `ustunum` = '081105' AND `upwd` = '546639220bbbd2c27e26555368aef58d' LIMIT 1   [ RunTime:0.0136s ]
+SQL: SELECT `uid` FROM `es_user` WHERE `ustunum` = '081105' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `utype` FROM `es_user` WHERE `ustunum` = '081105' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000327s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2016-08-01T16:49:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2016-08-01T16:50:04+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+

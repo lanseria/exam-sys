@@ -1,0 +1,72 @@
+[ 2016-07-17T00:27:33+08:00 ] 127.0.0.1 /Public/images/arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-17T00:27:34+08:00 ] 127.0.0.1 /Public/images/img-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-17T00:28:00+08:00 ] 127.0.0.1 /Public/images/arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-17T00:28:00+08:00 ] 127.0.0.1 /Public/images/img-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-17T00:29:35+08:00 ] 127.0.0.1 /Public/images/arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-17T00:29:36+08:00 ] 127.0.0.1 /Public/images/img-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-17T00:30:04+08:00 ] 127.0.0.1 /Public/images/arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-17T00:30:04+08:00 ] 127.0.0.1 /Public/images/img-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-17T00:30:12+08:00 ] 127.0.0.1 /Public/images/arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-17T00:30:12+08:00 ] 127.0.0.1 /Public/images/img-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-17T00:31:41+08:00 ] 127.0.0.1 /Public/images/arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+ERR: 无法加载模块:Public
+
+[ 2016-07-17T00:31:42+08:00 ] 127.0.0.1 /Public/images/img-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+ERR: 无法加载模块:Public
+

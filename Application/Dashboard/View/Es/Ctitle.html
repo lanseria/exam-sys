@@ -1,0 +1,208 @@
+            <link rel="stylesheet" href="__PUBLIC__/assets/css/datepicker.css" />
+            <link rel="stylesheet" href="__PUBLIC__/assets/css/bootstrap-timepicker.css" />
+            <div class="main-content">
+              <div class="breadcrumbs" id="breadcrumbs">
+                <script type="text/javascript">
+                  try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+                </script>
+
+                <ul class="breadcrumb">
+                  <li>
+                    <i class="icon-home home-icon"></i>
+                    <a href="#">Dashboard</a>
+                  </li>
+                  <li class="active">开始出题</li>
+                </ul><!-- .breadcrumb -->
+
+                <div class="nav-search" id="nav-search">
+                  <form class="form-search">
+                    <span class="input-icon">
+                      <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                      <i class="icon-search nav-search-icon"></i>
+                    </span>
+                  </form>
+                </div><!-- #nav-search -->
+              </div>
+
+              <div class="page-content">
+                <div class="page-header">
+                  <h1>
+                    开始出题
+                    <small>
+                      <i class="icon-double-angle-right"></i>
+                      1.确定主题
+                    </small>
+                  </h1>
+                </div><!-- /.page-header -->
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <!-- PAGE CONTENT BEGINS -->
+                    <div class="hr dotted"></div>
+                    <div class="">
+                      <div id="user-profile-3" class="user-profile row">
+                        <div class="col-sm-offset-1 col-sm-10">
+                          <div class="well well-sm">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            &nbsp;
+                            <div class="inline middle blue bigger-110"> 填写你的考试名字，开始与结束时间，并加上相关图片，做一下简单描述 </div>
+
+                            &nbsp; &nbsp; &nbsp;
+                            <div style="width:200px;" data-percent="70%" class="inline middle no-margin progress progress-striped active">
+                              <div class="progress-bar progress-bar-success" style="width:70%"></div>
+                            </div>
+                          </div><!-- /well -->
+
+                          <div class="space"></div>
+
+                          <form class="form-horizontal" id="MyForm" action="__SELF__" enctype="multipart/form-data" method="post">
+                            <input type="hidden" name="uid" id="uid" value="{$usermsg.uid}" />
+                            <div class="tabbable">
+                              <ul class="nav nav-tabs padding-16">
+                                <li class="active">
+                                  <a data-toggle="tab" href="#edit-password">
+                                    <i class="blue icon-key bigger-125"></i>
+                                    确定主题
+                                  </a>
+                                </li>
+                              </ul>
+
+                              <div class="tab-content profile-edit-tab-content">
+                                <div id="edit-password" class="tab-pane in active">
+                                  <div class="space-10"></div>
+
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass1">考试主题:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" id="form-field-etitle" name="etitle" />
+                                    </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">描述本场考试:</label>
+                                    <div class="col-sm-8">
+                                      <textarea class="form-control autosize-transition" name="edescription"></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">展示图片:</label>
+                                    <div class="col-sm-4">
+                                      <input type="file" name="eimgurl" id="img-file-input" />
+                                    </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">开始时间:</label>
+                                    <div class="col-sm-5">
+                                      <div class="row">
+                                        <div class="col-xs-12 col-sm-10">
+                                          <div class="input-group">
+                                            <input class="form-control date-picker" id="id-date-picker-1" name="estarttime1" type="text" data-date-format="yyyy-mm-dd" />
+                                            <span class="input-group-addon">
+                                              <i class="icon-calendar bigger-110"></i>
+                                            </span>
+                                          </div>
+                                          <input type="hidden" name="estarttime">
+                                          <div class="input-group bootstrap-timepicker">
+                                            <input id="timepicker1" type="text" class="form-control" name="estarttime2" />
+                                            <span class="input-group-addon">
+                                              <i class="icon-time bigger-110"></i>
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">结束时间:</label>
+                                    <div class="col-sm-5">
+                                      <div class="row">
+                                        <div class="col-xs-12 col-sm-10">
+                                          <div class="input-group">
+                                            <input class="form-control date-picker" id="id-date-picker-2" type="text" data-date-format="yyyy-mm-dd" />
+                                            <span class="input-group-addon">
+                                              <i class="icon-calendar bigger-110"></i>
+                                            </span>
+                                          </div>
+                                          <input type="hidden" name="eendtime">
+                                          <div class="input-group bootstrap-timepicker">
+                                            <input id="timepicker2" type="text" class="form-control" name="eendtime2" />
+                                            <span class="input-group-addon">
+                                              <i class="icon-time bigger-110"></i>
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="clearfix form-actions">
+                              <div class="col-md-offset-3 col-md-9">
+                                <button class="btn btn-info" type="submit">
+                                  <i class="icon-ok bigger-110"></i>
+                                  Save
+                                </button>
+
+                                &nbsp; &nbsp;
+                                <button class="btn" type="reset">
+                                  <i class="icon-undo bigger-110"></i>
+                                  Reset
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div><!-- /span -->
+                      </div><!-- /user-profile -->
+                    </div>
+
+                    <!-- PAGE CONTENT ENDS -->
+                  </div><!-- /.col -->
+                </div><!-- /.row -->
+              </div><!-- /.page-content -->
+            </div><!-- /.main-content -->
+            <!-- inline scripts related to this page -->
+            <script type="text/javascript" src="__PUBLIC__/js/jquery.autosize.min.js"></script>
+            <script src="__PUBLIC__/assets/js/date-time/bootstrap-datepicker.min.js"></script>
+            <script src="__PUBLIC__/assets/js/date-time/bootstrap-timepicker.min.js"></script>
+            <script src="__PUBLIC__/assets/js/ace-elements.min.js"></script>
+            <script type="text/javascript">
+             jQuery(function($) {
+              $('textarea[class*=autosize]').autosize({append: "\n"});
+              $('#img-file-input').ace_file_input({
+                style: 'well',
+                no_file:'点击选择一张图片或者拖入',
+                btn_choose:'选择',
+                btn_change:'改变',
+                droppable:true,
+                thumbnail:'fit',
+          });
+              $('.date-picker').datepicker({autoclose:true}).next().on(ace.click_event, function(){
+                $(this).prev().focus();
+              });
+              $('#timepicker1,#timepicker2').timepicker({
+                minuteStep: 1,
+                showSeconds: true,
+                showMeridian: false
+              }).next().on(ace.click_event, function(){
+                $(this).prev().focus();
+              });
+              $("form#MyForm").submit(function(e){
+                var etitle = $('#form-field-etitle').val();
+                var edescription = $('textarea').val();
+                var estarttime = $('#id-date-picker-1').val()+' '+$('#timepicker1').val();
+                var eendtime = $('#id-date-picker-2').val()+' '+$('#timepicker2').val();
+                if(etitle==''||edescription==''||estarttime==''||eendtime=='')
+                  alert('是否填入完整？');
+                else{
+                  $("input[name='estarttime']").val(estarttime);
+                  $("input[name='eendtime']").val(eendtime);
+                  alert(("input[name='estarttime']").val());
+                }
+              });
+            });
+          </script>

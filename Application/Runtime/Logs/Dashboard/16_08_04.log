@@ -1,0 +1,101 @@
+[ 2016-08-04T22:14:59+08:00 ] 127.0.0.1 /Dashboard/Es/Cqus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `es_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `es_user` WHERE `uid` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `es_exam` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `es_exam`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: StartTag1 D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 127 行.
+NOTIC: [8] Undefined variable: StartTag2 D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 133 行.
+NOTIC: [8] Undefined variable: StartTag4 D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 145 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 154 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 161 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 194 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 200 行.
+NOTIC: [8] Undefined variable: groups D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 296 行.
+NOTIC: [8] Undefined variable: vo1 D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 306 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001338s ]
+
+[ 2016-08-04T22:15:25+08:00 ] 127.0.0.1 /Dashboard/Es/Cqus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `es_user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `es_user` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `es_exam` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `es_exam`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined variable: StartTag1 D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 127 行.
+NOTIC: [8] Undefined variable: StartTag2 D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 133 行.
+NOTIC: [8] Undefined variable: StartTag4 D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 145 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 154 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 161 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 194 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 200 行.
+NOTIC: [8] Undefined variable: groups D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 296 行.
+NOTIC: [8] Undefined variable: vo1 D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 306 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2016-08-04T22:15:41+08:00 ] 127.0.0.1 /Dashboard/Es/Cqus.html?eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `es_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `es_user` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `es_exam` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `es_exam` WHERE `eid` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `es_groups` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `es_groups` WHERE `eid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined variable: StartTag1 D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 127 行.
+NOTIC: [8] Undefined variable: StartTag2 D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 133 行.
+NOTIC: [8] Undefined variable: StartTag4 D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 145 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 154 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 161 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 194 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 200 行.
+NOTIC: [8] Undefined variable: exam D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 260 行.
+NOTIC: [8] Undefined variable: vo1 D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Dashboard\ea7115bfa4fe8052faf26f74704e9fe6.php 第 306 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+

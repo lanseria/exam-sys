@@ -1,0 +1,22 @@
+div.det_text input[type='text']{
+    margin: 0 auto;
+    display: inline-block;
+    background: 0;
+    border: 0;
+    border-bottom: 3px solid #000000;
+    outline: 0;
+    text-align: center;
+    width: 4.8em;
+    border-bottom-width: 2px;
+    -webkit-transition: border-color .2s ease;
+}
+textarea.autosize-transition {
+    -webkit-transition-duration: "height 0.2s";
+    transition-duration: "height 0.2s";
+}
+.form-control:focus, select:focus {
+    color: #696969;
+    border-color: #f59942;
+    background-color: #fff;
+    outline: 0;
+}

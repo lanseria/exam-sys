@@ -1,0 +1,335 @@
+            <div class="main-content">
+              <div class="breadcrumbs" id="breadcrumbs">
+                <script type="text/javascript">
+                  try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+                </script>
+
+                <ul class="breadcrumb">
+                  <li>
+                    <i class="icon-home home-icon"></i>
+                    <a href="#">Dashboard</a>
+                  </li>
+                  <li class="active">开始出题</li>
+                </ul><!-- .breadcrumb -->
+
+                <div class="nav-search" id="nav-search">
+                  <form class="form-search">
+                    <span class="input-icon">
+                      <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                      <i class="icon-search nav-search-icon"></i>
+                    </span>
+                  </form>
+                </div><!-- #nav-search -->
+              </div>
+
+              <div class="page-content">
+                <div class="page-header">
+                  <h1>
+                    开始出题
+                    <small>
+                      <i class="icon-double-angle-right"></i>
+                      2.确定题目类型
+                    </small>
+                    <div class="btn-group">
+                      <button data-toggle="dropdown" class="btn btn-inverse btn-xs dropdown-toggle">
+                        <present name="Oneexam">
+                          {$Oneexam.etitle}
+                          <else />
+                          如果中断意外退出，请选择相应考卷
+                          <span class="icon-caret-down icon-on-right"></span>
+                        </present>
+                      </button>
+                      <ul class="dropdown-menu dropdown-inverse">
+                        <volist name="exam" id="vo">
+                          <li>
+                            <a href="__ACTION__.html?eid={$vo.eid}">{$vo.etitle}</a>
+                          </li>
+                        </volist>
+                      </ul>
+                    </div>
+                  </h1>
+                </div><!-- /.page-header -->
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <!-- PAGE CONTENT BEGINS -->
+                    <div class="hr dotted"></div>
+                    <div class="">
+                      <div id="user-profile-3" class="user-profile row">
+                        <div class="col-sm-offset-1 col-sm-10">
+                          <div class="well well-sm">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            &nbsp;
+                            <div class="inline middle blue bigger-110"> 填写你的考试中的题型，分值说明，做一下简单描述 </div>
+
+                            &nbsp; &nbsp; &nbsp;
+                            <div style="width:200px;" data-percent="70%" class="inline middle no-margin progress progress-striped active">
+                              <div class="progress-bar progress-bar-success" style="width:70%"></div>
+                            </div>
+                          </div><!-- /well -->
+
+                          <div class="space"></div>
+
+                          <form class="form-horizontal" id="MyForm" action="__SELF__" enctype="multipart/form-data" method="post">
+                            <input type="hidden" name="uid" id="uid" value="{$usermsg.uid}" />
+                            <input type="hidden" name="eid" id="eid" value="{$eid}" />
+                            <input type="hidden" name="gname" id="gname" value="" />
+                            <input type="hidden" name="gdescription" id="gdescription" value="" />
+                            <input type="hidden" name="gorder" id="gorder" value="" />
+                            <div class="tabbable">
+                              <ul class="nav nav-tabs padding-16">
+                                <volist name="groups" id="vo">
+                                  <li class="">
+                                    <a data-toggle="tab" href="#edit-Group-{$vo.gid}">
+                                      <i class="blue icon-key bigger-125"></i>
+                                      {$vo.gname}
+                                    </a>
+                                  </li>
+                                </volist>
+                              </ul>
+
+                              <div class="tab-content profile-edit-tab-content">
+                                <volist name="groups" id="quesvo">
+                                  <div id="edit-Group-{$quesvo.gid}" class="tab-pane">
+                                    <volist name="quesvo.question" id="qus">
+                                      <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right">题型:</label>
+                                        <div class="col-sm-10">
+                                          {$qus.qtype}
+                                        </div>
+                                      </div>
+                                      <div class="space-4"></div>
+                                      <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right">题目描述:</label>
+                                        <div class="col-sm-10">
+                                          <a href="#" class="my_modal" sid="{$qus.qid}">{$qus.question}</a>
+                                        </div>
+                                      </div>
+                                      <div class="space-4"></div>
+                                      <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right">题序:</label>
+                                        <div class="col-sm-10">
+                                          {$qus.qorder}
+                                        </div>
+                                      </div>
+                                      <div class="hr dotted"></div>
+                                    </volist>
+                                    <div class="form-group">
+                                      <label class="col-sm-2 control-label no-padding-right">题型:</label>
+                                      <div class="col-sm-10">
+                                        <select class="width-50 form-control special-select" id="my_select{$quesvo.gid}" data-placeholder="Choose a Type">
+                                          <option value="">&nbsp;</option>
+                                          <option value="T">单选</option>
+                                          <option value="D">多选</option>
+                                          <option value="K">填空</option>
+                                          <option value="J">论述题</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="space-4"></div>
+                                    <div class="form-group">
+                                      <label class="col-sm-2 control-label no-padding-right">题序:</label>
+                                      <div class="col-sm-10">
+                                        <input type="text" id="form-field-qorder{$quesvo.gid}" value="" />
+                                      </div>
+                                    </div>
+                                    <div class="space-4"></div>
+                                    <div class="form-group">
+                                      <label class="col-sm-2 control-label no-padding-right">题目:</label>
+                                      <div class="col-sm-8">
+                                        <textarea class="form-control autosize-transition" id="autosize{$quesvo.gid}"></textarea>
+                                      </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                      <label class="col-sm-2 control-label no-padding-right"">提交:</label>
+                                      <div class="col-sm-10">
+                                        <button class="btn btn-info" type="button" onclick="subajax();"><i class="icon-ok bigger-110"></i>Save</button>
+                                        <button class="btn" type="button" id="btn-addInput{$quesvo.gid}" style="display:none;" onclick="AddInput();">
+                                          <i class="icon-plus bigger-110"></i>
+                                          增加填空项
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </volist>
+                              </div>
+                            </div>
+
+                            <div class="clearfix form-actions">
+                              <div class="col-md-offset-3 col-md-9">
+                                <button class="btn btn-info" type="button" id="btn-add" onclick="">
+                                  <i class="icon-ok bigger-110"></i>
+                                  Next
+                                </button>
+                                &nbsp; &nbsp;
+                                <button class="btn" type="button" id="btn-minus" onclick="MinusGroup();">
+                                  <i class="icon-minus bigger-110"></i>
+                                  minus
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div><!-- /span -->
+                      </div><!-- /user-profile -->
+                    </div>
+
+                    <!-- PAGE CONTENT ENDS -->
+                  </div><!-- /.col -->
+                </div><!-- /.row -->
+              </div><!-- /.page-content -->
+            </div><!-- /.main-content -->
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">增加选项</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- inline scripts related to this page -->
+            <script type="text/javascript" src="__PUBLIC__/js/jquery.autosize.min.js"></script>
+            <script src="__PUBLIC__/assets/js/ace-elements.min.js"></script>
+            <script src="__PUBLIC__/assets/js/chosen.jquery.min.js"></script>
+            <script type="text/javascript">
+              var n = 0;
+              function subajax(){
+                var gid = $('ul.nav-tabs li.active a').attr("href");
+                gid = gid.replace(/[^0-9]/ig,"");
+                var qtype = $('#my_select'+gid).val();
+                var question = $('#autosize'+gid).val();
+                var qorder = $('#form-field-qorder'+gid).val();
+                var eid = $('#eid').val();
+                //alert(gid);
+                //alert(qtype);
+                var data = {"eid":eid,"gid":gid,"qtype":qtype,"question":question,"qorder":qorder};
+                //alert(data);
+                var url = "{:U('Dashboard/Ajax/addques')}";
+                var success = function(response){
+                  if(false){
+                    alert(response+'请先登录注册');
+                  }
+                  else{
+                    if(response)
+                    {
+                      alert('加入成功');
+                      location.reload();
+                    }
+                  }
+                }
+                $.post(url, data ,success, "json");
+                n=0;
+              }
+              
+              function AddInput(){
+                var id = $('ul.nav-tabs li.active a').attr("href");
+                id = id.replace(/[^0-9]/ig,"");
+                var qorder = $('#form-field-qorder'+id).val();
+                var obj = $('#autosize'+id).get(0);
+                var str = '<input type="text" name="K'+qorder+n+'" class="underline-text">';
+                if (document.selection) {
+                  obj.focus();
+                  var sel = document.selection.createRange();
+                  sel.text = str;
+                } else if (typeof obj.selectionStart === 'number' && typeof obj.selectionEnd === 'number') {
+                  var startPos = obj.selectionStart;
+                  var endPos = obj.selectionEnd;
+                  var tmpStr = obj.value;
+                  obj.value = tmpStr.substring(0, startPos) + str + tmpStr.substring(endPos, tmpStr.length);
+                } else {
+                  obj.value += str;
+                }
+                n++;
+                //alert(id);
+              }
+              function ajaxans(qid){
+                var url = "{:U('Dashboard/Ajax/addans')}";
+                var answer = $('input.question').val();
+                var aorder = $('input.aorder').val();
+                var data = {"qid":qid, "answer":answer, "aorder":aorder};
+                var success = function(response){
+                  if(false){
+                    alert(response+'请先登录注册');
+                  }
+                  else{
+                    if(response)
+                    {
+                      alert('添加成功');
+                      //location.reload();
+                      $('div.modal-body').append('<p>'+answer+'</p>');
+                    }
+                  }
+                }
+                $.post(url, data ,success, "json");
+              }
+              jQuery(function($){
+                $('a.my_modal').click(function(){
+                  $('div.modal-body').html('<h5>'+$(this).html()+'</h5>');
+                  var qid = $(this).attr('sid');
+                  // $('div.modal-body').append();
+                  $.ajax({
+                    url: "{:U('Dashboard/Ajax/searchans')}?qid="+qid,
+                    type: "get",
+                    dataType: "json",
+                    success: function (data) {
+                      var html_inter = '';
+                      for(var i = 0; i < data.length; i++)
+                      {
+                        html_inter += '<p>'+(i+1)+'.'+data[i]['answer']+'</p>';
+                      }
+                      html_inter += '<input type="text" class="question"/><input type="text" class="aorder"/><button class="btn" type="button" onclick="ajaxans('+qid+');"><i class="icon-plus"></i></button>';
+                      $('div.modal-body').append(html_inter);
+
+                    }
+                  });
+                  $('#myModal').modal();
+                });
+              })
+              jQuery(function($) {
+                $('ul.nav-tabs li:first').addClass("active");
+                $('div.tab-content div:first').addClass("in active");
+                $('textarea[class*=autosize]').autosize({append: "\n"});
+              })
+              jQuery(function($) {
+                $('.special-select').change(function(){
+                  var id = $('ul.nav-tabs li.active a').attr("href");
+                  id = id.replace(/[^0-9]/ig,"");
+                  //alert($('#my_select'+id).val()+id);
+                  if($('#my_select'+id).val()=='K'){
+                    $('#btn-addInput'+id).show();
+                  }else{
+                    $('#btn-addInput'+id).hide();
+                  }
+                });
+              });
+              jQuery(function($){
+                $("form#MyForm").submit(function(e){
+                  var gname = '';var gdescription = '';var gorder = '';
+                  for(var i = 0; i < now; i++){
+                    gname += $('#form-field-gname'+(i+1)).val()+';';
+                    gdescription += $('#autosize'+(i+1)).html()+';';
+                    gorder += $('#form-field-gorder'+(i+1)).val()+';';
+                  }
+                  gname = gname.substring(0, gname.length-1);
+                  gdescription = gdescription.substring(0, gdescription.length-1);
+                  gorder = gorder.substring(0, gorder.length-1);
+                  $("input[name='gname']").val(gname);
+                  $("input[name='gdescription']").val(gdescription);
+                  $("input[name='gorder']").val(gorder);
+                  if(gname==''||gdescription==''||gorder==''){
+                    alert('是否填入完整？');
+                    return ;
+                  }
+                });
+              })
+            </script>

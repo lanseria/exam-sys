@@ -1,0 +1,69 @@
+<div class="top_bg">
+	<div class="wrap">
+		<div class="top">
+			<h2>欢迎进来答题</h2>
+		</div>
+	</div>
+</div>
+<!-- start main -->
+<div class="wrap">
+	<div class="main">
+		<h1 style="font-size:2em;">2016年党课考试试题</h1>
+		<hr/>
+		<form class="form-group" method="post" action="{:U('Home/Index/p')}">
+			<div class="det_text">
+				<volist name="groups" id="mygroups">
+					<p class="para">{$mygroups.gname}。{$mygroups.gdescription}</p>
+					<volist name="mygroups.question" id="resvo">
+						<switch name="resvo.qtype"> 
+							<case value="T">
+								<p class="para rccount">{$resvo.qorder}、{$resvo.question}</p>
+								<div class="row">
+									<div class="col-sm-12">
+										<volist name="resvo.answer" id="anssub">
+											<div class="radio">
+												<input type="radio" name="T{$resvo.qorder}" id="r{$anssub['aorder']}{$resvo.qorder}" value="{$anssub['aorder']}" />
+												<label for="r{$anssub['aorder']}{$resvo.qorder}">
+													<span>{$anssub['aorder']}、</span>
+													{$anssub['answer']}
+												</label>
+											</div>
+										</volist>
+									</div>
+								</div>
+							</case>
+							<case value="D">
+								<p class="para rccount">{$resvo.qorder}、{$resvo.question}</p>
+								<div class="row">
+									<div class="col-sm-12">
+										<volist name="resvo[answer]" id="anssub">
+											<div class="checkbox checkbox-circle">
+												<input type="checkbox" class="styled" name="D{$resvo.qorder}[]" id="r{$anssub['aorder']}{$resvo.qorder}" value="{$anssub['aorder']}"/>
+												<label for="r{$anssub['aorder']}{$resvo.qorder}">
+													<span>{$anssub['aorder']}、</span>
+													{$anssub['answer']}
+												</label>
+											</div>
+										</volist>
+									</div>
+								</div>
+							</case>
+							<case value="K">
+								<p class="para">{$resvo.qorder}、{$resvo.question}</p>
+							</case>
+							<case value="J">
+								<p class="para">{$resvo.qorder}、{$resvo.question}</p>
+								<textarea class="form-control autosize-transition" name="J{$resvo.qorder}" id="answer-3-{$resvo.qorder}" placeholder="解答："></textarea>
+							</case>
+							<default />
+						</switch>
+					</volist>
+				</volist>
+			</div>
+			<div class="clear"></div>
+			<input type="hidden" name="eid" value="{$eid}" />
+			<input type="hidden" name="uid" value="1" />
+			<button class="btn btn-info" type="submit">提交</button>
+		</form>
+	</div>
+</div>
