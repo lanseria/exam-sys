@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
 <head>
-	<title>主页</title>
+	<title>郑轻考试管理系统</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.min.css"/>
@@ -16,7 +16,23 @@
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/font-awesome.min.css"/>
 	<link rel="icon" href="/favicon.ico">
 </head>
-<body>
+<script>
+    function two_char(n) {
+        return n >= 10 ? n : "0" + n;
+    }
+    function time_fun() {
+        var sec=0;
+        setInterval(function () {
+            sec++;
+            document.getElementById("time").value = sec;
+            var date = new Date(0, 0)
+            date.setSeconds(sec);
+            var h = date.getHours(), m = date.getMinutes(), s = date.getSeconds();
+            document.getElementById("mytime").innerText = two_char(h) + ":" + two_char(m) + ":" + two_char(s);
+        }, 1000);
+    }
+</script>
+<body onload="{$time}">
 	<!-- start header -->
 	<div class="header_bg">
 		<div class="wrap">
@@ -48,6 +64,7 @@
 						<li class="{$ac_about}"><a href="{:U('Home/Index/about')}">关于我们</a></li>
 						<li class="{$ac_custom}"><a href="{:U('Home/Index/custom')}">客户</a></li>
 						<li class="{$ac_questionbank}"><a href="{:U('Home/Index/questionbank')}">题库</a></li>
+						<li class="{$ac_resultbank}"><a href="{:U('Home/Index/resultbank')}">结果</a></li>
 						<li class="{$ac_contact}"><a href="{:U('Home/Index/contact')}">联系我们</a></li>
 					</ul>
 				</div>

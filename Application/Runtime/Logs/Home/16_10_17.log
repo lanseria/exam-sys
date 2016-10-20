@@ -1,0 +1,762 @@
+[ 2016-10-17T20:17:16+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.087815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016945s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.030532s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.030739s ]
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined variable: ac_resultbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 78 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 79 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 80 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.239744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.239817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.058957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.059104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.048535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.048703s ]
+
+[ 2016-10-17T20:17:38+08:00 ] 127.0.0.1 /Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `es_user` [ RunTime:0.2656s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `es_user` WHERE `ustunum` = '081105' AND `upwd` = '546639220bbbd2c27e26555368aef58d' LIMIT 1   [ RunTime:0.0280s ]
+SQL: SELECT `uid` FROM `es_user` WHERE `ustunum` = '081105' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `utype` FROM `es_user` WHERE `ustunum` = '081105' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000523s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000567s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2016-10-17T20:17:39+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined variable: ac_resultbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 78 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 79 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 80 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2016-10-17T20:48:21+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+NOTIC: [8] Undefined variable: ac_resultbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 78 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 79 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 80 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2016-10-17T20:48:25+08:00 ] 127.0.0.1 /Home/Index/questionbank.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `es_exam` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_exam`  [ RunTime:0.1284s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_resultbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 65 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 66 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 77 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 78 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 79 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 81 行.
+NOTIC: [8] Undefined index: urname D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2016-10-17T20:48:26+08:00 ] 127.0.0.1 /Home/Index/e.html?eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0024s ]
+SQL: SELECT `passed` FROM `es_vques` WHERE `eid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `es_groups` [ RunTime:0.0404s ]
+SQL: SELECT * FROM `es_groups`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `es_question` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='1' ) ORDER BY qorder asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `es_answer` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='1' ) ORDER BY aorder asc  [ RunTime:0.0077s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='2' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='3' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='4' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='5' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='6' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='7' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='8' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='9' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='10' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='11' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='12' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='13' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='14' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='15' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='16' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='17' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='18' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='19' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='20' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='2' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='21' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='22' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='23' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='24' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='25' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='26' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='3' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='27' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='28' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='29' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='4' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='30' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='31' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='32' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 64 行.
+NOTIC: [8] Undefined variable: ac_resultbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 65 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 66 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 77 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 78 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 79 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 80 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 81 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-10-17T20:49:27+08:00 ] 127.0.0.1 /Home/Index/p.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `es_record` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `es_finish` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: score D:\Lanseria\Documents\php\Examination_System\Application\Home\Controller\IndexController.class.php 第 16 行.
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1048:Column 'fchecked' cannot be null
+ [ SQL语句 ] : INSERT INTO `es_finish` (`eid`,`uid`,`fchecked`,`ftime`,`frtime`) VALUES ('1','1',NULL,'60','2016-10-17 20:49:27')
+ERR: 1048:Column 'fchecked' cannot be null
+ [ SQL语句 ] : INSERT INTO `es_finish` (`eid`,`uid`,`fchecked`,`ftime`,`frtime`) VALUES ('1','1',NULL,'60','2016-10-17 20:49:27')
+
+[ 2016-10-17T20:57:15+08:00 ] 127.0.0.1 /Home/Index/p.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+
+[ 2016-10-17T20:57:33+08:00 ] 127.0.0.1 /Home/Index/p.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `es_record` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `es_finish` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_finish` (`eid`,`uid`,`fchecked`,`ftime`,`frtime`) VALUES ('1','1','0','1','2016-10-17 20:57:30') [ RunTime:0.1587s ]
+SQL: SHOW COLUMNS FROM `es_question` [ RunTime:0.0017s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','1','2',NULL) [ RunTime:0.0433s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','2','2',NULL) [ RunTime:0.0389s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 3 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','3','2',NULL) [ RunTime:0.0767s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 4 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','4','3',NULL) [ RunTime:0.0767s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','5','3',NULL) [ RunTime:0.0373s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','6','3',NULL) [ RunTime:0.0389s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','7','2',NULL) [ RunTime:0.0374s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','8','2',NULL) [ RunTime:0.0388s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 9 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','9','2',NULL) [ RunTime:0.0374s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 10 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','10','3',NULL) [ RunTime:0.0389s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 11 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','11','2',NULL) [ RunTime:0.0484s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 12 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','12','3',NULL) [ RunTime:0.0389s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 13 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','13','3',NULL) [ RunTime:0.0373s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 14 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','14','3',NULL) [ RunTime:0.0389s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 15 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','15','3',NULL) [ RunTime:0.0374s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 16 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','16','2',NULL) [ RunTime:0.0389s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 17 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','17','4',NULL) [ RunTime:0.0374s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 18 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','T','18','4',NULL) [ RunTime:0.0431s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 19 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','D','19','2',NULL) [ RunTime:0.0392s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 19 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','D','19','3',NULL) [ RunTime:0.0368s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 19 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','D','19','4',NULL) [ RunTime:0.0393s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 20 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','D','20','1',NULL) [ RunTime:0.0480s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 20 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','D','20','2',NULL) [ RunTime:0.0442s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 20 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','D','20','3',NULL) [ RunTime:0.0388s ]
+SQL: SELECT `qans` FROM `es_question` WHERE `qid` = 20 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','D','20','4',NULL) [ RunTime:0.0374s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','210',NULL,'切尔奇无') [ RunTime:0.0391s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','211',NULL,'问问群二') [ RunTime:0.0379s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','212',NULL,'问而我热无若') [ RunTime:0.0516s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','213',NULL,'而我热无若') [ RunTime:0.0365s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','220',NULL,'二恶烷若 ') [ RunTime:0.0544s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','230',NULL,' 二恶烷热无') [ RunTime:0.0651s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','231',NULL,'撒旦撒多 ') [ RunTime:0.0408s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','240',NULL,'的撒打算') [ RunTime:0.0402s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','241',NULL,'撒发放个人') [ RunTime:0.0628s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','242',NULL,'而额外热水电费') [ RunTime:0.0402s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','243',NULL,'额外人发生地方') [ RunTime:0.0368s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','250',NULL,'撒地方郭德纲') [ RunTime:0.0656s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','251',NULL,'撒旦撒多') [ RunTime:0.0297s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','260',NULL,'是对方感受') [ RunTime:0.0374s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','K','261',NULL,'电视分为') [ RunTime:0.0285s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','J','27',NULL,'大发个') [ RunTime:0.0374s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','J','28',NULL,'阿尔高发的发发发') [ RunTime:0.0285s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','J','29',NULL,'我发的萨芬') [ RunTime:0.0374s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','J','30',NULL,'阿尔法打发打发') [ RunTime:0.0286s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','J','31',NULL,'大发大发发') [ RunTime:0.0374s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\Examination_System\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `es_record` (`eid`,`uid`,`fid`,`rtype`,`qid`,`isChecked`,`content`) VALUES ('1','1','1','J','32',NULL,'大发发达的发放额外任务二') [ RunTime:0.0285s ]
+SQL: UPDATE `es_finish` SET `fchecked`='4' WHERE `fid` = 1 [ RunTime:0.0527s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-10-17T20:57:34+08:00 ] 127.0.0.1 /Home/Index/questionbank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `es_exam` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `es_exam`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_resultbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 65 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 66 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 77 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 78 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 79 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 81 行.
+NOTIC: [8] Undefined index: urname D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2016-10-17T20:57:36+08:00 ] 127.0.0.1 /Home/Index/resultbank.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `es_vques` WHERE `passed` = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 64 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 66 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 77 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 78 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 79 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 80 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2016-10-17T21:02:05+08:00 ] 127.0.0.1 /Home/Index/resultbank.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `es_vques` WHERE `passed` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 64 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 66 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 77 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 78 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 79 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 80 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\44afb061796bed0acdfd94c511dc4841.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2016-10-17T21:06:57+08:00 ] 127.0.0.1 /Home/Index/e.html?eid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0014s ]
+SQL: SELECT `passed` FROM `es_vques` WHERE `eid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `es_groups` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `es_groups`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `es_question` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='1' ) ORDER BY qorder asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `es_answer` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='1' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='2' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='3' ) ORDER BY aorder asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='4' ) ORDER BY aorder asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='5' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='6' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='7' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='8' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='9' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='10' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='11' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='12' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='13' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='14' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='15' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='16' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='17' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='18' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='19' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='20' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='2' ) ORDER BY qorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='21' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='22' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='23' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='24' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='25' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='26' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='3' ) ORDER BY qorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='27' ) ORDER BY aorder asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='28' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='29' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='4' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='30' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='31' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='32' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 64 行.
+NOTIC: [8] Undefined variable: ac_resultbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 65 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 66 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 77 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 78 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 79 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 80 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 81 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2016-10-17T21:07:46+08:00 ] 127.0.0.1 /Home/Index/e.html?eid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0013s ]
+SQL: SELECT `passed` FROM `es_vques` WHERE `eid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `es_groups` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `es_groups`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `es_question` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='1' ) ORDER BY qorder asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `es_answer` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='1' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='2' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='3' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='4' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='5' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='6' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='7' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='8' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='9' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='10' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='11' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='12' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='13' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='14' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='15' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='16' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='17' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='18' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='19' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='20' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='2' ) ORDER BY qorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='21' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='22' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='23' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='24' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='25' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='26' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='3' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='27' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='28' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='29' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='4' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='30' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='31' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='32' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 64 行.
+NOTIC: [8] Undefined variable: ac_resultbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 65 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 66 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 77 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 78 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 79 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 80 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 81 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2016-10-17T21:11:17+08:00 ] 127.0.0.1 /Home/Index/e.html?eid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0009s ]
+SQL: SELECT `passed` FROM `es_vques` WHERE `eid` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `es_groups` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `es_groups`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `es_question` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='1' ) ORDER BY qorder asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `es_answer` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='1' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='2' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='3' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='4' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='5' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='6' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='7' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='8' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='9' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='10' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='11' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='12' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='13' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='14' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='15' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='16' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='17' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='18' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='19' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='20' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='2' ) ORDER BY qorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='21' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='22' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='23' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='24' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='25' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='26' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='3' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='27' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='28' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='29' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='4' ) ORDER BY qorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='30' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='31' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='32' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 64 行.
+NOTIC: [8] Undefined variable: ac_resultbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 65 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 66 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 77 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 78 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 79 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 80 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 81 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+

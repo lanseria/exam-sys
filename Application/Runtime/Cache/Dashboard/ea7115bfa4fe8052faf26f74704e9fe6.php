@@ -142,12 +142,6 @@
                   3.为每个组定题目
                 </a>
               </li>
-              <li class="<?php echo ($StartTag4); ?>">
-                <a href="<?php echo U('/Dashboard/Es/Cans');?>">
-                  <i class="icon-double-angle-right"></i>
-                  4.填写标准答案
-                </a>
-              </li>
             </ul>
           </li>
 
@@ -191,13 +185,13 @@
               </li>
             </ul>
           </li>
-          <li class="<?php echo ($aac); ?>">
+          <li class="<?php echo ($Manaexam); ?>">
             <a href="<?php echo U('/Dashboard/Manaexam/index');?>" class="dropdown-toggle">
               <i class="icon-list-alt"></i>
               <span class="menu-text"> 管理答卷 </span>
             </a>
           </li>
-          <li class="<?php echo ($aac); ?>">
+          <li class="<?php echo ($Muser); ?>">
             <a href="<?php echo U('/Dashboard/Muser/index');?>" class="dropdown-toggle">
               <i class="icon-user"></i>
               <span class="menu-text"> 查看用户 </span>
@@ -285,7 +279,7 @@
 
                           <div class="space"></div>
 
-                          <form class="form-horizontal" id="MyForm" action="/Dashboard/Es/Cqus.html?eid=1" enctype="multipart/form-data" method="post">
+                          <form class="form-horizontal" id="MyForm" action="/Dashboard/Es/Cqus.html" enctype="multipart/form-data" method="post" style="height: 600px;overflow: scroll;">
                             <input type="hidden" name="uid" id="uid" value="<?php echo ($usermsg["uid"]); ?>" />
                             <input type="hidden" name="eid" id="eid" value="<?php echo ($eid); ?>" />
                             <input type="hidden" name="gname" id="gname" value="" />
@@ -302,7 +296,7 @@
                               </ul>
 
                               <div class="tab-content profile-edit-tab-content">
-                                <?php if(is_array($groups)): $i = 0; $__LIST__ = $groups;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$quesvo): $mod = ($i % 2 );++$i;?><div id="edit-Group-<?php echo ($quesvo["gid"]); ?>" class="tab-pane">
+                                <?php if(is_array($groups)): $i = 0; $__LIST__ = $groups;if( count($__LIST__)==0 ) : echo "暂时没有数据" ;else: foreach($__LIST__ as $key=>$quesvo): $mod = ($i % 2 );++$i;?><div id="edit-Group-<?php echo ($quesvo["gid"]); ?>" class="tab-pane">
                                     <?php if(is_array($quesvo["question"])): $i = 0; $__LIST__ = $quesvo["question"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$qus): $mod = ($i % 2 );++$i;?><div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right">题型:</label>
                                         <div class="col-sm-10">
@@ -323,7 +317,14 @@
                                           <?php echo ($qus["qorder"]); ?>
                                         </div>
                                       </div>
-                                      <div class="hr dotted"></div><?php endforeach; endif; else: echo "" ;endif; ?>
+                                      <div class="space-4"></div>
+                                      <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right">答案:</label>
+                                        <div class="col-sm-10">
+                                          <?php echo ($qus["qans"]); ?>
+                                        </div>
+                                      </div>
+                                      <div class="hr dotted"></div><?php endforeach; endif; else: echo "暂时没有数据" ;endif; ?>
                                     <div class="form-group">
                                       <label class="col-sm-2 control-label no-padding-right">题型:</label>
                                       <div class="col-sm-10">
@@ -350,7 +351,13 @@
                                         <textarea class="form-control autosize-transition" id="autosize<?php echo ($quesvo["gid"]); ?>"></textarea>
                                       </div>
                                     </div>
-
+                                    <div class="form-group">
+                                      <label class="col-sm-2 control-label no-padding-right">答案:</label>
+                                      <div class="col-sm-10">
+                                        <input type="text" id="form-field-qans<?php echo ($quesvo["gid"]); ?>" value="" />
+                                      </div>
+                                    </div>
+                                    <div class="space-4"></div>
                                     <div class="form-group">
                                       <label class="col-sm-2 control-label no-padding-right"">提交:</label>
                                       <div class="col-sm-10">
@@ -364,25 +371,10 @@
                                   </div><?php endforeach; endif; else: echo "" ;endif; ?>
                               </div>
                             </div>
-
-                            <div class="clearfix form-actions">
-                              <div class="col-md-offset-3 col-md-9">
-                                <button class="btn btn-info" type="button" id="btn-add" onclick="">
-                                  <i class="icon-ok bigger-110"></i>
-                                  Next
-                                </button>
-                                &nbsp; &nbsp;
-                                <button class="btn" type="button" id="btn-minus" onclick="MinusGroup();">
-                                  <i class="icon-minus bigger-110"></i>
-                                  minus
-                                </button>
-                              </div>
-                            </div>
                           </form>
                         </div><!-- /span -->
                       </div><!-- /user-profile -->
                     </div>
-
                     <!-- PAGE CONTENT ENDS -->
                   </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -418,10 +410,11 @@
                 var qtype = $('#my_select'+gid).val();
                 var question = $('#autosize'+gid).val();
                 var qorder = $('#form-field-qorder'+gid).val();
+                var qans = $('#form-field-qans'+gid).val();
                 var eid = $('#eid').val();
                 //alert(gid);
-                //alert(qtype);
-                var data = {"eid":eid,"gid":gid,"qtype":qtype,"question":question,"qorder":qorder};
+                //alert(qans);
+                var data = {"eid":eid,"gid":gid,"qtype":qtype,"question":question,"qorder":qorder,"qans":qans};
                 //alert(data);
                 var url = "<?php echo U('Dashboard/Ajax/addques');?>";
                 var success = function(response){
@@ -475,11 +468,13 @@
                     {
                       alert('添加成功');
                       //location.reload();
-                      $('div.modal-body').append('<p>'+answer+'</p>');
+                      $('div.modal-body').append('<p>'+aorder+'.'+answer+'</p>');
                     }
                   }
                 }
                 $.post(url, data ,success, "json");
+                $('input.question').val("");
+                $('input.aorder').val("");
               }
               jQuery(function($){
                 $('a.my_modal').click(function(){
@@ -496,7 +491,7 @@
                       {
                         html_inter += '<p>'+(i+1)+'.'+data[i]['answer']+'</p>';
                       }
-                      html_inter += '<input type="text" class="question"/><input type="text" class="aorder"/><button class="btn" type="button" onclick="ajaxans('+qid+');"><i class="icon-plus"></i></button>';
+                      html_inter += '<input type="text" class="question" placeholder="这里填写选项"/><input type="text" class="aorder" placeholder="这里填写排序" style="width:100px;"/><button class="btn" type="button" onclick="ajaxans('+qid+');"><i class="icon-plus"></i></button>';
                       $('div.modal-body').append(html_inter);
 
                     }

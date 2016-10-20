@@ -18,7 +18,7 @@ class EsController extends MainController {
 				$path = './Public/images/exam_img/'.$info['savepath'].$info['savename'];
 				$image->open($path);
 				$image->thumb(290, 180, 3)->save($path);
-				$r = $exam->Add_Exam(I('post.etitle'), I('post.edescription'), $path, I('post.estarttime'), I('post.eendtime'));
+				$r = $exam->Add_Exam(I('post.etitle'), I('post.edescription'), $info['savepath'].$info['savename'], I('post.estarttime'), I('post.eendtime'));
 				if($r){
 					$this->success("添加成功，即将跳入下一步，确定题目类型",'Cgtype.html?eid='.$r, 3);
 				}
@@ -47,7 +47,9 @@ class EsController extends MainController {
 			if($r){
 				$this->success("添加成功，即将跳入下一步，确定具体题目",'Cqus.html?eid='.I('post.eid'), 3);
 			}else{
-				$this->error("Failed", 3);
+				echo "<pre>";
+				var_dump($gnameArr,$gdescriptionArr,$gorderArr);
+				//$this->error("Failed", "Cgtype.html?eid=".I('get.eid'), 3);
 			}
 		}
 		else{
@@ -85,29 +87,6 @@ class EsController extends MainController {
 			$this->assign("eid", $eid);
 			$this->assign("StartTag","active open");
 			$this->assign("StartTag3","active");
-			$this->display();
-		}
-	}
-	public function Cans(){
-		if(IS_POST){
-
-		}
-		else{
-			$eid = I('get.eid');
-			if(empty($eid)){
-				$exam = D('exam')->select();
-				$this->assign('exam', $exam);
-			}else{
-				$exam = D('exam')->where(array('eid'=>$eid))->select();
-				$this->assign('Oneexam', $exam[0]);
-				$groups = D('groups')->relation(true)->where(array('eid'=>$eid))->select();
-				//echo "<pre>";
-				//var_dump($groups);
-				$this->assign('groups', $groups);
-			}
-			$this->assign("eid", $eid);
-			$this->assign("StartTag","active open");
-			$this->assign("StartTag4","active");
 			$this->display();
 		}
 	}

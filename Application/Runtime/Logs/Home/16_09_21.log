@@ -1,0 +1,978 @@
+[ 2016-09-21T19:03:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.080958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.081028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011149s ]
+
+[ 2016-09-21T19:03:14+08:00 ] 127.0.0.1 /Home/Index/questionbank.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.2041s ]
+SQL: SELECT * FROM `es_vques`  [ RunTime:0.0113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.006492s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006606s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002050s ]
+
+[ 2016-09-21T19:05:13+08:00 ] 127.0.0.1 /Home/Index/questionbank.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `es_vques`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2016-09-21T19:05:13+08:00 ] 127.0.0.1 /Home/Index/Public/images/exam_img/2016-09-18/57de8c371414b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-09-21T19:05:13+08:00 ] 127.0.0.1 /Home/Index/Public/images/exam_img/2016-09-18/57de8c371414b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+
+[ 2016-09-21T19:07:35+08:00 ] 127.0.0.1 /Home/Index/questionbank.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `es_vques`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2016-09-21T19:07:35+08:00 ] 127.0.0.1 /Home/Public/images/exam_img/2016-09-18/57de8c371414b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2016-09-21T19:07:35+08:00 ] 127.0.0.1 /Home/Public/images/exam_img/2016-09-18/57de8c371414b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001142s ]
+
+[ 2016-09-21T19:07:38+08:00 ] 127.0.0.1 /Home/Index/questionbank.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `es_vques`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2016-09-21T19:07:38+08:00 ] 127.0.0.1 /Home/Public/images/exam_img/2016-09-18/57de8c371414b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2016-09-21T19:07:38+08:00 ] 127.0.0.1 /Home/Public/images/exam_img/2016-09-18/57de8c371414b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2016-09-21T19:08:02+08:00 ] 127.0.0.1 /Home/Index/questionbank.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `es_vques`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2016-09-21T19:18:06+08:00 ] 127.0.0.1 /Home/Index/questionbank.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `es_vques`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2016-09-21T19:25:21+08:00 ] 127.0.0.1 /Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2016-09-21T19:25:22+08:00 ] 127.0.0.1 /Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `es_user` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `es_user` WHERE `ustunum` = '081105' AND `upwd` = '546639220bbbd2c27e26555368aef58d' LIMIT 1   [ RunTime:0.0749s ]
+SQL: SELECT `uid` FROM `es_user` WHERE `ustunum` = '081105' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `utype` FROM `es_user` WHERE `ustunum` = '081105' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2016-09-21T19:25:23+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2016-09-21T19:25:34+08:00 ] 127.0.0.1 /Home/Index/e.html?eid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `es_groups` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `es_groups`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `es_question` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='1' ) ORDER BY qorder asc  [ RunTime:0.0234s ]
+SQL: SHOW COLUMNS FROM `es_answer` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='1' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='2' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='3' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='4' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='5' ) ORDER BY aorder asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='6' ) ORDER BY aorder asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='7' ) ORDER BY aorder asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='8' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='9' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='10' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='11' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='12' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='13' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='14' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='15' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='16' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='17' ) ORDER BY aorder asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='18' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='19' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='20' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='2' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='3' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='4' ) ORDER BY qorder asc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 64 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2016-09-21T22:12:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2016-09-21T22:12:46+08:00 ] 127.0.0.1 /Home/Index/questionbank.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `es_vques`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2016-09-21T22:12:51+08:00 ] 127.0.0.1 /Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `es_user` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `es_user` WHERE `ustunum` = '081105' AND `upwd` = '546639220bbbd2c27e26555368aef58d' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `uid` FROM `es_user` WHERE `ustunum` = '081105' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `utype` FROM `es_user` WHERE `ustunum` = '081105' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2016-09-21T22:12:52+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2016-09-21T22:50:54+08:00 ] 127.0.0.1 /Home/Index/e.html?eid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `es_groups` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_groups`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `es_question` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='1' ) ORDER BY qorder asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `es_answer` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='1' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='2' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='3' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='4' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='5' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='6' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='7' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='8' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='9' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='10' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='11' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='12' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='13' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='14' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='15' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='16' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='17' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='18' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='19' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='20' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='2' ) ORDER BY qorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='21' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='22' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='23' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='24' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='25' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='26' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='3' ) ORDER BY qorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='27' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='28' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='29' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='4' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='30' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='31' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 64 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2016-09-21T23:19:02+08:00 ] 127.0.0.1 /Home/Index/e.html?eid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `es_groups` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `es_groups`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `es_question` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='1' ) ORDER BY qorder asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `es_answer` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='1' ) ORDER BY aorder asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='2' ) ORDER BY aorder asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='3' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='4' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='5' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='6' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='7' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='8' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='9' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='10' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='11' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='12' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='13' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='14' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='15' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='16' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='17' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='18' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='19' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='20' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='2' ) ORDER BY qorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='21' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='22' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='23' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='24' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='25' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='26' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='3' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='27' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='28' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='29' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='4' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='30' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='31' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 64 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000986s ]
+
+[ 2016-09-21T23:30:56+08:00 ] 127.0.0.1 /Home/Index/e.html?eid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `es_groups` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `es_groups`  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `es_question` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='1' ) ORDER BY qorder asc  [ RunTime:0.0198s ]
+SQL: SHOW COLUMNS FROM `es_answer` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='1' ) ORDER BY aorder asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='2' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='3' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='4' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='5' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='6' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='7' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='8' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='9' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='10' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='11' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='12' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='13' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='14' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='15' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='16' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='17' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='18' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='19' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='20' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='2' ) ORDER BY qorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='21' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='22' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='23' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='24' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='25' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='26' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='3' ) ORDER BY qorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='27' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='28' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='29' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='4' ) ORDER BY qorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='30' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='31' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 64 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2016-09-21T23:42:32+08:00 ] 127.0.0.1 /Home/Index/e.html?eid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001970s ]
+SQL: SHOW COLUMNS FROM `es_groups` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `es_groups`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `es_question` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='1' ) ORDER BY qorder asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `es_answer` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='1' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='2' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='3' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='4' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='5' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='6' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='7' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='8' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='9' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='10' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='11' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='12' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='13' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='14' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='15' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='16' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='17' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='18' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='19' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='20' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='2' ) ORDER BY qorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='21' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='22' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='23' ) ORDER BY aorder asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='24' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='25' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='26' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='3' ) ORDER BY qorder asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='27' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='28' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='29' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='4' ) ORDER BY qorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='30' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='31' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 64 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2016-09-21T23:42:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2016-09-21T23:42:41+08:00 ] 127.0.0.1 /Home/Index/questionbank.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `es_vques` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `es_vques`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\49a7a8a3aa2febb5d135a9c7fdf11784.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2016-09-21T23:57:12+08:00 ] 127.0.0.1 /Home/Index/e.html?eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `es_groups` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `es_groups`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `es_question` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='1' ) ORDER BY qorder asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `es_answer` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='1' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='2' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='3' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='4' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='5' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='6' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='7' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='8' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='9' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='10' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='11' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='12' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='13' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='14' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='15' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='16' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='17' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='18' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='19' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='20' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='2' ) ORDER BY qorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='21' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='22' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='23' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='24' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='25' ) ORDER BY aorder asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='26' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='3' ) ORDER BY qorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='27' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='28' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='29' ) ORDER BY aorder asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='4' ) ORDER BY qorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='30' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='31' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 64 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2016-09-21T23:58:07+08:00 ] 127.0.0.1 /Home/Index/e.html?eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `es_groups` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `es_groups`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `es_question` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='1' ) ORDER BY qorder asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `es_answer` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='1' ) ORDER BY aorder asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='2' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='3' ) ORDER BY aorder asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='4' ) ORDER BY aorder asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='5' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='6' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='7' ) ORDER BY aorder asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='8' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='9' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='10' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='11' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='12' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='13' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='14' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='15' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='16' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='17' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='18' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='19' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='20' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='2' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='21' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='22' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='23' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='24' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='25' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='26' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='3' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='27' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='28' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='29' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_question` WHERE ( 1=1 AND gid='4' ) ORDER BY qorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='30' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `es_answer` WHERE ( 1=1 AND qid='31' ) ORDER BY aorder asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 45 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 46 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 47 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 48 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 49 行.
+NOTIC: [8] Undefined variable: ac_index D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 60 行.
+NOTIC: [8] Undefined variable: ac_about D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 61 行.
+NOTIC: [8] Undefined variable: ac_custom D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 62 行.
+NOTIC: [8] Undefined variable: ac_questionbank D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 63 行.
+NOTIC: [8] Undefined variable: ac_contact D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 64 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+NOTIC: [8] Use of undefined constant answer - assumed 'answer' D:\Lanseria\Documents\php\Examination_System\Application\Runtime\Cache\Home\4f0c85419bc2b7d14612bdf79a46f1c6.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001497s ]
+

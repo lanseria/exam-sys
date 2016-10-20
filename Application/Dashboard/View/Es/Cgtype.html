@@ -241,7 +241,7 @@
                   var gname = '';var gdescription = '';var gorder = '';
                   for(var i = 0; i < now; i++){
                     gname += $('#form-field-gname'+(i+1)).val()+';';
-                    gdescription += $('#autosize'+(i+1)).html()+';';
+                    gdescription += $('#autosize'+(i+1)).val()+';';//!!!! 
                     gorder += $('#form-field-gorder'+(i+1)).val()+';';
                   }
                   gname = gname.substring(0, gname.length-1);
@@ -254,6 +254,9 @@
                     alert('是否填入完整？');
                     return ;
                   }
+                  alert(gname);
+                  alert(gdescription);
+                  alert(gorder);
                 });
               });
             </script>

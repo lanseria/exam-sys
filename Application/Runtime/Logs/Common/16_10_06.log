@@ -1,0 +1,6 @@
+[ 2016-10-06T16:10:25+08:00 ] 127.0.0.1 /Public/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+ERR: 无法加载模块:Public
+

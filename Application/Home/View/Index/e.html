@@ -1,14 +1,15 @@
+
 <div class="top_bg">
 	<div class="wrap">
 		<div class="top">
-			<h2>欢迎进来答题</h2>
+			<h2>欢迎进来答题</h2><span>time:</span><span class="h2" id="mytime">00:00:00</span>
 		</div>
 	</div>
 </div>
 <!-- start main -->
 <div class="wrap">
 	<div class="main">
-		<h1 style="font-size:2em;">2016年党课考试试题</h1>
+		<h1 style="font-size:2em;">{$title}</h1>
 		<hr/>
 		<form class="form-group" method="post" action="{:U('Home/Index/p')}">
 			<div class="det_text">
@@ -62,7 +63,8 @@
 			</div>
 			<div class="clear"></div>
 			<input type="hidden" name="eid" value="{$eid}" />
-			<input type="hidden" name="uid" value="1" />
+			<input type="hidden" name="uid" value="{$uid}" />
+			<input type="hidden" id="time" name="ftime" value="">
 			<button class="btn btn-info" type="submit">提交</button>
 		</form>
 	</div>

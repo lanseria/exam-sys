@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
 <head>
-	<title>主页</title>
+	<title>郑轻考试管理系统</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="/Public/css/bootstrap.min.css"/>
@@ -16,7 +16,23 @@
 	<link rel="stylesheet" type="text/css" href="/Public/css/font-awesome.min.css"/>
 	<link rel="icon" href="/favicon.ico">
 </head>
-<body>
+<script>
+    function two_char(n) {
+        return n >= 10 ? n : "0" + n;
+    }
+    function time_fun() {
+        var sec=0;
+        setInterval(function () {
+            sec++;
+            document.getElementById("time").value = sec;
+            var date = new Date(0, 0)
+            date.setSeconds(sec);
+            var h = date.getHours(), m = date.getMinutes(), s = date.getSeconds();
+            document.getElementById("mytime").innerText = two_char(h) + ":" + two_char(m) + ":" + two_char(s);
+        }, 1000);
+    }
+</script>
+<body onload="<?php echo ($time); ?>">
 	<!-- start header -->
 	<div class="header_bg">
 		<div class="wrap">
@@ -46,6 +62,7 @@
 						<li class="<?php echo ($ac_about); ?>"><a href="<?php echo U('Home/Index/about');?>">关于我们</a></li>
 						<li class="<?php echo ($ac_custom); ?>"><a href="<?php echo U('Home/Index/custom');?>">客户</a></li>
 						<li class="<?php echo ($ac_questionbank); ?>"><a href="<?php echo U('Home/Index/questionbank');?>">题库</a></li>
+						<li class="<?php echo ($ac_resultbank); ?>"><a href="<?php echo U('Home/Index/resultbank');?>">结果</a></li>
 						<li class="<?php echo ($ac_contact); ?>"><a href="<?php echo U('Home/Index/contact');?>">联系我们</a></li>
 					</ul>
 				</div>
@@ -111,13 +128,13 @@
 		<!-- start span_of_3 -->
 		<div class="span_of_3">
 			<div class="span1_of_3">
-				<a href="details.html"><img src="/Public/images/pic1.jpg" alt=""></a>
+				<a href="#"><img src="/Public/images/pic1.jpg" alt=""></a>
 				<div class="span1_of_3_text">
-					<h3><a href="details.html">党员工作室</a></h3>
+					<h3><a href="#">党员工作室</a></h3>
 					<p>专注于党员的发展，学院学生上课情况的督查的一个学生组织。</p>
 				</div>
 				<div class="ser_btn">
-					<a class="button ser_btn1" href="details.html">read more</a>
+					<a class="button ser_btn1" href="#">read more</a>
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -301,51 +318,76 @@
 			if (typeof this.naturalWidth != "undefined" && this.naturalWidth == 0) {
 				error = true;
 			}
-
 			if(error){
 				$(this).bind('error.replaceSrc',function(){
 					this.src = "/Public/images/Nopic.png";
-
 					$(this).unbind('error.replaceSrc');
 				}).trigger('load');
 			}
 		});
 		$('textarea[class*=autosize]').autosize({append: "\n"});
+		$('form.form-group').submit(function(e){
+			var nullcount = 0;
+			var strs = '';
+			var rccount = $('p.rccount').length;
+			nullcount += rccount;
+			// $("[type='radio']").each(function(){
+			// 	if($(this).is(':checked')) {
+			// 		strs += '1';
+			// 	}
+			// 	else{
+			// 		strs += '0';
+			// 	}
+			// 	strs += $(this).attr('name');
+			// })
+			// $("[type='checkbox']").each(function(){
+			// 	if($(this).is(':checked')) {
+			// 		strs += '1';
+			// 	}
+			// 	else{
+			// 		strs += '0';
+			// 	}
+			// 	strs += $(this).attr('name');
+			// })
+			$('input:radio:checked').each(function(){
+				if(!$(this).attr('checked')){
+					nullcount--;
+				}
+			})
+			$('input:checkbox:checked').each(function(){
+				if(!$(this).attr('checked')){
+					nullcount--;
+				}
+			})
+			$('form.form-group input').each(function(){
+				if($(this).val()==''){
+					nullcount++;
+				}
+			});
+			$('form.form-group textarea').each(function(){
+				if($(this).val()==''){
+					nullcount++;
+				}
+			});
+			if(nullcount>0){
+				alert('Please Input something'+nullcount+'\n'+strs);
+				return false;
+			}
+			
+		});
 		// $('#formToConfirm').click(function(){
-		// 	if($('#regUname').val()==""){
-		// 		alert('请填写用户名');
-		// 		return false;
-		// 	}
-		// 	else{
-		// 		if($('#regEmail').val()==""){
-		// 			alert('请填写邮箱');
+		// 	$('input').each(function(){
+		// 		if($(this).val()==''){
+		// 			alert('Please Input something');
 		// 			return false;
 		// 		}
-		// 		else{
-		// 			if($('#regPassword').val()==""){
-		// 				alert('请填写密码');
-		// 				return false;
-		// 			}
-		// 			else{
-		// 				if($('#regPassword').val()==""){
-		// 					alert('请填写密码');
-		// 					return false;
-		// 				}
-		// 				else{
-		// 					if($('#regCPassword').val()==""){
-		// 						alert('请填写确认密码');
-		// 						return false;
-		// 					}
-		// 					else{
-		// 						if($('#regPassword').val()!=$('#regCPassword').val()){
-		// 							alert('请确认密码一致');
-		// 							return false;
-		// 						}
-		// 					}
-		// 				}
-		// 			}
+		// 	});
+		// 	$('textarea').each(function(){
+		// 		if($(this).val()==''){
+		// 			alert('Please Input something');
+		// 			return false;
 		// 		}
-		// 	}
+		// 	});
 		// });
 		
 	});

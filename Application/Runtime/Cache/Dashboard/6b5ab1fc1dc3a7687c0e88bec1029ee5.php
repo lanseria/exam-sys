@@ -191,13 +191,13 @@
               </li>
             </ul>
           </li>
-          <li class="<?php echo ($aac); ?>">
+          <li class="<?php echo ($Manaexam); ?>">
             <a href="<?php echo U('/Dashboard/Manaexam/index');?>" class="dropdown-toggle">
               <i class="icon-list-alt"></i>
               <span class="menu-text"> 管理答卷 </span>
             </a>
           </li>
-          <li class="<?php echo ($aac); ?>">
+          <li class="<?php echo ($Muser); ?>">
             <a href="<?php echo U('/Dashboard/Muser/index');?>" class="dropdown-toggle">
               <i class="icon-user"></i>
               <span class="menu-text"> 查看用户 </span>

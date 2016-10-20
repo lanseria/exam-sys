@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
 <head>
-	<title>主页</title>
+	<title>郑轻考试管理系统</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="/Public/css/bootstrap.min.css"/>
@@ -16,7 +16,23 @@
 	<link rel="stylesheet" type="text/css" href="/Public/css/font-awesome.min.css"/>
 	<link rel="icon" href="/favicon.ico">
 </head>
-<body>
+<script>
+    function two_char(n) {
+        return n >= 10 ? n : "0" + n;
+    }
+    function time_fun() {
+        var sec=0;
+        setInterval(function () {
+            sec++;
+            document.getElementById("time").value = sec;
+            var date = new Date(0, 0)
+            date.setSeconds(sec);
+            var h = date.getHours(), m = date.getMinutes(), s = date.getSeconds();
+            document.getElementById("mytime").innerText = two_char(h) + ":" + two_char(m) + ":" + two_char(s);
+        }, 1000);
+    }
+</script>
+<body onload="<?php echo ($time); ?>">
 	<!-- start header -->
 	<div class="header_bg">
 		<div class="wrap">
@@ -46,6 +62,7 @@
 						<li class="<?php echo ($ac_about); ?>"><a href="<?php echo U('Home/Index/about');?>">关于我们</a></li>
 						<li class="<?php echo ($ac_custom); ?>"><a href="<?php echo U('Home/Index/custom');?>">客户</a></li>
 						<li class="<?php echo ($ac_questionbank); ?>"><a href="<?php echo U('Home/Index/questionbank');?>">题库</a></li>
+						<li class="<?php echo ($ac_resultbank); ?>"><a href="<?php echo U('Home/Index/resultbank');?>">结果</a></li>
 						<li class="<?php echo ($ac_contact); ?>"><a href="<?php echo U('Home/Index/contact');?>">联系我们</a></li>
 					</ul>
 				</div>
@@ -98,17 +115,18 @@
 		</div>
 	</div>
 	<!-- start slider -->
-	<div class="top_bg">
+	
+<div class="top_bg">
 	<div class="wrap">
 		<div class="top">
-			<h2>欢迎进来答题</h2>
+			<h2>欢迎进来答题</h2><span>time:</span><span class="h2" id="mytime">00:00:00</span>
 		</div>
 	</div>
 </div>
 <!-- start main -->
 <div class="wrap">
 	<div class="main">
-		<h1 style="font-size:2em;">2016年党课考试试题</h1>
+		<h1 style="font-size:2em;"><?php echo ($title); ?></h1>
 		<hr/>
 		<form class="form-group" method="post" action="<?php echo U('Home/Index/p');?>">
 			<div class="det_text">
@@ -144,7 +162,8 @@
 			</div>
 			<div class="clear"></div>
 			<input type="hidden" name="eid" value="<?php echo ($eid); ?>" />
-			<input type="hidden" name="uid" value="1" />
+			<input type="hidden" name="uid" value="<?php echo ($uid); ?>" />
+			<input type="hidden" id="time" name="ftime" value="">
 			<button class="btn btn-info" type="submit">提交</button>
 		</form>
 	</div>

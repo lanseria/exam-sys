@@ -58,31 +58,19 @@
 <div class="wrap">
 	<div class="main content_top">
 		<!-- start span_of_3 -->
+		<volist name="exam" id="vo">
 		<div class="span_of_3">
 			<div class="span1_of_3">
-				<a href="details.html"><img src="__PUBLIC__/images/pic1.jpg" alt=""/></a>
+				<a href="{:U('Home/Index/e')}?eid={$vo.eid}"><img src="__PUBLIC__/images/exam_img/{$vo.eimgurl}" alt=""/></a>
 				<div class="span1_of_3_text">
-					<h3><a href="details.html">生活常识在线考试（50题）</a></h3>
-					<p>共50题，每题2分，总分100分。考试时间25分钟。</p>
-				</div>
-			</div>
-			<div class="span1_of_3">
-				<a href="details.html"><img src="__PUBLIC__/images/pic2.jpg" alt=""/></a>
-				<div class="span1_of_3_text">
-					<h3><a href="details.html">消防安全知识在线考试</a></h3>
-					<p>共50题，每题2分，总分100分。考试时间25分钟。</p>
-				</div>
-			</div>
-			<div class="span1_of_3">
-				<a href="details.html"><img src="__PUBLIC__/images/pic3.jpg" alt=""/></a>
-				<div class="span1_of_3_text">
-					<h3><a href="details.html">销售人员对产品了解程度在线考试</a></h3>
-					<p>共50题，每题2分，总分100分。考试时间25分钟。</p>
+					<h3><a href="{:U('Home/Index/e')}?eid={$vo.eid}">{$vo.etitle}</a></h3>
+					<p>{$vo.edescription}</p>
 				</div>
 			</div>
 			<div class="clear"></div>
 		</div>
-		<!--  -->
+		</volist>
+		<!--  
 		<div class="span_of_3">
 			<div class="span1_of_3">
 				<a href="details.html"><img src="__PUBLIC__/images/pic4.jpg" alt=""/></a>
@@ -107,6 +95,7 @@
 			</div>
 			<div class="clear"></div>
 		</div>
+		-->
 		<!-- end grids_of_3 -->
 	</div>
 </div>

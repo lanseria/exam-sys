@@ -1,0 +1,34 @@
+<div class="top_bg">
+	<div class="wrap">
+		<div class="top">
+			<h2>你的结果</h2>
+		</div>
+	</div>
+</div>
+<!-- start main -->
+<div class="wrap">
+	<div class="main">
+		<div class="blog">
+			<volist name="exam" id="examvo" empty="暂时没有数据">
+				<div class="blog_list">
+					<h2>{$examvo.etitle}</h2>
+					<h5><span class="glyphicon glyphicon-time" aria-hidden="true"></span>Start at {$examvo.estarttime} <span class="glyphicon glyphicon-time" aria-hidden="true"></span>End at {$examvo.eendtime}, Posted by&nbsp;<a href="index.html">{$examvo.urname}</a></h5>
+					<div class="blog_para">
+						<p class="para"><a  href="{:U('Home/Index/e')}?eid={$examvo.eid}"><img src="__PUBLIC__/images/exam_img/{$examvo.eimgurl}" alt=""></a>{$examvo.edescription}</p>
+						<eq name="examvo.passed" value="$Think.session.logineduserid"><strong class="text-success">已答过题</strong>|<span>选择题得分:{$examvo.select_s}</span>|<span>其他得分:{$examvo.black_s}</span>|<span>完成时间:{$examvo.finish_t} second</span>|<span>结束答题时间:{$examvo.end_t}</span>
+						<div class="read_more">
+							<button class="btn btn-lg" disabled="disabled">谢绝答题</button>
+						</div>
+						<else /> <span class="text-danger">未答过题</span>
+						<div class="read_more">
+							<a class="btn" href="{:U('Home/Index/e')}?eid={$examvo.eid}">开始答题</a>
+						</div>
+						</eq>
+						
+						<div class="clear"></div>
+					</div>
+				</div>
+			</volist>
+		</div>
+	</div>
+</div>

@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +16,7 @@
     <!--[if IE 7]>
       <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
       <![endif]-->
+      <link rel="stylesheet" href="/Public/assets/css/chosen.css" />
       <link rel="stylesheet" href="/Public/assets/css/dropzone.css" />
       <!-- page specific plugin styles -->
 
@@ -116,41 +117,35 @@
           </li>
 
 
-          <li class="<?php echo ($cac); ?>">
+          <li class="<?php echo ($StartTag); ?>">
             <a href="#" class="dropdown-toggle">
               <i class="icon-list"></i>
               <span class="menu-text"> 开始出题 </span>
               <b class="arrow icon-angle-down"></b>
             </a>
             <ul class="submenu">
-              <li>
+              <li class="<?php echo ($StartTag1); ?>">
                 <a href="<?php echo U('/Dashboard/Es/Ctitle');?>">
                   <i class="icon-double-angle-right"></i>
                   1.确定主题
                 </a>
               </li>
-              <li>
+              <li class="<?php echo ($StartTag2); ?>">
                 <a href="<?php echo U('/Dashboard/Es/Cgtype');?>">
                   <i class="icon-double-angle-right"></i>
                   2.确定题目类型
                 </a>
               </li>
-              <li>
+              <li class="<?php echo ($StartTag3); ?>">
                 <a href="<?php echo U('/Dashboard/Es/Cqus');?>">
                   <i class="icon-double-angle-right"></i>
                   3.为每个组定题目
                 </a>
               </li>
-              <li>
-                <a href="<?php echo U('/Dashboard/Es/Cans');?>">
-                  <i class="icon-double-angle-right"></i>
-                  4.填写标准答案
-                </a>
-              </li>
             </ul>
           </li>
 
-          <li class="<?php echo ($fac); ?>">
+          <li class="<?php echo ($ExploreExam); ?>">
             <a href="<?php echo U('/Dashboard/Vexam/index');?>" class="dropdown-toggle">
               <i class="icon-edit"></i>
               <span class="menu-text"> 预览答卷 </span>
@@ -190,13 +185,13 @@
               </li>
             </ul>
           </li>
-          <li class="<?php echo ($aac); ?>">
+          <li class="<?php echo ($Manaexam); ?>">
             <a href="<?php echo U('/Dashboard/Manaexam/index');?>" class="dropdown-toggle">
               <i class="icon-list-alt"></i>
               <span class="menu-text"> 管理答卷 </span>
             </a>
           </li>
-          <li class="<?php echo ($aac); ?>">
+          <li class="<?php echo ($Muser); ?>">
             <a href="<?php echo U('/Dashboard/Muser/index');?>" class="dropdown-toggle">
               <i class="icon-user"></i>
               <span class="menu-text"> 查看用户 </span>
@@ -216,143 +211,168 @@
     </script>
   </div>
 
-          <div class="main-content">
-          <div class="breadcrumbs" id="breadcrumbs">
-            <script type="text/javascript">
-              try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
-            </script>
-
-            <ul class="breadcrumb">
-              <li>
-                <i class="icon-home home-icon"></i>
-                <a href="#">Dashboard</a>
-              </li>
-              <li class="active">个人中心</li>
-            </ul><!-- .breadcrumb -->
-
-            <div class="nav-search" id="nav-search">
-              <form class="form-search">
-                <span class="input-icon">
-                  <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
-                  <i class="icon-search nav-search-icon"></i>
-                </span>
-              </form>
-            </div><!-- #nav-search -->
+  <div class="main-content">
+  <div class="breadcrumbs" id="breadcrumbs">
+    <script type="text/javascript">
+    try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+    </script>
+    <ul class="breadcrumb">
+      <li>
+        <i class="icon-home home-icon"></i>
+        <a href="#">Dashboard</a>
+      </li>
+      <li class="active">查看用户</li>
+      </ul><!-- .breadcrumb -->
+      <div class="nav-search" id="nav-search">
+        <form class="form-search">
+          <span class="input-icon">
+            <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+            <i class="icon-search nav-search-icon"></i>
+          </span>
+        </form>
+        </div><!-- #nav-search -->
+      </div>
+      <div class="page-content">
+        <div class="page-header">
+          <h1>
+          查看用户
+          <small>
+          <i class="icon-double-angle-right"></i>
+          修改用户信息
+          </small>
+          </h1>
+          </div><!-- /.page-header -->
+          
+          <div class="row">
+            <div class="col-xs-12">
+              <h3 class="header smaller lighter blue">jQuery dataTables</h3>
+              <div class="table-header">
+                Results for "Latest Registered Domains"
+              </div>
+              <div class="table-responsive">
+                <table id="sample-table-2" class="table table-striped table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th class="center">
+                        <label>
+                          <span class="lbl">No</span>
+                        </label>
+                      </th>
+                      <th>类型</th>
+                      <th>名字</th>
+                      <th class="hidden-480">学号</th>
+                      <th>
+                        <i class="icon-time bigger-110 hidden-480"></i>
+                        加密密码
+                      </th>
+                      <th class="hidden-480">原始密码</th>
+                      <th>操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php if(is_array($users)): $i = 0; $__LIST__ = $users;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                      <td class="center">
+                        <label>
+                          <?php echo ($i); ?>
+                          <span class="lbl"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <a href="#"><?php echo ($vo["utype"]); ?></a>
+                      </td>
+                      <td><?php echo ($vo["urname"]); ?></td>
+                      <td class="hidden-480"><?php echo ($vo["ustunum"]); ?></td>
+                      <td><?php echo ($vo["upwd"]); ?></td>
+                      <td><?php echo ($vo["rpwd"]); ?></td>
+                      <td>
+                        <div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
+                          <a class="blue" href="#">
+                            <i class="icon-zoom-in bigger-130"></i>
+                          </a>
+                          <a class="green" href="#">
+                            <i class="icon-pencil bigger-130"></i>
+                          </a>
+                          <a class="red" href="#">
+                            <i class="icon-trash bigger-130"></i>
+                          </a>
+                        </div>
+                        <div class="visible-xs visible-sm hidden-md hidden-lg">
+                          <div class="inline position-relative">
+                            <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-caret-down icon-only bigger-120"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+                              <li>
+                                <a href="#" class="tooltip-info" data-rel="tooltip" title="View">
+                                  <span class="blue">
+                                    <i class="icon-zoom-in bigger-120"></i>
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                  <span class="green">
+                                    <i class="icon-edit bigger-120"></i>
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
+                                  <span class="red">
+                                    <i class="icon-trash bigger-120"></i>
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
-
-          <div class="page-content">
-            <div class="page-header">
-              <h1>
-                个人中心
-                <small>
-                  <i class="icon-double-angle-right"></i>
-                  2处信息可以修改
-                </small>
-              </h1>
-            </div><!-- /.page-header -->
-
-            <div class="row">
-              <div class="col-xs-12">
-                <!-- PAGE CONTENT BEGINS -->
-                <div class="hr dotted"></div>
-                <div class="">
-                  <div id="user-profile-3" class="user-profile row">
-                    <div class="col-sm-offset-1 col-sm-10">
-                      <div class="well well-sm">
-                        <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        &nbsp;
-                        <div class="inline middle blue bigger-110"> 修改与填写的你信息 </div>
-
-                        &nbsp; &nbsp; &nbsp;
-                        <div style="width:200px;" data-percent="70%" class="inline middle no-margin progress progress-striped active">
-                          <div class="progress-bar progress-bar-success" style="width:70%"></div>
-                        </div>
-                      </div><!-- /well -->
-
-                      <div class="space"></div>
-
-                      <form class="form-horizontal">
-                        <input type="hidden" name="uid" id="uid" value="<?php echo ($usermsg["uid"]); ?>" />
-                        <div class="tabbable">
-                          <ul class="nav nav-tabs padding-16">
-                            <li class="active">
-                              <a data-toggle="tab" href="#edit-password">
-                                <i class="blue icon-key bigger-125"></i>
-                                修改密码
-                              </a>
-                            </li>
-                          </ul>
-
-                          <div class="tab-content profile-edit-tab-content">
-                            <div id="edit-password" class="tab-pane in active">
-                              <div class="space-10"></div>
-
-                              <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-pass1">New Password</label>
-
-                                <div class="col-sm-9">
-                                  <input type="password" id="form-field-pass1" />
-                                </div>
-                              </div>
-
-                              <div class="space-4"></div>
-
-                              <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-pass2">Confirm Password</label>
-
-                                <div class="col-sm-9">
-                                  <input type="password" id="form-field-pass2" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="clearfix form-actions">
-                          <div class="col-md-offset-3 col-md-9">
-                            <button class="btn btn-info" id="btn-save" type="button">
-                              <i class="icon-ok bigger-110"></i>
-                              Save
-                            </button>
-
-                            &nbsp; &nbsp;
-                            <button class="btn" type="reset">
-                              <i class="icon-undo bigger-110"></i>
-                              Reset
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </div><!-- /span -->
-                  </div><!-- /user-profile -->
-                </div>
-
-                <!-- PAGE CONTENT ENDS -->
-              </div><!-- /.col -->
-            </div><!-- /.row -->
-          </div><!-- /.page-content -->
-        </div><!-- /.main-content -->
-        <!-- inline scripts related to this page -->
-        <script type="text/javascript">
-         jQuery(function($) {
-          $('#btn-save').click(function(){
-            var pass1 = $('#form-field-pass1').val();
-            var pass2 = $('#form-field-pass2').val();
-            if(pass2 != pass1)
-              alert('两次密码不一致，请重新输入');
-            else{
-              var url = "<?php echo U('Dashboard/Ajax/motifypwd');?>";
-              var data = {"uid":$('#uid').val(),"pwd": pass1};
-              var success = function(response){
-                if(response)
-                  alert('已修改');
-                else
-                  alert('修改失败');
-              }
-              $.post(url, data ,success, "json");
-            }
+          
+          </div><!-- /.main-content -->
+          <script src="/Public/assets/js/jquery.dataTables.min.js"></script>
+          <script src="/Public/assets/js/jquery.dataTables.bootstrap.js"></script>
+          <script src="/Public/assets/js/dataTables.sort.plungin.js"></script>
+          <!-- inline scripts related to this page -->
+          <script type="text/javascript">
+          jQuery(function($) {
+          var oTable1 = $('#sample-table-2').dataTable({
+          //"bPaginate": false, //翻页功能
+          //"sScrollY": "200px",
+          //"bPaginate": false
+          "aoColumnDefs": [
+                    { "sType": "html-percent", "aTargets": [0] },    //指定列号使用自定义排序
+                ],
+          "aaSorting": [ [0,'asc']],
+          "aLengthMenu": [[10, 20, -1], [10, 20, "所有"]],
+          "iDisplayLength":10 ,
+          });
+          $('table th input:checkbox').on('click' , function(){
+          var that = this;
+          $(this).closest('table').find('tr > td:first-child input:checkbox')
+          .each(function(){
+          this.checked = that.checked;
+          $(this).closest('tr').toggleClass('selected');
+          });
+          });
+          $('[data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+          function tooltip_placement(context, source) {
+          var $source = $(source);
+          var $parent = $source.closest('table')
+          var off1 = $parent.offset();
+          var w1 = $parent.width();
+          var off2 = $source.offset();
+          var w2 = $source.width();
+          if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
+          return 'left';
+          }
           })
-        });
+          </script>
   <div class="ace-settings-container" id="ace-settings-container">
     <div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
       <i class="icon-cog bigger-150"></i>
@@ -431,6 +451,7 @@
 <script src="/Public/assets/js/jquery.sparkline.min.js"></script>
 
 <!-- ace scripts -->
+
 
 <script src="/Public/assets/js/ace-elements.min.js"></script>
 <script src="/Public/assets/js/ace.min.js"></script>

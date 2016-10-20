@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
 <head>
-	<title>主页</title>
+	<title>郑轻考试管理系统</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="/Public/css/bootstrap.min.css"/>
@@ -16,7 +16,23 @@
 	<link rel="stylesheet" type="text/css" href="/Public/css/font-awesome.min.css"/>
 	<link rel="icon" href="/favicon.ico">
 </head>
-<body>
+<script>
+    function two_char(n) {
+        return n >= 10 ? n : "0" + n;
+    }
+    function time_fun() {
+        var sec=0;
+        setInterval(function () {
+            sec++;
+            document.getElementById("time").value = sec;
+            var date = new Date(0, 0)
+            date.setSeconds(sec);
+            var h = date.getHours(), m = date.getMinutes(), s = date.getSeconds();
+            document.getElementById("mytime").innerText = two_char(h) + ":" + two_char(m) + ":" + two_char(s);
+        }, 1000);
+    }
+</script>
+<body onload="<?php echo ($time); ?>">
 	<!-- start header -->
 	<div class="header_bg">
 		<div class="wrap">
@@ -46,6 +62,7 @@
 						<li class="<?php echo ($ac_about); ?>"><a href="<?php echo U('Home/Index/about');?>">关于我们</a></li>
 						<li class="<?php echo ($ac_custom); ?>"><a href="<?php echo U('Home/Index/custom');?>">客户</a></li>
 						<li class="<?php echo ($ac_questionbank); ?>"><a href="<?php echo U('Home/Index/questionbank');?>">题库</a></li>
+						<li class="<?php echo ($ac_resultbank); ?>"><a href="<?php echo U('Home/Index/resultbank');?>">结果</a></li>
 						<li class="<?php echo ($ac_contact); ?>"><a href="<?php echo U('Home/Index/contact');?>">联系我们</a></li>
 					</ul>
 				</div>
@@ -115,20 +132,20 @@
 	       	<p class="para">来自科技创业中心的我们，利用平时的技术，去创写网站代码。</p>
 	       	<p class="para">为这个网站的创建，我们付出了诸多努力，也同时收获了许多经验，在老师在启发下，与同学的互相鼓励下，我们写下了这个网站。</p>
 			<div class="read_more">
-				 <a class="btn" href="details.html">了解更多</a>
+				 <a class="btn" href="#">了解更多</a>
 			</div>
 	       	</div>
 	      	 <div class="clear"></div>
 	      	</div>
 			 <div class="cont-grid-img img_style">
-	     		<a href="details.html"><img src="/Public/images/about_pic.jpg" alt=""></a>
+	     		<a href="#"><img src="/Public/images/about_pic.jpg" alt=""></a>
 	     	</div>	      	
 	      	<div class="clear"></div>
 	    	<div class="about-p">
 		    	<p class="para">大学生科技创业中心成立于2002年，是计算机与通信工程学院在郑州轻工业学院率先推出的大学生科技创业团队。我们通过技术指导、培训，参加项目建设使每位成员的实践能力、工作态度、合作精神、科技创新意识、激情创业能力等得到全面提高。    </p>
 				<p class="para">中心目前致力于网站制作、软件开发、电脑维护和多媒体处理，现正朝自主产品研发、项目科技创新、软件开发等方向发展，并且在系领导老师的支持和协助下逐步发展成为大学生科技创业公司。 </p>
 				<div class="read_more">
-					<a class="btn" href="details.html">了解更多</a>
+					<a class="btn" href="#">了解更多</a>
 				</div>
 		</div>
 		</div>
@@ -311,51 +328,76 @@
 			if (typeof this.naturalWidth != "undefined" && this.naturalWidth == 0) {
 				error = true;
 			}
-
 			if(error){
 				$(this).bind('error.replaceSrc',function(){
 					this.src = "/Public/images/Nopic.png";
-
 					$(this).unbind('error.replaceSrc');
 				}).trigger('load');
 			}
 		});
 		$('textarea[class*=autosize]').autosize({append: "\n"});
+		$('form.form-group').submit(function(e){
+			var nullcount = 0;
+			var strs = '';
+			var rccount = $('p.rccount').length;
+			nullcount += rccount;
+			// $("[type='radio']").each(function(){
+			// 	if($(this).is(':checked')) {
+			// 		strs += '1';
+			// 	}
+			// 	else{
+			// 		strs += '0';
+			// 	}
+			// 	strs += $(this).attr('name');
+			// })
+			// $("[type='checkbox']").each(function(){
+			// 	if($(this).is(':checked')) {
+			// 		strs += '1';
+			// 	}
+			// 	else{
+			// 		strs += '0';
+			// 	}
+			// 	strs += $(this).attr('name');
+			// })
+			$('input:radio:checked').each(function(){
+				if(!$(this).attr('checked')){
+					nullcount--;
+				}
+			})
+			$('input:checkbox:checked').each(function(){
+				if(!$(this).attr('checked')){
+					nullcount--;
+				}
+			})
+			$('form.form-group input').each(function(){
+				if($(this).val()==''){
+					nullcount++;
+				}
+			});
+			$('form.form-group textarea').each(function(){
+				if($(this).val()==''){
+					nullcount++;
+				}
+			});
+			if(nullcount>0){
+				alert('Please Input something'+nullcount+'\n'+strs);
+				return false;
+			}
+			
+		});
 		// $('#formToConfirm').click(function(){
-		// 	if($('#regUname').val()==""){
-		// 		alert('请填写用户名');
-		// 		return false;
-		// 	}
-		// 	else{
-		// 		if($('#regEmail').val()==""){
-		// 			alert('请填写邮箱');
+		// 	$('input').each(function(){
+		// 		if($(this).val()==''){
+		// 			alert('Please Input something');
 		// 			return false;
 		// 		}
-		// 		else{
-		// 			if($('#regPassword').val()==""){
-		// 				alert('请填写密码');
-		// 				return false;
-		// 			}
-		// 			else{
-		// 				if($('#regPassword').val()==""){
-		// 					alert('请填写密码');
-		// 					return false;
-		// 				}
-		// 				else{
-		// 					if($('#regCPassword').val()==""){
-		// 						alert('请填写确认密码');
-		// 						return false;
-		// 					}
-		// 					else{
-		// 						if($('#regPassword').val()!=$('#regCPassword').val()){
-		// 							alert('请确认密码一致');
-		// 							return false;
-		// 						}
-		// 					}
-		// 				}
-		// 			}
+		// 	});
+		// 	$('textarea').each(function(){
+		// 		if($(this).val()==''){
+		// 			alert('Please Input something');
+		// 			return false;
 		// 		}
-		// 	}
+		// 	});
 		// });
 		
 	});

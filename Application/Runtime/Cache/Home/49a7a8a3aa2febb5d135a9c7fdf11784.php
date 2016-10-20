@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
 <head>
-	<title>主页</title>
+	<title>郑轻考试管理系统</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="/Public/css/bootstrap.min.css"/>
@@ -16,7 +16,23 @@
 	<link rel="stylesheet" type="text/css" href="/Public/css/font-awesome.min.css"/>
 	<link rel="icon" href="/favicon.ico">
 </head>
-<body>
+<script>
+    function two_char(n) {
+        return n >= 10 ? n : "0" + n;
+    }
+    function time_fun() {
+        var sec=0;
+        setInterval(function () {
+            sec++;
+            document.getElementById("time").value = sec;
+            var date = new Date(0, 0)
+            date.setSeconds(sec);
+            var h = date.getHours(), m = date.getMinutes(), s = date.getSeconds();
+            document.getElementById("mytime").innerText = two_char(h) + ":" + two_char(m) + ":" + two_char(s);
+        }, 1000);
+    }
+</script>
+<body onload="<?php echo ($time); ?>">
 	<!-- start header -->
 	<div class="header_bg">
 		<div class="wrap">
@@ -46,6 +62,7 @@
 						<li class="<?php echo ($ac_about); ?>"><a href="<?php echo U('Home/Index/about');?>">关于我们</a></li>
 						<li class="<?php echo ($ac_custom); ?>"><a href="<?php echo U('Home/Index/custom');?>">客户</a></li>
 						<li class="<?php echo ($ac_questionbank); ?>"><a href="<?php echo U('Home/Index/questionbank');?>">题库</a></li>
+						<li class="<?php echo ($ac_resultbank); ?>"><a href="<?php echo U('Home/Index/resultbank');?>">结果</a></li>
 						<li class="<?php echo ($ac_contact); ?>"><a href="<?php echo U('Home/Index/contact');?>">联系我们</a></li>
 					</ul>
 				</div>
@@ -109,7 +126,7 @@
 <div class="wrap">
 	<div class="main">
 		<div class="blog">
-			<?php if(is_array($exam)): $i = 0; $__LIST__ = $exam;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$examvo): $mod = ($i % 2 );++$i;?><div class="blog_list">
+			<?php if(is_array($exam)): $i = 0; $__LIST__ = $exam;if( count($__LIST__)==0 ) : echo "暂时没有数据" ;else: foreach($__LIST__ as $key=>$examvo): $mod = ($i % 2 );++$i;?><div class="blog_list">
 					<h2><?php echo ($examvo["etitle"]); ?></h2>
 					<h5><span class="glyphicon glyphicon-time" aria-hidden="true"></span>Start at <?php echo ($examvo["estarttime"]); ?> <span class="glyphicon glyphicon-time" aria-hidden="true"></span>End at <?php echo ($examvo["eendtime"]); ?>, Posted by&nbsp;<a href="index.html"><?php echo ($examvo["urname"]); ?></a></h5>
 					<div class="blog_para">
@@ -119,7 +136,7 @@
 						</div>
 						<div class="clear"></div>
 					</div>
-				</div><?php endforeach; endif; else: echo "" ;endif; ?>
+				</div><?php endforeach; endif; else: echo "暂时没有数据" ;endif; ?>
 		</div>
 	</div>
 </div>
@@ -308,19 +325,53 @@
 		});
 		$('textarea[class*=autosize]').autosize({append: "\n"});
 		$('form.form-group').submit(function(e){
-			$('input').each(function(){
+			var nullcount = 0;
+			var strs = '';
+			var rccount = $('p.rccount').length;
+			nullcount += rccount;
+			// $("[type='radio']").each(function(){
+			// 	if($(this).is(':checked')) {
+			// 		strs += '1';
+			// 	}
+			// 	else{
+			// 		strs += '0';
+			// 	}
+			// 	strs += $(this).attr('name');
+			// })
+			// $("[type='checkbox']").each(function(){
+			// 	if($(this).is(':checked')) {
+			// 		strs += '1';
+			// 	}
+			// 	else{
+			// 		strs += '0';
+			// 	}
+			// 	strs += $(this).attr('name');
+			// })
+			$('input:radio:checked').each(function(){
+				if(!$(this).attr('checked')){
+					nullcount--;
+				}
+			})
+			$('input:checkbox:checked').each(function(){
+				if(!$(this).attr('checked')){
+					nullcount--;
+				}
+			})
+			$('form.form-group input').each(function(){
 				if($(this).val()==''){
-					alert('Please Input something');
-					return false;
+					nullcount++;
 				}
 			});
-			$('textarea').each(function(){
+			$('form.form-group textarea').each(function(){
 				if($(this).val()==''){
-					alert('Please Input something');
-					return false;
+					nullcount++;
 				}
 			});
-			return true;
+			if(nullcount>0){
+				alert('Please Input something'+nullcount+'\n'+strs);
+				return false;
+			}
+			
 		});
 		// $('#formToConfirm').click(function(){
 		// 	$('input').each(function(){

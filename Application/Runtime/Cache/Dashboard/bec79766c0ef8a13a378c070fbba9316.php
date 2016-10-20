@@ -191,13 +191,13 @@
               </li>
             </ul>
           </li>
-          <li class="<?php echo ($aac); ?>">
+          <li class="<?php echo ($Manaexam); ?>">
             <a href="<?php echo U('/Dashboard/Manaexam/index');?>" class="dropdown-toggle">
               <i class="icon-list-alt"></i>
               <span class="menu-text"> 管理答卷 </span>
             </a>
           </li>
-          <li class="<?php echo ($aac); ?>">
+          <li class="<?php echo ($Muser); ?>">
             <a href="<?php echo U('/Dashboard/Muser/index');?>" class="dropdown-toggle">
               <i class="icon-user"></i>
               <span class="menu-text"> 查看用户 </span>
@@ -287,7 +287,7 @@
 
                           <div class="space"></div>
 
-                          <form class="form-horizontal" id="MyForm" action="/Dashboard/Es/Cgtype.html?eid=1" enctype="multipart/form-data" method="post">
+                          <form class="form-horizontal" id="MyForm" action="/Dashboard/Es/Cgtype.html" enctype="multipart/form-data" method="post">
                             <input type="hidden" name="uid" id="uid" value="<?php echo ($usermsg["uid"]); ?>" />
                             <input type="hidden" name="eid" id="eid" value="<?php echo ($eid); ?>" />
                             <input type="hidden" name="gname" id="gname" value="" />
@@ -456,7 +456,7 @@
                   var gname = '';var gdescription = '';var gorder = '';
                   for(var i = 0; i < now; i++){
                     gname += $('#form-field-gname'+(i+1)).val()+';';
-                    gdescription += $('#autosize'+(i+1)).html()+';';
+                    gdescription += $('#autosize'+(i+1)).val()+';';//!!!! 
                     gorder += $('#form-field-gorder'+(i+1)).val()+';';
                   }
                   gname = gname.substring(0, gname.length-1);
@@ -469,6 +469,9 @@
                     alert('是否填入完整？');
                     return ;
                   }
+                  alert(gname);
+                  alert(gdescription);
+                  alert(gorder);
                 });
               });
             </script>

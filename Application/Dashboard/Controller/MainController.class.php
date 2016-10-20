@@ -11,7 +11,7 @@ class MainController extends Controller {
 			$uid = session('logineduserid');
 			$usermsg = D('User')->where(array('uid' => $uid))->select();
 			$this->assign('usermsg',$usermsg[0]);
-			$this->assign('gac','active');
+			//$this->assign('gac','active');
 		}else{
 			$this->error('只有管理员才可以进入,请先登录','/Home/User/login');
 		}

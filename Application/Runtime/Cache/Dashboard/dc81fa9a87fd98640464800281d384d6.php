@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +16,7 @@
     <!--[if IE 7]>
       <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
       <![endif]-->
+      <link rel="stylesheet" href="/Public/assets/css/chosen.css" />
       <link rel="stylesheet" href="/Public/assets/css/dropzone.css" />
       <!-- page specific plugin styles -->
 
@@ -116,41 +117,35 @@
           </li>
 
 
-          <li class="<?php echo ($cac); ?>">
+          <li class="<?php echo ($StartTag); ?>">
             <a href="#" class="dropdown-toggle">
               <i class="icon-list"></i>
               <span class="menu-text"> 开始出题 </span>
               <b class="arrow icon-angle-down"></b>
             </a>
             <ul class="submenu">
-              <li>
+              <li class="<?php echo ($StartTag1); ?>">
                 <a href="<?php echo U('/Dashboard/Es/Ctitle');?>">
                   <i class="icon-double-angle-right"></i>
                   1.确定主题
                 </a>
               </li>
-              <li>
+              <li class="<?php echo ($StartTag2); ?>">
                 <a href="<?php echo U('/Dashboard/Es/Cgtype');?>">
                   <i class="icon-double-angle-right"></i>
                   2.确定题目类型
                 </a>
               </li>
-              <li>
+              <li class="<?php echo ($StartTag3); ?>">
                 <a href="<?php echo U('/Dashboard/Es/Cqus');?>">
                   <i class="icon-double-angle-right"></i>
                   3.为每个组定题目
                 </a>
               </li>
-              <li>
-                <a href="<?php echo U('/Dashboard/Es/Cans');?>">
-                  <i class="icon-double-angle-right"></i>
-                  4.填写标准答案
-                </a>
-              </li>
             </ul>
           </li>
 
-          <li class="<?php echo ($fac); ?>">
+          <li class="<?php echo ($ExploreExam); ?>">
             <a href="<?php echo U('/Dashboard/Vexam/index');?>" class="dropdown-toggle">
               <i class="icon-edit"></i>
               <span class="menu-text"> 预览答卷 </span>
@@ -190,13 +185,13 @@
               </li>
             </ul>
           </li>
-          <li class="<?php echo ($aac); ?>">
+          <li class="<?php echo ($Manaexam); ?>">
             <a href="<?php echo U('/Dashboard/Manaexam/index');?>" class="dropdown-toggle">
               <i class="icon-list-alt"></i>
               <span class="menu-text"> 管理答卷 </span>
             </a>
           </li>
-          <li class="<?php echo ($aac); ?>">
+          <li class="<?php echo ($Muser); ?>">
             <a href="<?php echo U('/Dashboard/Muser/index');?>" class="dropdown-toggle">
               <i class="icon-user"></i>
               <span class="menu-text"> 查看用户 </span>
@@ -227,7 +222,7 @@
                 <i class="icon-home home-icon"></i>
                 <a href="#">Dashboard</a>
               </li>
-              <li class="active">个人中心</li>
+              <li class="active">试卷管理</li>
             </ul><!-- .breadcrumb -->
 
             <div class="nav-search" id="nav-search">
@@ -243,10 +238,10 @@
           <div class="page-content">
             <div class="page-header">
               <h1>
-                个人中心
+                试卷管理
                 <small>
                   <i class="icon-double-angle-right"></i>
-                  2处信息可以修改
+                  此处可以管理你所创建的试卷
                 </small>
               </h1>
             </div><!-- /.page-header -->
@@ -261,7 +256,7 @@
                       <div class="well well-sm">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         &nbsp;
-                        <div class="inline middle blue bigger-110"> 修改与填写的你信息 </div>
+                        <div class="inline middle blue bigger-110"> 注意修改与删除查看你的试卷(Undevlepment)  </div>
 
                         &nbsp; &nbsp; &nbsp;
                         <div style="width:200px;" data-percent="70%" class="inline middle no-margin progress progress-striped active">
@@ -276,34 +271,63 @@
                         <div class="tabbable">
                           <ul class="nav nav-tabs padding-16">
                             <li class="active">
-                              <a data-toggle="tab" href="#edit-password">
+                              <a data-toggle="tab" href="#edit-Basic">
                                 <i class="blue icon-key bigger-125"></i>
-                                修改密码
+                                选择
                               </a>
                             </li>
                           </ul>
 
                           <div class="tab-content profile-edit-tab-content">
-                            <div id="edit-password" class="tab-pane in active">
+                            <div id="edit-Basic" class="tab-pane in active">
                               <div class="space-10"></div>
 
-                              <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-pass1">New Password</label>
+                              <?php if(is_array($Exams)): $i = 0; $__LIST__ = $Exams;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><h4 class="header blue bolder smaller"><?php echo ($vo["etitle"]); ?></h4>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-4">
+                                      <img src="/Public/images/exam_img/<?php echo ($vo["eimgurl"]); ?>" style="width: 100%;">
+                                  </div>
 
-                                <div class="col-sm-9">
-                                  <input type="password" id="form-field-pass1" />
+                                  <div class="vspace-xs"></div>
+
+                                  <div class="col-xs-12 col-sm-8">
+                                    <div class="form-group">
+                                      <label class="col-sm-4 control-label no-padding-right">创建时间</label>
+
+                                      <div class="col-sm-8">
+                                        <input class="col-xs-12 col-sm-10" type="text" value="<?php echo ($vo["ecreatetime"]); ?>" disabled/>
+                                      </div>
+                                    </div>
+
+                                    <div class="space-4"></div>
+
+                                    <div class="form-group">
+                                      <label class="col-sm-4 control-label no-padding-right">开考时间</label>
+
+                                      <div class="col-sm-8">
+                                        <input class="col-xs-12 col-sm-10" type="text" value="<?php echo ($vo["estarttime"]); ?>" disabled/>
+                                      </div>
+                                    </div>
+                                    <div class="space-4"></div>
+
+                                    <div class="form-group">
+                                      <label class="col-sm-4 control-label no-padding-right">结束时间</label>
+
+                                      <div class="col-sm-8">
+                                        <input class="col-xs-12 col-sm-10" type="text" value="<?php echo ($vo["eendtime"]); ?>" disabled/>
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <p class="text col-sm-offset-1">详细：<?php echo ($vo["edescription"]); ?></p>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
+                                <div class="space-4"></div>
+                                <a class="btn btn-info" href="/Home/Index/e.html?eid=<?php echo ($vo["eid"]); ?>">查看</a>
+                                <a class="btn btn-success" href="/Dashboard/Manaexam/motify.html?eid=<?php echo ($vo["eid"]); ?>">批改</a>
+                                <button class="btn btn-danger">删除</button>
+                                <button class="btn btn-warning">编辑</button><?php endforeach; endif; else: echo "" ;endif; ?>
 
-                              <div class="space-4"></div>
-
-                              <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-pass2">Confirm Password</label>
-
-                                <div class="col-sm-9">
-                                  <input type="password" id="form-field-pass2" />
-                                </div>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -332,27 +356,6 @@
             </div><!-- /.row -->
           </div><!-- /.page-content -->
         </div><!-- /.main-content -->
-        <!-- inline scripts related to this page -->
-        <script type="text/javascript">
-         jQuery(function($) {
-          $('#btn-save').click(function(){
-            var pass1 = $('#form-field-pass1').val();
-            var pass2 = $('#form-field-pass2').val();
-            if(pass2 != pass1)
-              alert('两次密码不一致，请重新输入');
-            else{
-              var url = "<?php echo U('Dashboard/Ajax/motifypwd');?>";
-              var data = {"uid":$('#uid').val(),"pwd": pass1};
-              var success = function(response){
-                if(response)
-                  alert('已修改');
-                else
-                  alert('修改失败');
-              }
-              $.post(url, data ,success, "json");
-            }
-          })
-        });
   <div class="ace-settings-container" id="ace-settings-container">
     <div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
       <i class="icon-cog bigger-150"></i>
@@ -431,6 +434,7 @@
 <script src="/Public/assets/js/jquery.sparkline.min.js"></script>
 
 <!-- ace scripts -->
+
 
 <script src="/Public/assets/js/ace-elements.min.js"></script>
 <script src="/Public/assets/js/ace.min.js"></script>
