@@ -91,6 +91,9 @@ class IndexController extends Controller {
 
 		if($passed == $uid && session('loginedusertype')=='C'){
 			$this->error('你已经答过题了', '/Home/Index/index');//javascript:window.location.href=document.referrer;
+		}
+		elseif (session('?loginedusertype')) {
+			$this->error('请先登录', '/Home/User/login');
 		}else{
 			$this->assign('uid', $uid);
 			$map['eid'] = $eid;
@@ -103,7 +106,7 @@ class IndexController extends Controller {
 
 	}
 	public function questionbank(){
-		$exam = D('exam')->select();
+		$exam = D('vques')->select();
 		$this->assign('exam', $exam);
 		$this->assign('ac_questionbank','active');
 		$this->display();
@@ -123,7 +126,22 @@ class IndexController extends Controller {
 		$this->display();
 	}
 	public function contact(){
-		$this->assign('ac_contact','active');
-		$this->display();
+		if (IS_POST) {
+			$data['username'] = I('post.userName');
+			$data['useremail'] = I('post.userEmail');
+			$data['userphone'] = I('post.userPhone');
+			$data['usermsg'] = I('post.userMsg');
+			if(D('contact')->create($data, 1)){
+				$res = D('contact')->add();
+				$this->success('提交成功', '/Home/Index/contact');
+			}else{
+				$this->error('提交失败', '/Home/Index/contact');
+			}
+			
+		}else{
+			$this->assign('ac_contact','active');
+			$this->display();
+		}
+
 	}
 }
