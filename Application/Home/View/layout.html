@@ -43,7 +43,7 @@
 				<div class="social">
 					<ul>
 						<present name="Think.session.logineduser">
-							<li><a href="{:U('')}">欢迎你,{$Think.session.logineduser}!</a></li>
+							<li><a href="{:U('/Center/index/index')}">欢迎你,{$Think.session.logineduser}!</a></li>
 							<li><a href="/Home/User/logout">注销</a></li>
 							<else/>
 							<li class="social-icons"><a href="#" data-toggle="modal" data-target="#login_register"></a></li>
@@ -65,29 +65,36 @@
 						<li class="{$ac_custom}"><a href="{:U('Home/Index/custom')}">客户</a></li>
 						<li class="{$ac_questionbank}"><a href="{:U('Home/Index/questionbank')}">题库</a></li>
 						<li class="{$ac_resultbank}"><a href="{:U('Home/Index/resultbank')}">结果</a></li>
+						<li class="{$ac_article}"><a href="{:U('Home/Article/lists')}">文章资料</a></li>
 						<li class="{$ac_contact}"><a href="{:U('Home/Index/contact')}">联系我们</a></li>
 					</ul>
 				</div>
+				<!--
 				<div class="h_search">
 					<form>
 						<input type="text" value="" placeholder="search something...">
 						<input type="submit" value="">
 					</form>
 				</div>
+				-->
 				<div class="menu">
 					<ul>
 						<li class="{$ac_index}"><a href="{:U('Home/Index/index')}">主页</a></li>
 						<li class="{$ac_about}"><a href="{:U('Home/Index/about')}">关于我们</a></li>
 						<li class="{$ac_custom}"><a href="{:U('Home/Index/custom')}">客户</a></li>
 						<li class="{$ac_questionbank}"><a href="{:U('Home/Index/questionbank')}">题库</a></li>
+						<li class="{$ac_resultbank}"><a href="{:U('Home/Index/resultbank')}">结果</a></li>
+						<li class="{$ac_article}"><a href="{:U('Home/Article/lists')}">文章资料</a></li>
 						<li class="{$ac_contact}"><a href="{:U('Home/Index/contact')}">联系我们</a></li>
 					</ul>
 				</div>
+				<!--
 				<div class="search">
 					<form action="/iphone/search.html">
 						<input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
 					</form>
 				</div>
+				-->
 				<div class="sub-head">
 					<ul>
 						<li><a href="#" id="menu">Menu  <span></span></a></li>

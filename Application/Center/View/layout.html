@@ -115,104 +115,18 @@
               <span class="menu-text"> 个人中心 </span>
             </a>
           </li>
-
-
-          <li class="{$StartTag}">
-            <a href="#" class="dropdown-toggle">
-              <i class="icon-list"></i>
-              <span class="menu-text"> 开始出题 </span>
-              <b class="arrow icon-angle-down"></b>
-            </a>
-            <ul class="submenu">
-              <li class="{$StartTag1}">
-                <a href="__MODULE__/Es/Ctitle">
-                  <i class="icon-double-angle-right"></i>
-                  1.确定主题
-                </a>
-              </li>
-              <li class="{$StartTag2}">
-                <a href="__MODULE__/Es/Cgtype">
-                  <i class="icon-double-angle-right"></i>
-                  2.确定题目类型
-                </a>
-              </li>
-              <li class="{$StartTag3}">
-                <a href="__MODULE__/Es/Cqus">
-                  <i class="icon-double-angle-right"></i>
-                  3.为每个组定题目
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="{$ExploreExam}">
-            <a href="__MODULE__/Vexam/index" class="dropdown-toggle">
-              <i class="icon-edit"></i>
-              <span class="menu-text"> 预览答卷 </span>
-            </a>
-          </li>
-
-          <!--<li class="{$aac}">
-            <a href="#" class="dropdown-toggle">
-              <i class="icon-pencil"></i>
-              <span class="menu-text"> 修改答卷 </span>
-              <b class="arrow icon-angle-down"></b>
-            </a>
-            <ul class="submenu">
-              <li>
-                <a href="__MODULE__/Es/Ctitle">
-                  <i class="icon-double-angle-right"></i>
-                  1.修改主题
-                </a>
-              </li>
-              <li>
-                <a href="__MODULE__/Es/Cgtype">
-                  <i class="icon-double-angle-right"></i>
-                  2.修改题目类型
-                </a>
-              </li>
-              <li>
-                <a href="__MODULE__/Es/Cqus">
-                  <i class="icon-double-angle-right"></i>
-                  3.为每个组修改题目
-                </a>
-              </li>
-              <li>
-                <a href="__MODULE__/Es/Cans">
-                  <i class="icon-double-angle-right"></i>
-                  4.修改标准答案
-                </a>
-              </li>
-            </ul>
-          </li>-->
+          <eq name="Admin" value="1">
           <li class="{$Manaexam}">
             <a href="__MODULE__/Manaexam/index" class="dropdown-toggle">
               <i class="icon-list-alt"></i>
               <span class="menu-text"> 管理答卷 </span>
             </a>
           </li>
-          <li class="{$Mmsg}">
-            <a href="__MODULE__/Mmsg/index" class="dropdown-toggle">
-              <i class="icon-text-width"></i>
-              <span class="menu-text"> 添加文章 </span>
-            </a>
-          </li>
-          <li class="{$Muser}">
-            <a href="__MODULE__/Muser/index" class="dropdown-toggle">
-              <i class="icon-user"></i>
-              <span class="menu-text"> 查看用户 </span>
-            </a>
-          </li>
-          <li class="{$MAuser}">
-            <a href="__MODULE__/MAuser/index" class="dropdown-toggle">
-              <i class="icon-user"></i>
-              <span class="menu-text"> 查看管理员 </span>
-            </a>
-          </li>
+          </eq>
           <li class="{$Mcontact}">
             <a href="__MODULE__/Mcontact/index" class="dropdown-toggle">
               <i class="icon-comment"></i>
-              <span class="menu-text"> 查看用户回馈 </span>
+              <span class="menu-text"> 查看回馈 </span>
             </a>
           </li>
         </ul>

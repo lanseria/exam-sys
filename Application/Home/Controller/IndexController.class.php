@@ -86,15 +86,9 @@ class IndexController extends Controller {
 		$this->assign("time", "time_fun()");
 		$title = D('exam')->where(array('eid'=>$eid))->getField('etitle');
 		$this->assign('title', $title);
-		$passed = D('vques')->where(array('eid'=>$eid))->getField('passed');
 		$uid = session('logineduserid');
-
-		if($passed == $uid && session('loginedusertype')=='C'){
-			$this->error('你已经答过题了', '/Home/Index/index');//javascript:window.location.href=document.referrer;
-		}
-		elseif (session('?loginedusertype')) {
-			$this->error('请先登录', '/Home/User/login');
-		}else{
+		$passed = D('vques')->where(array('eid'=>$eid, 'passed'=>$uid))->getField('passed');
+		if (session('loginedusertype')=="T") {
 			$this->assign('uid', $uid);
 			$map['eid'] = $eid;
 			$this->assign('eid', $eid);
@@ -103,10 +97,27 @@ class IndexController extends Controller {
 			$this->assign("groups", $res);
 			$this->display();
 		}
+		else{
+			if(!session('?logineduser')){
+				$this->error('请先登录', '/Home/User/login');
+			}
+			elseif ($passed == $uid) {
+				$this->error('你已经答过题了', '/Home/Index/questionbank');//javascript:window.location.href=document.referrer;
+			}else{
+				$this->assign('uid', $uid);
+				$map['eid'] = $eid;
+				$this->assign('eid', $eid);
+				$groups = D('groups');
+				$res = $groups->relation(true)->select();
+				$this->assign("groups", $res);
+				$this->display();
+			}
+		}
+
 
 	}
 	public function questionbank(){
-		$exam = D('vques')->select();
+		$exam = D('vqb')->select();
 		$this->assign('exam', $exam);
 		$this->assign('ac_questionbank','active');
 		$this->display();

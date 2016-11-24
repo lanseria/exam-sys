@@ -9,7 +9,7 @@
                 <i class="icon-home home-icon"></i>
                 <a href="#">Dashboard</a>
               </li>
-              <li class="active">试卷管理</li>
+              <li class="active">个人中心</li>
             </ul><!-- .breadcrumb -->
 
             <div class="nav-search" id="nav-search">
@@ -25,10 +25,10 @@
           <div class="page-content">
             <div class="page-header">
               <h1>
-                试卷管理
+                个人中心
                 <small>
                   <i class="icon-double-angle-right"></i>
-                  此处可以管理你所创建的试卷
+                  2处信息可以修改
                 </small>
               </h1>
             </div><!-- /.page-header -->
@@ -43,7 +43,7 @@
                       <div class="well well-sm">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         &nbsp;
-                        <div class="inline middle blue bigger-110"> 注意修改与删除查看你的试卷(Undevlepment)  </div>
+                        <div class="inline middle blue bigger-110"> 修改与填写的你信息 </div>
 
                         &nbsp; &nbsp; &nbsp;
                         <div style="width:200px;" data-percent="70%" class="inline middle no-margin progress progress-striped active">
@@ -58,65 +58,34 @@
                         <div class="tabbable">
                           <ul class="nav nav-tabs padding-16">
                             <li class="active">
-                              <a data-toggle="tab" href="#edit-Basic">
+                              <a data-toggle="tab" href="#edit-password">
                                 <i class="blue icon-key bigger-125"></i>
-                                选择
+                                修改密码
                               </a>
                             </li>
                           </ul>
 
                           <div class="tab-content profile-edit-tab-content">
-                            <div id="edit-Basic" class="tab-pane in active">
+                            <div id="edit-password" class="tab-pane in active">
                               <div class="space-10"></div>
 
-                              <volist name="Exams" id="vo">
-                                <h4 class="header blue bolder smaller">{$vo.etitle}</h4>
-                                <div class="row">
-                                  <div class="col-xs-12 col-sm-4">
-                                      <img src="__PUBLIC__/images/exam_img/{$vo.eimgurl}" style="width: 100%;">
-                                  </div>
+                              <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="form-field-pass1">New Password</label>
 
-                                  <div class="vspace-xs"></div>
-
-                                  <div class="col-xs-12 col-sm-8">
-                                    <div class="form-group">
-                                      <label class="col-sm-4 control-label no-padding-right">创建时间</label>
-
-                                      <div class="col-sm-8">
-                                        <input class="col-xs-12 col-sm-10" type="text" value="{$vo.ecreatetime}" disabled/>
-                                      </div>
-                                    </div>
-
-                                    <div class="space-4"></div>
-
-                                    <div class="form-group">
-                                      <label class="col-sm-4 control-label no-padding-right">开考时间</label>
-
-                                      <div class="col-sm-8">
-                                        <input class="col-xs-12 col-sm-10" type="text" value="{$vo.estarttime}" disabled/>
-                                      </div>
-                                    </div>
-                                    <div class="space-4"></div>
-
-                                    <div class="form-group">
-                                      <label class="col-sm-4 control-label no-padding-right">结束时间</label>
-
-                                      <div class="col-sm-8">
-                                        <input class="col-xs-12 col-sm-10" type="text" value="{$vo.eendtime}" disabled/>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <p class="text col-sm-offset-1">详细：{$vo.edescription}</p>
-                                    </div>
-                                  </div>
+                                <div class="col-sm-9">
+                                  <input type="password" id="form-field-pass1" />
                                 </div>
-                                <div class="space-4"></div>
-                                <a class="btn btn-info" href="/Home/Index/e.html?eid={$vo.eid}">查看</a>
-                                <a class="btn btn-success" href="__MODULE__/Manaexam/motify.html?eid={$vo.eid}">批改</a>
-                                <button class="btn btn-danger">删除</button>
-                                <button class="btn btn-warning">编辑</button>
-                              </volist>
+                              </div>
 
+                              <div class="space-4"></div>
+
+                              <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="form-field-pass2">Confirm Password</label>
+
+                                <div class="col-sm-9">
+                                  <input type="password" id="form-field-pass2" />
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -145,3 +114,25 @@
             </div><!-- /.row -->
           </div><!-- /.page-content -->
         </div><!-- /.main-content -->
+        <!-- inline scripts related to this page -->
+        <script type="text/javascript">
+         jQuery(function($) {
+          $('#btn-save').click(function(){
+            var pass1 = $('#form-field-pass1').val();
+            var pass2 = $('#form-field-pass2').val();
+            if(pass2 != pass1)
+              alert('两次密码不一致，请重新输入');
+            else{
+              var url = "{:U('Dashboard/Ajax/motifypwd')}";
+              var data = {"uid":$('#uid').val(),"pwd": pass1};
+              var success = function(response){
+                if(response)
+                  alert('已修改');
+                else
+                  alert('修改失败');
+              }
+              $.post(url, data ,success, "json");
+            }
+          })
+        });
+        </script>

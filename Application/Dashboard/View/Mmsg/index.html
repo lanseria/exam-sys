@@ -1,0 +1,188 @@
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/font-awesome.min.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/froala_editor.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/froala_style.css">
+
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/custom-theme.css">
+
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/char_counter.min.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/code_view.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/colors.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/draggable.min.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/emoticons.min.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/image_manager.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/image.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/line_breaker.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/table.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/char_counter.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/video.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/fullscreen.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/file.css">
+		<link rel="stylesheet" href="__PUBLIC__/assets/css/editor_css/plugins/quick_insert.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+
+		<style>
+			section {
+
+				width: 81%;
+				margin: auto;
+				text-align: left;
+			}
+			.form-group{
+				width: 81%;
+				margin: auto;
+				text-align: left;
+				padding-bottom: 10px;
+			}
+		</style>
+		<div class="main-content">
+			<div class="breadcrumbs" id="breadcrumbs">
+				<script type="text/javascript">
+					try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+				</script>
+
+				<ul class="breadcrumb">
+					<li>
+						<i class="icon-home home-icon"></i>
+						<a href="#">Dashboard</a>
+					</li>
+					<li class="active">添加文章</li>
+				</ul><!-- .breadcrumb -->
+
+				<div class="nav-search" id="nav-search">
+					<form class="form-search">
+						<span class="input-icon">
+							<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+							<i class="icon-search nav-search-icon"></i>
+						</span>
+					</form>
+				</div><!-- #nav-search -->
+			</div>
+
+			<div class="page-content">
+				<div class="page-header">
+					<h1>
+						添加文章
+						<small>
+							<i class="icon-double-angle-right"></i>
+							确定你的题目与文体
+						</small>
+					</h1>
+				</div><!-- /.page-header -->
+
+				<div class="row">
+					<div class="col-xs-12">
+
+						<div class="row">
+							<form class="form col-sm-8" method="post" enctype="multipart/form-data">
+								<div class="space-6"></div>
+								<div class="form-group">
+									<label class="col-sm-3 text-center control-label no-padding-right"> Title </label>
+
+									<div class="col-sm-9">
+										<input type="text" placeholder="Title" class="col-xs-10 col-sm-7" name="a_title">
+									</div>
+								</div>
+								<section id="editor">
+									<input type="hidden" name="a_content" id="hidcon" value="" />
+									<div id='edit' style="margin-top: 30px;">
+									</div>
+								</section>
+								<div class="form-group" style="margin-top: 10px;">
+									<label class="col-sm-3 text-center control-label no-padding-right"> 确定提交吗？ </label>
+
+									<div class="col-sm-9">
+										<button class="btn btn-success col-xs-10 col-sm-7">提交</button>
+									</div>
+								</div>
+								<div class="vspace-sm"></div>
+							</form>
+							<div class="col-sm-4">
+								<ul class="new_ul">
+									<volist name="article" id="article_vo" empty="暂时没有数据"><li>
+									<a href="{:U('Home/Article/index')}?aid={$article_vo.aid}"><i>&gt;&gt;</i>{$article_vo.title}</a>
+									</li>
+									</volist>
+								</ul>
+							</div>
+						</div><!-- /row -->
+
+						<div class="hr hr32 hr-dotted"></div>
+
+						<!-- PAGE CONTENT ENDS -->
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.page-content -->
+		</div><!-- /.main-content -->
+		<!-- page specific plugin scripts -->
+		<!-- editor -->
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/codemirror.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/xml.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/froala_editor.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/align.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/char_counter.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/code_beautifier.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/code_view.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/colors.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/draggable.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/emoticons.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/entities.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/file.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/font_size.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/font_family.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/fullscreen.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/image.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/image_manager.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/line_breaker.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/inline_style.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/link.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/lists.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/paragraph_format.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/paragraph_style.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/quick_insert.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/quote.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/table.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/save.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/url.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/plugins/video.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/assets/js/editor_js/languages/zh_cn.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#edit').froalaEditor({
+					imageDefaultWidth: 0,
+					language: 'zh_cn',
+					fontFamily: 	{
+						'Microsoft YaHei': 'Microsoft YaHei',
+						'仿宋_GB2312,serif': '仿宋_GB2312',
+						'仿宋,sans-serif': '仿宋',
+						'黑体,sans-serif': '黑体',
+						"宋体,Times,serif": '宋体',
+						'新宋体,sans-serif': '新宋体',
+						'隶书,sans-serif': '隶书',
+						'幼圆,sans-serif': '幼圆',
+					},
+					fontFamilyDefaultSelection: 'Microsoft YaHei',
+					fontFamilySelection: true,
+				});
+
+			})
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(document).click(function(){
+					$("#hidcon").val($("div.fr-view").html());
+				});
+			})
+		</script>
+		<script>
+
+			window.onload=function(){
+				var temp = document.getElementsByTagName("a");
+				var i = 0;
+				for(i=0;i<temp.length;i++){
+					if(temp[i].href=="https://froala.com/wysiwyg-editor")
+						{           temp[i].parentNode.removeChild(temp[i].parentNode.childNodes[0]);
+						}
+					}
+				}
+
+			</script>

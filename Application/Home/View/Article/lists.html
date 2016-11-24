@@ -1,0 +1,37 @@
+<style type="text/css">
+div.container{
+	margin-top: 50px;
+}
+	div.blog_box1{
+		margin-bottom: 3em;
+	}
+	.item_info_dl {
+		color: #9ad905;
+		font-weight: 300;
+		line-height: 32px;
+		margin: 0 0 20px;
+	}
+	.item_info_dl h2 {
+	    font-weight: 600;
+	    font-size: 1.5em;
+	}
+	.item_info_dl h2 a {
+	    color: #000;
+	}
+	.item_info_dl dd {
+	    margin: 0;
+	    display: inline-block;
+	}
+</style>
+<div class="container">
+<volist name="article" id="vo">
+<div class="blog_box1">
+	<dl class="item_info_dl">
+		<h2>
+		<a href="index?aid={$vo.aid}">{$vo.title}</a>
+		</h2>
+	</dl>
+	<dd>{$vo.ctime}</dd>
+</div>
+</volist>
+</div>

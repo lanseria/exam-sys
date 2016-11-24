@@ -1,5 +1,5 @@
 <?php
-namespace Dashboard\Controller;
+namespace Center\Controller;
 use Think\Controller;
 class ManaexamController extends MainController {
 	public function e($fid='')
@@ -22,14 +22,21 @@ class ManaexamController extends MainController {
 	public function motify(){
 		$eid = I('get.eid');
 		$uid = session('logineduserid');
-		$Exams = D('vques')->where(array('eid'=>$eid))->select();
+		$cond['black_s']=array('EQ','0');
+		$cond['eid']=array('EQ',$eid);
+		
+		$Exams = D('vques')->where($cond)->select();
 		$this->assign('Exams', $Exams);
+		$cond['black_s']=array('GT','0');
+		$cond['eid']=array('EQ',$eid);
+		$Exams = D('vques')->where($cond)->select();
+		$this->assign('Exams1', $Exams);
 		$this->assign('Manaexam', 'active');
 		$this->display();
 	}
 	public function index(){
 		$uid = session('logineduserid');
-		$Exams = D('exam')->where(array('euid' => $uid))->select();
+		$Exams = D('exam')->select();
 		$this->assign('Exams', $Exams);
 		$this->assign('Manaexam', 'active');
 		$this->display();

@@ -1,5 +1,5 @@
 <?php
-namespace Dashboard\Controller;
+namespace Center\Controller;
 use Think\Controller;
 class AjaxController extends MainController {
 

@@ -1,0 +1,163 @@
+        <style type="text/css">
+          div.fdiv{
+            height: 600px;
+            overflow: scroll;
+          }
+        </style>
+        <div class="main-content">
+          <div class="breadcrumbs" id="breadcrumbs">
+            <script type="text/javascript">
+              try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+            </script>
+
+            <ul class="breadcrumb">
+              <li>
+                <i class="icon-home home-icon"></i>
+                <a href="#">Dashboard</a>
+              </li>
+              <li class="active">试卷管理</li>
+            </ul><!-- .breadcrumb -->
+
+            <div class="nav-search" id="nav-search">
+              <form class="form-search">
+                <span class="input-icon">
+                  <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                  <i class="icon-search nav-search-icon"></i>
+                </span>
+              </form>
+            </div><!-- #nav-search -->
+          </div>
+
+          <div class="page-content">
+            <div class="page-header">
+            <h1>
+                试卷批改
+                <small>
+                  <i class="icon-double-angle-right"></i>
+                  此处可以批改你所创建的试卷
+                </small>
+              </h1>
+            </div><!-- /.page-header -->
+
+            <div class="row">
+              <div class="col-xs-12">
+                <!-- PAGE CONTENT BEGINS -->
+                <div class="hr dotted"></div>
+                <div class="">
+                  <div id="user-profile-3" class="user-profile row">
+                    <div class="col-sm-offset-1 col-sm-10">
+                      <div class="well well-sm">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        &nbsp;
+                        <div class="inline middle blue bigger-110"> 注意查看你的试卷(Undevlepment)</div>
+
+                        &nbsp; &nbsp; &nbsp;
+                        <div style="width:200px;" data-percent="70%" class="inline middle no-margin progress progress-striped active">
+                          <div class="progress-bar progress-bar-success" style="width:70%"></div>
+                        </div>
+                      </div><!-- /well -->
+
+                      <div class="space"></div>
+
+                      <form class="form-horizontal">
+                        <input type="hidden" name="uid" id="uid" value="{$usermsg.uid}" />
+                        <div class="tabbable">
+                          <ul class="nav nav-tabs padding-16">
+                            <li class="active">
+                              <a data-toggle="tab" href="#edit-Basic" id="a_s">
+                                <i class="blue icon-key bigger-125"></i>
+                                所做者
+                              </a>
+                            </li>
+                          </ul>
+
+                          <div class="tab-content profile-edit-tab-content">
+                            <div id="edit-Basic" class="tab-pane in active">
+                              <div class="space-10"></div>
+
+                              <div class="fdiv">
+                                <h3>填空题</h3>
+                                <volist name="record1" id="vo">
+                                  <eq name="vo.qid|substr=2,1" value="0"><hr/><p>填空题第{$vo.qid|substr=0,2}道</p></eq>
+                                  <div class="su" style="display: inline-block;">
+                                  <span>第{$vo.qid|substr=2,1}空</span>
+                                  <span class="h3">内容:{$vo.content}</span>
+                                  打分:<input type="text" name="{$vo.qid}">
+                                  <a class="btn btn-info btn-sm com">确认</a>
+                                  </div>
+                                  <br/>
+                                </volist>
+                                <h3>论述题</h3>
+                                <volist name="record2" id="vo1">
+                                  <h4>{$vo1.qid}</h4>
+                                  <p class="h5">内容:{$vo1.content}</p>
+                                  <div class="su">
+                                  打分:<input type="text" name="{$vo1.qid}">
+                                  <a class="btn btn-info btn-sm com">确认</a><br/>
+                                  </div>
+                                </volist>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <input type="hidden" name="fid" value="{$fid}">
+                        <div class="clearfix form-actions">
+                          <div class="col-md-offset-3 col-md-9">
+                            <button class="btn btn-info" id="btn-save" type="button" onclick="ajax_m_score();">
+                              <i class="icon-ok bigger-110"></i>
+                              提交
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div><!-- /span -->
+                  </div><!-- /user-profile -->
+                </div>
+
+                <!-- PAGE CONTENT ENDS -->
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.page-content -->
+        </div><!-- /.main-content -->
+        <script type="text/javascript">
+           var score = 0;
+           jQuery(function($) {
+            $('.com').click(function(event) {
+              var s = $(this).siblings("input").val();
+              if (isNaN(s)||s.length == 0) {
+                alert('不是一个数字');
+              }
+              else{
+                if (parseInt(s)>=50) {
+                  alert("数字不能大于50");
+                }
+                else{
+                  score += parseInt(s);
+                  $(this).parent('div').wrapAll('<fieldset style="display: inline-block;" disabled></fieldset>')
+                  $(this).siblings("input").addClass('disabled');
+                  $('#a_s').html('<i class="blue icon-key bigger-125"></i>所做者_得分：'+score);
+                }
+              }
+            });
+          });
+           function ajax_m_score(){
+                var url = "__MODULE__/Ajax/m_score";
+                var fid = $('input[name="fid"]').val();
+                var data = {"fid":fid, "score":score};
+                var success = function(response){
+                  if(false){
+                    alert(response+'请先登录注册');
+                  }
+                  else{
+                    if(response)
+                    {
+                      alert('添加成功');
+                    }
+                  }
+                }
+                $.post(url, data ,success, "json");
+                $('input.question').val("");
+                $('input.aorder').val("");
+              }
+        </script>

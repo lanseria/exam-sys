@@ -1,0 +1,12 @@
+<style type="text/css">
+div.container{
+	margin: 50px auto;
+}
+</style>
+<div class="container">
+  <h1  class="h2">{$article.title}</h1>
+  <em>时间：{$article.ctime}</em>
+  <div class="">
+  {$article.content|htmlspecialchars_decode}
+  </div>
+</div>

@@ -70,7 +70,7 @@
 
                           <div class="space"></div>
 
-                          <form class="form-horizontal" id="MyForm" action="__SELF__" enctype="multipart/form-data" method="post" style="height: 600px;overflow: scroll;">
+                          <form class="form-horizontal" id="MyForm" action="__SELF__" enctype="multipart/form-data" method="post">
                             <input type="hidden" name="uid" id="uid" value="{$usermsg.uid}" />
                             <input type="hidden" name="eid" id="eid" value="{$eid}" />
                             <input type="hidden" name="gname" id="gname" value="" />
@@ -88,7 +88,7 @@
                                 </volist>
                               </ul>
 
-                              <div class="tab-content profile-edit-tab-content">
+                              <div class="tab-content profile-edit-tab-content"  style="height: 600px;overflow: scroll;">
                                 <volist name="groups" id="quesvo" empty="暂时没有数据">
                                   <div id="edit-Group-{$quesvo.gid}" class="tab-pane">
                                     <volist name="quesvo.question" id="qus">
