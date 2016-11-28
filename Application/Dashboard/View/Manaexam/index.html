@@ -1,58 +1,51 @@
-        <div class="main-content">
-          <div class="breadcrumbs" id="breadcrumbs">
-            <script type="text/javascript">
-              try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
-            </script>
-
-            <ul class="breadcrumb">
-              <li>
-                <i class="icon-home home-icon"></i>
-                <a href="#">Dashboard</a>
-              </li>
-              <li class="active">试卷管理</li>
-            </ul><!-- .breadcrumb -->
-
-            <div class="nav-search" id="nav-search">
-              <form class="form-search">
-                <span class="input-icon">
-                  <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
-                  <i class="icon-search nav-search-icon"></i>
-                </span>
-              </form>
-            </div><!-- #nav-search -->
-          </div>
-
-          <div class="page-content">
-            <div class="page-header">
-              <h1>
-                试卷管理
-                <small>
-                  <i class="icon-double-angle-right"></i>
-                  此处可以管理你所创建的试卷
-                </small>
-              </h1>
-            </div><!-- /.page-header -->
-
-            <div class="row">
-              <div class="col-xs-12">
-                <!-- PAGE CONTENT BEGINS -->
-                <div class="hr dotted"></div>
-                <div class="">
-                  <div id="user-profile-3" class="user-profile row">
-                    <div class="col-sm-offset-1 col-sm-10">
-                      <div class="well well-sm">
-                        <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        &nbsp;
-                        <div class="inline middle blue bigger-110"> 注意修改与删除查看你的试卷(Undevlepment)  </div>
-
-                        &nbsp; &nbsp; &nbsp;
-                        <div style="width:200px;" data-percent="70%" class="inline middle no-margin progress progress-striped active">
-                          <div class="progress-bar progress-bar-success" style="width:70%"></div>
-                        </div>
+<div class="main-content">
+  <div class="breadcrumbs" id="breadcrumbs">
+    <script type="text/javascript">
+    try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+    </script>
+    <ul class="breadcrumb">
+      <li>
+        <i class="icon-home home-icon"></i>
+        <a href="#">Dashboard</a>
+      </li>
+      <li class="active">试卷管理</li>
+      </ul><!-- .breadcrumb -->
+      <div class="nav-search" id="nav-search">
+        <form class="form-search">
+          <span class="input-icon">
+            <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+            <i class="icon-search nav-search-icon"></i>
+          </span>
+        </form>
+        </div><!-- #nav-search -->
+      </div>
+      <div class="page-content">
+        <div class="page-header">
+          <h1>
+          试卷管理
+          <small>
+          <i class="icon-double-angle-right"></i>
+          此处可以管理你所创建的试卷
+          </small>
+          </h1>
+          </div><!-- /.page-header -->
+          <div class="row">
+            <div class="col-xs-12">
+              <!-- PAGE CONTENT BEGINS -->
+              <div class="hr dotted"></div>
+              <div class="">
+                <div id="user-profile-3" class="user-profile row">
+                  <div class="col-sm-offset-1 col-sm-10">
+                    <div class="well well-sm">
+                      <button type="button" class="close" data-dismiss="alert">&times;</button>
+                      &nbsp;
+                      <div class="inline middle blue bigger-110"> 注意修改与删除查看你的试卷(Undevlepment)  </div>
+                      &nbsp; &nbsp; &nbsp;
+                      <div style="width:200px;" data-percent="70%" class="inline middle no-margin progress progress-striped active">
+                        <div class="progress-bar progress-bar-success" style="width:70%"></div>
+                      </div>
                       </div><!-- /well -->
-
                       <div class="space"></div>
-
                       <form class="form-horizontal">
                         <input type="hidden" name="uid" id="uid" value="{$usermsg.uid}" />
                         <div class="tabbable">
@@ -64,84 +57,83 @@
                               </a>
                             </li>
                           </ul>
-
                           <div class="tab-content profile-edit-tab-content">
                             <div id="edit-Basic" class="tab-pane in active">
                               <div class="space-10"></div>
-
                               <volist name="Exams" id="vo">
-                                <h4 class="header blue bolder smaller">{$vo.etitle}</h4>
-                                <div class="row">
-                                  <div class="col-xs-12 col-sm-4">
-                                      <img src="__PUBLIC__/images/exam_img/{$vo.eimgurl}" style="width: 100%;">
+                              <h4 class="header blue bolder smaller">{$vo.etitle}</h4>
+                              <div class="row">
+                                <div class="col-xs-12 col-sm-4">
+                                  <img src="__PUBLIC__/images/exam_img/{$vo.eimgurl}" style="width: 100%;">
+                                </div>
+                                <div class="vspace-xs"></div>
+                                <div class="col-xs-12 col-sm-8">
+                                  <div class="form-group">
+                                    <label class="col-sm-4 control-label no-padding-right">创建时间</label>
+                                    <div class="col-sm-8">
+                                      <input class="col-xs-12 col-sm-10" type="text" value="{$vo.ecreatetime}" disabled/>
+                                    </div>
                                   </div>
-
-                                  <div class="vspace-xs"></div>
-
-                                  <div class="col-xs-12 col-sm-8">
-                                    <div class="form-group">
-                                      <label class="col-sm-4 control-label no-padding-right">创建时间</label>
-
-                                      <div class="col-sm-8">
-                                        <input class="col-xs-12 col-sm-10" type="text" value="{$vo.ecreatetime}" disabled/>
-                                      </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-4 control-label no-padding-right">开考时间</label>
+                                    <div class="col-sm-8">
+                                      <input class="col-xs-12 col-sm-10" type="text" value="{$vo.estarttime}" disabled/>
                                     </div>
-
-                                    <div class="space-4"></div>
-
-                                    <div class="form-group">
-                                      <label class="col-sm-4 control-label no-padding-right">开考时间</label>
-
-                                      <div class="col-sm-8">
-                                        <input class="col-xs-12 col-sm-10" type="text" value="{$vo.estarttime}" disabled/>
-                                      </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-4 control-label no-padding-right">结束时间</label>
+                                    <div class="col-sm-8">
+                                      <input class="col-xs-12 col-sm-10" type="text" value="{$vo.eendtime}" disabled/>
                                     </div>
-                                    <div class="space-4"></div>
-
-                                    <div class="form-group">
-                                      <label class="col-sm-4 control-label no-padding-right">结束时间</label>
-
-                                      <div class="col-sm-8">
-                                        <input class="col-xs-12 col-sm-10" type="text" value="{$vo.eendtime}" disabled/>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <p class="text col-sm-offset-1">详细：{$vo.edescription}</p>
-                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <p class="text col-sm-offset-1">详细：{$vo.edescription}</p>
                                   </div>
                                 </div>
-                                <div class="space-4"></div>
-                                <a class="btn btn-info" href="/Home/Index/e.html?eid={$vo.eid}">查看</a>
-                                <a class="btn btn-success" href="__MODULE__/Manaexam/motify.html?eid={$vo.eid}">批改</a>
-                                <button class="btn btn-danger">删除</button>
-                                <button class="btn btn-warning">编辑</button>
+                              </div>
+                              <div class="space-4"></div>
+                              <a class="btn btn-info" href="/Home/Index/e.html?eid={$vo.eid}">查看</a>
+                              <a class="btn btn-success" href="__MODULE__/Manaexam/motify.html?eid={$vo.eid}">批改</a>
+                              <button class="btn btn-danger" onclick="alert_del();" type="button">删除</button>
+                              <button class="btn btn-warning">编辑</button>
+                              <div class="alert alert-danger alert-dismissible fade" id="alert_del" role="alert">
+                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                                <h4>你真的要删除此考试吗？</h4>
+                                <p>删除此考试将不会恢复</p>
+                                <p>
+                                  <a href="__MODULE__/Manaexam/del.html?eid={$vo.eid}" class="btn btn-danger">确认</a>
+                                </p>
+                              </div>
                               </volist>
-
                             </div>
                           </div>
                         </div>
-
                         <div class="clearfix form-actions">
                           <div class="col-md-offset-3 col-md-9">
                             <button class="btn btn-info" id="btn-save" type="button">
-                              <i class="icon-ok bigger-110"></i>
-                              Save
+                            <i class="icon-ok bigger-110"></i>
+                            Save
                             </button>
-
                             &nbsp; &nbsp;
                             <button class="btn" type="reset">
-                              <i class="icon-undo bigger-110"></i>
-                              Reset
+                            <i class="icon-undo bigger-110"></i>
+                            Reset
                             </button>
                           </div>
                         </div>
                       </form>
-                    </div><!-- /span -->
-                  </div><!-- /user-profile -->
-                </div>
-
-                <!-- PAGE CONTENT ENDS -->
-              </div><!-- /.col -->
-            </div><!-- /.row -->
-          </div><!-- /.page-content -->
-        </div><!-- /.main-content -->
+                      </div><!-- /span -->
+                      </div><!-- /user-profile -->
+                    </div>
+                    <!-- PAGE CONTENT ENDS -->
+                    </div><!-- /.col -->
+                    </div><!-- /.row -->
+                    </div><!-- /.page-content -->
+                    </div><!-- /.main-content -->
+                    <script type="text/javascript">
+                      function alert_del() {
+                        $('#alert_del').addClass('in');
+                      }
+                    </script>

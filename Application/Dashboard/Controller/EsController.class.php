@@ -40,15 +40,16 @@ class EsController extends MainController {
 			$gnameArr = explode(';', I('post.gname'));
 			$gdescriptionArr = explode(';', I('post.gdescription'));
 			$gorderArr = explode(';', I('post.gorder'));
+			$gscoreArr = explode(';', I('post.gscore'));
 			foreach ($gnameArr as $k => $v) {
 				$n++;
-				$r = $groups->Add_Groups(I('post.eid'), $v, $gdescriptionArr[$k], $gorderArr[$k]);
+				$r = $groups->Add_Groups(I('post.eid'), $v, $gdescriptionArr[$k], $gorderArr[$k], $gscoreArr[$k]);
 			}
 			if($r){
 				$this->success("添加成功，即将跳入下一步，确定具体题目",'Cqus.html?eid='.I('post.eid'), 3);
 			}else{
 				echo "<pre>";
-				var_dump($gnameArr,$gdescriptionArr,$gorderArr);
+				var_dump($gnameArr,$gdescriptionArr,$gorderArr,$gscoreArr[$k]);
 				//$this->error("Failed", "Cgtype.html?eid=".I('get.eid'), 3);
 			}
 		}

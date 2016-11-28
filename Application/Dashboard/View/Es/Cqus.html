@@ -60,7 +60,7 @@
                           <div class="well well-sm">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
                             &nbsp;
-                            <div class="inline middle blue bigger-110"> 填写你的考试中的题型，分值说明，做一下简单描述 </div>
+                            <div class="inline middle blue bigger-110"> 填写你的考试中的题型，分值说明，做一下简单描述 (注意：题序号必须连贯，如选择1-10，填空题必须从10开始，以此类推)</div>
 
                             &nbsp; &nbsp; &nbsp;
                             <div style="width:200px;" data-percent="70%" class="inline middle no-margin progress progress-striped active">
@@ -200,7 +200,7 @@
             <script src="__PUBLIC__/assets/js/ace-elements.min.js"></script>
             <script src="__PUBLIC__/assets/js/chosen.jquery.min.js"></script>
             <script type="text/javascript">
-              var n = 0;
+              var n = 1;
               function subajax(){
                 var gid = $('ul.nav-tabs li.active a').attr("href");
                 gid = gid.replace(/[^0-9]/ig,"");
@@ -227,7 +227,7 @@
                   }
                 }
                 $.post(url, data ,success, "json");
-                n=0;
+                n=1;
               }
               
               function AddInput(){
@@ -235,7 +235,7 @@
                 id = id.replace(/[^0-9]/ig,"");
                 var qorder = $('#form-field-qorder'+id).val();
                 var obj = $('#autosize'+id).get(0);
-                var str = '<input type="text" name="K'+qorder+n+'" class="underline-text">';
+                var str = '<input type="text" name="K'+qorder+';'+n+'" class="underline-text" onkeydown="this.onkeyup();" onkeyup="this.size=(this.value.gbkLength()>4?this.value.gbkLength():4);" size="4">';
                 if (document.selection) {
                   obj.focus();
                   var sel = document.selection.createRange();
@@ -255,7 +255,8 @@
                 var url = "{:U('Dashboard/Ajax/addans')}";
                 var answer = $('input.question').val();
                 var aorder = $('input.aorder').val();
-                var data = {"qid":qid, "answer":answer, "aorder":aorder};
+                var eid = $('#eid').val();
+                var data = {"qid":qid, "answer":answer, "aorder":aorder, "eid":eid};
                 var success = function(response){
                   if(false){
                     alert(response+'请先登录注册');

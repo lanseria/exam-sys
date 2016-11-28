@@ -6,7 +6,6 @@ div.det_text input[type='text']{
     border-bottom: 3px solid #000000;
     outline: 0;
     text-align: center;
-    width: 4.8em;
     border-bottom-width: 2px;
     -webkit-transition: border-color .2s ease;
 }

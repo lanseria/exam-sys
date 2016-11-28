@@ -7,7 +7,6 @@ class AjaxController extends MainController {
 	{
 		$fid = I('post.fid');
 		$score = I('post.score');
-		
 		$finish = D('finish');
 		$finish->fuchecked = $score;
 		$res= $finish->where(array('fid'=>$fid))->save();
@@ -23,8 +22,9 @@ class AjaxController extends MainController {
 		$qid = I('post.qid');
 		$answer = I('post.answer');
 		$aorder = I('post.aorder');
+		$eid = I('post.eid');
 		$Ans = D('answer');
-		$r = $Ans->Add_Answer($qid, $answer, $aorder);
+		$r = $Ans->Add_Answer($qid, $answer, $aorder, $eid);
 		if($r){
 			$this->ajaxReturn(true);
 		}

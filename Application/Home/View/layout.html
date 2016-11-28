@@ -316,24 +316,6 @@
 			var strs = '';
 			var rccount = $('p.rccount').length;
 			nullcount += rccount;
-			// $("[type='radio']").each(function(){
-			// 	if($(this).is(':checked')) {
-			// 		strs += '1';
-			// 	}
-			// 	else{
-			// 		strs += '0';
-			// 	}
-			// 	strs += $(this).attr('name');
-			// })
-			// $("[type='checkbox']").each(function(){
-			// 	if($(this).is(':checked')) {
-			// 		strs += '1';
-			// 	}
-			// 	else{
-			// 		strs += '0';
-			// 	}
-			// 	strs += $(this).attr('name');
-			// })
 			$('input:radio:checked').each(function(){
 				if(!$(this).attr('checked')){
 					nullcount--;
@@ -355,7 +337,7 @@
 				}
 			});
 			if(nullcount>0){
-				alert('Please Input something'+nullcount+'\n'+strs);
+				alert('你还有'+nullcount+'选项没有填写，请检查后再提交。');
 				return false;
 			}
 			

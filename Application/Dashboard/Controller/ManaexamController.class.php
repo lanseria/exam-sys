@@ -8,21 +8,32 @@ class ManaexamController extends MainController {
 		$this->assign('fid', $fid);
 		$uid = $finish[0]['uid'];
 		$eid = $finish[0]['eid'];
-		$record1 = D('record')->where(array('eid'=>$eid, 'uid'=>$uid, 'rtype'=>'K'))->select();
-		$record2 = D('record')->where(array('eid'=>$eid, 'uid'=>$uid, 'rtype'=>'J'))->select();
+		$record1 = D('record')->relation(true)->where(array('eid'=>$eid, 'uid'=>$uid, 'rtype'=>'K', 'fid' => $fid))->select();
+		$record2 = D('record')->relation(true)->where(array('eid'=>$eid, 'uid'=>$uid, 'rtype'=>'J', 'fid' => $fid))->select();
 		$this->assign('record1', $record1);
 		$this->assign('record2', $record2);
 		$this->assign('Manaexam', 'active');
 		$this->display();
-		//echo "<pre>";
-		//var_dump($record1);
-		//var_dump($record2);
-
 	}
+	public function del($eid='')
+	{
+		$exam = D('exam');
+		$group = D('groups');
+		$question = D('question');
+		$answer = D('answer');
+		$finish = D('finish');
+		$record = D('record');
+		$exam->where(array('eid'=>$eid))->delete();
+		$group->where(array('eid'=>$eid))->delete();
+		$question->where(array('eid'=>$eid))->delete();
+		$answer->where(array('eid'=>$eid))->delete();
+		$finish->where(array('eid'=>$eid))->delete();
+		$record->where(array('eid'=>$eid))->delete();
+	}	
 	public function motify(){
 		$eid = I('get.eid');
 		$uid = session('logineduserid');
-		$Exams = D('vques')->where(array('eid'=>$eid))->select();
+		$Exams = D('vques')->where(array('eid'=>$eid,'black_s'=>0))->select();
 		$this->assign('Exams', $Exams);
 		$this->assign('Manaexam', 'active');
 		$this->display();

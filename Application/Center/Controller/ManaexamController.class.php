@@ -8,29 +8,18 @@ class ManaexamController extends MainController {
 		$this->assign('fid', $fid);
 		$uid = $finish[0]['uid'];
 		$eid = $finish[0]['eid'];
-		$record1 = D('record')->where(array('eid'=>$eid, 'uid'=>$uid, 'rtype'=>'K'))->select();
-		$record2 = D('record')->where(array('eid'=>$eid, 'uid'=>$uid, 'rtype'=>'J'))->select();
+		$record1 = D('record')->relation(true)->where(array('eid'=>$eid, 'uid'=>$uid, 'rtype'=>'K', 'fid' => $fid))->select();
+		$record2 = D('record')->relation(true)->where(array('eid'=>$eid, 'uid'=>$uid, 'rtype'=>'J', 'fid' => $fid))->select();
 		$this->assign('record1', $record1);
 		$this->assign('record2', $record2);
 		$this->assign('Manaexam', 'active');
 		$this->display();
-		//echo "<pre>";
-		//var_dump($record1);
-		//var_dump($record2);
-
 	}
 	public function motify(){
 		$eid = I('get.eid');
 		$uid = session('logineduserid');
-		$cond['black_s']=array('EQ','0');
-		$cond['eid']=array('EQ',$eid);
-		
-		$Exams = D('vques')->where($cond)->select();
+		$Exams = D('vques')->where(array('eid'=>$eid,'black_s'=>0))->select();
 		$this->assign('Exams', $Exams);
-		$cond['black_s']=array('GT','0');
-		$cond['eid']=array('EQ',$eid);
-		$Exams = D('vques')->where($cond)->select();
-		$this->assign('Exams1', $Exams);
 		$this->assign('Manaexam', 'active');
 		$this->display();
 	}

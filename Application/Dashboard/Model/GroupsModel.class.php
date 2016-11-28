@@ -31,11 +31,12 @@ class GroupsModel extends RelationModel{
 			),
 		);
 	//ADD
-	public function Add_Groups($eid, $gname, $gdescription, $gorder){
+	public function Add_Groups($eid, $gname, $gdescription, $gorder, $gscore){
 		$data['eid'] = $eid;
 		$data['gname'] = $gname;
 		$data['gdescription'] = $gdescription;
 		$data['gorder'] =  $gorder;
+		$data['gscore'] =  $gscore;
 		if($this->create($data)){
 			$r = $this->add();
 			if($r){

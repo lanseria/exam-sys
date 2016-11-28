@@ -1,0 +1,40 @@
+<div class="top_bg">
+  <div class="wrap">
+    <div class="top">
+      <h2>{$exam_name}排名</h2>
+    </div>
+  </div>
+</div>
+<!-- start main -->
+<div class="wrap">
+  <div class="main">
+    <div class="blog">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>姓名</th>
+            <th>选择题得分</th>
+            <th>其余得分</th>
+            <th>总得分</th>
+            <th>花费时间(s)</th>
+            <th>完成时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <volist name="exam" id="vo">
+          <tr>
+            <td>{$i}</td>
+            <td>{$vo.urname}</td>
+            <td>{$vo.select_s}</td>
+            <td>{$vo.black_s}</td>
+            <td>{$vo.sum_s}</td>
+            <td>{$vo.finish_t}</td>
+            <td>{$vo.end_t}</td>
+          </tr>
+          </volist>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

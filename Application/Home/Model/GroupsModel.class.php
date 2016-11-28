@@ -18,13 +18,6 @@ class GroupsModel extends RelationModel{
 				'mapping_order' => 'aorder asc',
 				),
 			),
-		// 'Answer' => array(
-		// 	'mapping_type'  => self::HAS_MANY,
-		// 	'class_name'    => 'Answer',
-		// 	'foreign_key'   => 'qid',
-		// 	'mapping_name'  => 'answer',
-		// 	'mapping_order' => 'aorder asc',
-		// 	),
 		);
 
 }

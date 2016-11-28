@@ -9,6 +9,8 @@ class IndexController extends Controller {
 		$this->display();
 	}
 	public function p(){
+		$ADD_SCORE = D('groups')->where(array('gorder'=>'1'))->getField('gscore');//!!!!!这个还需要改进，需要知道选择题是哪一个组
+		//var_dump($ADD_SCORE);
 		$post = I('post.');
 		$Record = D('record');
 		$data = array();
@@ -30,12 +32,14 @@ class IndexController extends Controller {
 			if($k=='eid'||$k=='uid')
 				continue;
 			$data['rtype'] = substr($k, 0, 1);
-			$data['qid'] = substr($k, 1);
+			$qorder = substr($k, 1);
+			$data['qorder'] = strtok($qorder, ";");
+			$data['dorder'] = strtok("");
 			if($data['rtype']=='T'){
 				$data['isChecked'] = $v;
-				$q = D('question')->where(array('qid'=>$data['qid']))->getField('qans');
+				$q = D('question')->where(array('qorder'=>$data['qorder']))->getField('qans');
 				if($q == $v){
-					$score = $score + 1;
+					$score = $score + $ADD_SCORE;
 				}
 				$data['content'] = NULL;
 				if($Record->create($data, 1)){
@@ -60,7 +64,7 @@ class IndexController extends Controller {
 					}
 				}
 				if($istrue){
-					$score = $score + 2;
+					$score = $score + $ADD_SCORE;
 				}
 			}
 			if($data['rtype']=='K' || $data['rtype']=='J'){
@@ -115,6 +119,15 @@ class IndexController extends Controller {
 		}
 
 
+	}
+	public function rank($eid='')
+	{	
+		$exam_name = D('vques')->where(array('eid'=>$eid))->select();
+		$exam_name = $exam_name[0]['etitle'];
+		$this->assign('exam_name',$exam_name);
+		$exam = D('vfu')->where(array('eid'=>$eid))->order(array('sum_s'=>'desc','finish_t'))->select();
+		$this->assign('exam',$exam);
+		$this->display();
 	}
 	public function questionbank(){
 		$exam = D('vqb')->select();

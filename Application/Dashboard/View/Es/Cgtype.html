@@ -78,6 +78,7 @@
                             <input type="hidden" name="gname" id="gname" value="" />
                             <input type="hidden" name="gdescription" id="gdescription" value="" />
                             <input type="hidden" name="gorder" id="gorder" value="" />
+                            <input type="hidden" name="gscore" id="gscore" value="" />
                             <div class="tabbable">
                               <ul class="nav nav-tabs padding-16">
                                 <li class="active">
@@ -107,7 +108,7 @@
                                   <div class="form-group">
                                     <label class="col-sm-2 control-label no-padding-right" for="form-field-pass1">分组名:</label>
                                     <div class="col-sm-10">
-                                      <input type="text" id="form-field-gname1" value="一、选择题" />
+                                      <input type="text" id="form-field-gname1" value="一、选择题" /><span>请凸显需要必须自加中文序号如：一、二、三</span>
                                     </div>
                                   </div>
                                   <div class="space-4"></div>
@@ -122,6 +123,13 @@
                                     <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组排序:</label>
                                     <div class="col-sm-10">
                                       <input type="text" id="form-field-gorder1" value="1" />
+                                    </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组个别最高分:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" id="form-field-gscore1" value="2" />
                                     </div>
                                   </div>
                                 </div>
@@ -148,6 +156,13 @@
                                       <input type="text" id="form-field-gorder2" value="2" />
                                     </div>
                                   </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组个别最高分:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" id="form-field-gscore2" value="3" />
+                                    </div>
+                                  </div>
                                 </div>
                                 <div id="edit-Group-3" class="tab-pane">
                                   <div class="space-10"></div>
@@ -169,6 +184,13 @@
                                     <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组排序:</label>
                                     <div class="col-sm-10">
                                       <input type="text" id="form-field-gorder3" value="3" />
+                                    </div>
+                                  </div>
+                                  <div class="space-4"></div>
+                                  <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组个别最高分:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" id="form-field-gscore3" value="15" />
                                     </div>
                                   </div>
                                 </div>
@@ -222,7 +244,7 @@
                 now++;
                 var myli='<li class=""><a data-toggle="tab" href="#edit-Group-'+now+'"><i class="blue icon-key bigger-125"></i>Group_'+now+'</a></li>';
                 $('ul.nav-tabs').append(myli);
-                var mydiv='<div id="edit-Group-'+now+'" class="tab-pane"><div class="space-10"></div><div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-pass1">分组名:</label><div class="col-sm-10"><input type="text" id="form-field-gname'+now+'" value="" /></div></div><div class="space-4"></div><div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组描述:</label><div class="col-sm-8"><textarea class="form-control autosize-transition" id="autosize'+now+'"></textarea></div></div><div class="space-4"></div><div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组排序:</label><div class="col-sm-10"><input type="text" id="form-field-gorder'+now+'" value="'+now+'" /></div></div></div>';
+                var mydiv='<div id="edit-Group-'+now+'" class="tab-pane"><div class="space-10"></div><div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-pass1">分组名:</label><div class="col-sm-10"><input type="text" id="form-field-gname'+now+'" value="" /></div></div><div class="space-4"></div><div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组描述:</label><div class="col-sm-8"><textarea class="form-control autosize-transition" id="autosize'+now+'"></textarea></div></div><div class="space-4"></div><div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组排序:</label><div class="col-sm-10"><input type="text" id="form-field-gorder'+now+'" value="'+now+'" /></div></div><div class="space-4"></div><div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组个别最高分:</label><div class="col-sm-10"><input type="text" id="form-field-gscore'+now+'" value="'+now+'" /></div></div></div>';
                 $('div.profile-edit-tab-content').append(mydiv);
                 $("ul.nav-tabs li:last a").click();
               }
@@ -238,25 +260,28 @@
               jQuery(function($) {
                 $('textarea[class*=autosize]').autosize({append: "\n"});
                 $("form#MyForm").submit(function(e){
-                  var gname = '';var gdescription = '';var gorder = '';
+                  var gname = '';var gdescription = '';var gorder = '';var gscore = '';
                   for(var i = 0; i < now; i++){
                     gname += $('#form-field-gname'+(i+1)).val()+';';
                     gdescription += $('#autosize'+(i+1)).val()+';';//!!!! 
                     gorder += $('#form-field-gorder'+(i+1)).val()+';';
+                    gscore += $('#form-field-gscore'+(i+1)).val()+';';
                   }
                   gname = gname.substring(0, gname.length-1);
                   gdescription = gdescription.substring(0, gdescription.length-1);
                   gorder = gorder.substring(0, gorder.length-1);
+                  gscore = gscore.substring(0, gscore.length-1);
                   $("input[name='gname']").val(gname);
                   $("input[name='gdescription']").val(gdescription);
                   $("input[name='gorder']").val(gorder);
-                  if(gname==''||gdescription==''||gorder==''){
+                  $("input[name='gscore']").val(gscore);
+                  if(gname==''||gdescription==''||gorder==''||gscore==''){
                     alert('是否填入完整？');
                     return ;
                   }
-                  alert(gname);
-                  alert(gdescription);
-                  alert(gorder);
+                  //alert(gname);
+                  //alert(gdescription);
+                  //alert(gorder);
                 });
               });
             </script>
