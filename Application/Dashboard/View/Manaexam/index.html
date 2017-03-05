@@ -67,32 +67,6 @@
                                     <img class="editable img-responsive" alt="Alex's Avatar" id="avatar2" src="__PUBLIC__/images/exam_img/{$vo.eimgurl}">
                                   </span>
                                   <div class="space space-4"></div>
-                                  <div class="row">
-                                    <div class="col-xs-12 col-sm-3">
-                                      <a href="/Home/Index/e.html?eid={$vo.eid}" class="btn btn-sm btn-block btn-success">
-                                        <i class="ace-icon fa fa-plus-circle bigger-120"></i>
-                                        <span class="bigger-110">查看</span>
-                                      </a>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-3">
-                                      <a href="__MODULE__/Manaexam/motify.html?eid={$vo.eid}" class="btn btn-sm btn-block btn-warning">
-                                        <i class="ace-icon fa fa-envelope-o bigger-110"></i>
-                                        <span class="bigger-110">批改</span>
-                                      </a>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-3">
-                                      <a href="#" class="btn btn-sm btn-block btn-danger" onclick="alert_del();">
-                                        <i class="ace-icon fa fa-envelope-o bigger-110"></i>
-                                        <span class="bigger-110">删除</span>
-                                      </a>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-3">
-                                      <a href="#" class="btn btn-sm btn-block btn-primary">
-                                        <i class="ace-icon fa fa-envelope-o bigger-110"></i>
-                                        <span class="bigger-110">编辑</span>
-                                      </a>
-                                    </div>
-                                  </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-9">
                                   <h4 class="header blue bolder smaller">
@@ -126,6 +100,29 @@
                                       <div class="profile-info-name"> 详细 </div>
                                       <div class="profile-info-value">
                                         <span>{$vo.edescription}</span>
+                                      </div>
+                                    </div>
+                                    <div class="profile-info-row">
+                                      <div class="profile-info-name"> 操作 </div>
+                                      <div class="profile-info-value">
+                                        <div class="btn-group">
+                                          <a href="/Home/Index/e.html?eid={$vo.eid}" class="btn btn-sm btn-success">
+                                            <i class="ace-icon fa fa-plus-circle bigger-110"></i>
+                                            <span class="bigger-110">查看</span>
+                                          </a>
+                                          <a href="__MODULE__/Manaexam/motify.html?eid={$vo.eid}" class="btn btn-sm btn-warning">
+                                            <i class="ace-icon fa fa-envelope-o bigger-110"></i>
+                                            <span class="bigger-110">批改</span>
+                                          </a>
+                                          <a href="#" class="btn btn-sm btn-danger" onclick="alert_del();">
+                                            <i class="ace-icon fa fa-envelope-o bigger-110"></i>
+                                            <span class="bigger-110">删除</span>
+                                          </a>
+                                          <a href="#" class="btn btn-sm btn-primary">
+                                            <i class="ace-icon fa fa-envelope-o bigger-110"></i>
+                                            <span class="bigger-110">编辑</span>
+                                          </a>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
