@@ -97,12 +97,22 @@
 								<div class="vspace-sm"></div>
 							</form>
 							<div class="col-sm-4">
-								<ul class="new_ul">
-									<volist name="article" id="article_vo" empty="暂时没有数据"><li>
-									<a href="{:U('Home/Article/index')}?aid={$article_vo.aid}"><i>&gt;&gt;</i>{$article_vo.title}</a>
-									</li>
-									</volist>
-								</ul>
+								<table class="table table-striped table-bordered">
+									<thead>
+										<tr>
+											<th>文章题目</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<volist name="article" id="article_vo" empty="暂时没有文章提交">
+											<tr>
+												<td><i>&gt;&gt;</i>{$article_vo.title}</td>
+												<td><a class="btn btn-info btn-xs" href="{:U('Home/Article/index')}?aid={$article_vo.aid}">查看</a></td>
+											</tr>
+										</volist>
+									</tbody>
+								</table>
 							</div>
 						</div><!-- /row -->
 

@@ -1,7 +1,7 @@
 <style type="text/css">
-div.container{
-	margin-top: 50px;
-}
+	div.container{
+		margin-top: 50px;
+	}
 	div.blog_box1{
 		margin-bottom: 3em;
 	}
@@ -23,15 +23,27 @@ div.container{
 	    display: inline-block;
 	}
 </style>
-<div class="container">
-<volist name="article" id="vo" empty="暂时无文章发布">
-<div class="blog_box1">
-	<dl class="item_info_dl">
-		<h2>
-		<a href="index?aid={$vo.aid}">{$vo.title}</a>
-		</h2>
-	</dl>
-	<dd>{$vo.ctime}</dd>
+<div class="top_bg">
+	<div class="wrap">
+		<div class="top">
+			<h2>参考资料</h2>
+	 	</div>
+	</div>
 </div>
-</volist>
+<!-- start main -->
+<div class="wrap">
+	<div class="main">
+		<div class="blog">
+			<volist name="article" id="vo" empty="暂时无文章发布">
+				<div class="blog_box1">
+					<dl class="item_info_dl">
+						<h2>
+						<a href="index?aid={$vo.aid}">{$vo.title}</a>
+						</h2>
+					</dl>
+					<dd>{$vo.ctime}</dd>
+				</div>
+			</volist>
+		</div>
+	</div>
 </div>
