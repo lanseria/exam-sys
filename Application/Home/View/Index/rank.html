@@ -22,16 +22,16 @@
           </tr>
         </thead>
         <tbody>
-          <volist name="exam" id="vo">
-          <tr>
-            <td>{$i}</td>
-            <td>{$vo.urname}</td>
-            <td>{$vo.select_s}</td>
-            <td>{$vo.black_s}</td>
-            <td>{$vo.sum_s}</td>
-            <td>{$vo.finish_t}</td>
-            <td>{$vo.end_t}</td>
-          </tr>
+          <volist name="exam" id="vo" empty="暂时无数据">
+            <tr>
+              <td>{$i}</td>
+              <td>{$vo.urname}</td>
+              <td>{$vo.select_s}</td>
+              <td>{$vo.black_s}</td>
+              <td>{$vo.sum_s}</td>
+              <td>{$vo.finish_t}</td>
+              <td>{$vo.end_t}</td>
+            </tr>
           </volist>
         </tbody>
       </table>

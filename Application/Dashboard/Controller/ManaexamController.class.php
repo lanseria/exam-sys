@@ -33,8 +33,10 @@ class ManaexamController extends MainController {
 	public function motify(){
 		$eid = I('get.eid');
 		$uid = session('logineduserid');
+		$Exam = D('exam')->where(array('eid'=>$eid))->select();
 		$Exams = D('vques')->where(array('eid'=>$eid,'black_s'=>0))->select();
 		$this->assign('Exams', $Exams);
+		$this->assign('exam', $Exam[0]);
 		$this->assign('Manaexam', 'active');
 		$this->display();
 	}

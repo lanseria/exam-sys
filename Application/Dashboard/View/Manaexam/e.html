@@ -72,27 +72,26 @@ overflow: scroll;
                                 <eq name="vo.dorder" value="1"><hr/>
                                 <div>
                                 <p>第{$vo.qorder}道填空题</p>
-                                <h4>题面：{$vo.question.question}</h4>
-                                打分:<input type="text">
-                                <a class="btn btn-info btn-sm com">确认</a>
+                                <h4 class="text-warning">题面：{$vo.question.question}</h4>
+                                <span style="color:red;">打分:</span><input type="text">
+                                <a class="btn btn-info btn-xs com">确认</a>
                                 </div>
                                 </eq>
-                                <hr/>
                                 <div class="su" style="display: inline-block;">
                                   <span>第{$vo.dorder}空</span>
-                                  <span class="h3">内容:<span style="color: red;">{$vo.content}</span></span>
+                                  <span class="h3">其解答的内容:<span style="color: red;">{$vo.content}</span></span>
                                 </div>
                                 <br/>
                                 </volist>
                                 <hr/>
                                 <h3>论述题(最高<span style="color: red;">15</span>分)</h3>
                                 <volist name="record2" id="vo1">
-                                <h4>题面：{$vo1.question.question}</h4>
-                                <p class="h3">内容:<span style="color: red;">{$vo1.content}</span></p>
+                                <h4 class="text-warning">题面：{$vo1.question.question}</h4>
+                                <p class="h3">其解答的内容:<span style="color: red;">{$vo1.content}</span></p>
                                 <hr/>
                                 <div class="su">
-                                  打分:<input type="text">
-                                  <a class="btn btn-info btn-sm com">确认</a><br/>
+                                  <span style="color:red;">打分:</span><input type="text">
+                                  <a class="btn btn-info btn-xs com">确认</a><br/>
                                 </div>
                                 </volist>
                               </div>

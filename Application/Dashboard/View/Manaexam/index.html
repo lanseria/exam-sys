@@ -46,7 +46,6 @@
                       </div>
                       </div><!-- /well -->
                       <div class="space"></div>
-                      <form class="form-horizontal">
                         <input type="hidden" name="uid" id="uid" value="{$usermsg.uid}" />
                         <div class="tabbable">
                           <ul class="nav nav-tabs padding-16">
@@ -114,7 +113,7 @@
                                             <i class="ace-icon fa fa-envelope-o bigger-110"></i>
                                             <span class="bigger-110">批改</span>
                                           </a>
-                                          <a href="#" class="btn btn-sm btn-danger" onclick="alert_del();">
+                                          <a class="btn btn-sm btn-danger" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                             <i class="ace-icon fa fa-envelope-o bigger-110"></i>
                                             <span class="bigger-110">删除</span>
                                           </a>
@@ -128,32 +127,19 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="alert alert-danger alert-dismissible fade" id="alert_del" role="alert">
-                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                                <h4>你真的要删除此考试吗？</h4>
-                                <p>删除此考试将不会恢复</p>
-                                <p>
-                                  <a href="__MODULE__/Manaexam/del.html?eid={$vo.eid}" class="btn btn-danger">确认</a>
-                                </p>
+                              <div class="collapse" id="collapseExample">
+                                <div class="well">
+                                  <h4>你真的要删除此考试吗？</h4>
+                                  <p>删除此考试将不会恢复</p>
+                                  <p>
+                                    <a href="__MODULE__/Manaexam/del.html?eid={$vo.eid}" class="btn btn-danger btn-xs">确认</a>
+                                  </p>
+                                </div>
                               </div>
                               </volist>
                             </div>
                           </div>
                         </div>
-                        <div class="clearfix form-actions">
-                          <div class="col-md-offset-3 col-md-9">
-                            <button class="btn btn-info" id="btn-save" type="button">
-                            <i class="icon-ok bigger-110"></i>
-                            Save
-                            </button>
-                            &nbsp; &nbsp;
-                            <button class="btn" type="reset">
-                            <i class="icon-undo bigger-110"></i>
-                            Reset
-                            </button>
-                          </div>
-                        </div>
-                      </form>
                       </div><!-- /span -->
                       </div><!-- /user-profile -->
                     </div>
