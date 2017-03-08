@@ -17,6 +17,7 @@ class UserController extends Controller {
 				session('logineduser',$username);
 				session('logineduserid',$userTable->getUserIdByUserName($username));
 				session('loginedusertype',$userTable->getUserTypeByUserName($username));
+				session('logineduserName', $userTable->getUserNameByUserName($username));
                 //dump($_SESSION);
                 //3.2跳转到首页
 				$this->success('登录成功','/Home/Index/index');
@@ -35,6 +36,8 @@ class UserController extends Controller {
         //1注销session
 		session('logineduser',null);
 		session('logineduserid',null);
+		session('loginedusertype', null);
+		session('logineduserName', null);
         //跳转首页
 		$this->success('注销成功','javascript:window.location.href=document.referrer;',1);
 	}

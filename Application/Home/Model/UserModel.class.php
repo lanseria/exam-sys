@@ -43,6 +43,12 @@ class UserModel extends Model
         $r = $this->where($cond)->getField('uid');
         return $r;
     }
+    public function getUserNameByUserName($nickname)
+    {
+        $cond['ustunum']=$nickname;
+        $r = $this->where($cond)->getField('urname');
+        return $r;
+    }
     public function getUserTypeByUserName($nickname)
     {
         $cond['ustunum']=$nickname;
