@@ -99,6 +99,7 @@ class IndexController extends Controller {
 			$groups = D('groups');
 			$res = $groups->relation(true)->select();
 			$this->assign("groups", $res);
+			$this->assign('ac_questionbank','active');
 			$this->display();
 		}
 		else{
@@ -127,6 +128,7 @@ class IndexController extends Controller {
 		$this->assign('exam_name',$exam_name);
 		$exam = D('vfu')->where(array('eid'=>$eid))->order(array('sum_s'=>'desc','finish_t'))->select();
 		$this->assign('exam',$exam);
+		$this->assign('ac_questionbank','active');
 		$this->display();
 	}
 	public function questionbank(){
