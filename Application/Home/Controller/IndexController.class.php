@@ -27,7 +27,7 @@ class IndexController extends Controller {
 			echo "failed";
 		}
 		$data['fid'] = $res_fid;
-		$score = 0;
+		$score = 0.00;
 		foreach ($post as $k => $v) {
 			if($k=='eid'||$k=='uid')
 				continue;
@@ -39,7 +39,7 @@ class IndexController extends Controller {
 				$data['isChecked'] = $v;
 				$q = D('question')->where(array('qorder'=>$data['qorder']))->getField('qans');
 				if($q == $v){
-					$score = $score + $ADD_SCORE;
+					$score += $ADD_SCORE;
 				}
 				$data['content'] = NULL;
 				if($Record->create($data, 1)){
@@ -64,7 +64,7 @@ class IndexController extends Controller {
 					}
 				}
 				if($istrue){
-					$score = $score + $ADD_SCORE;
+					$score += $ADD_SCORE;
 				}
 			}
 			if($data['rtype']=='K' || $data['rtype']=='J'){
@@ -77,13 +77,10 @@ class IndexController extends Controller {
 					//echo "failed";
 				}
 			}
-			//echo "<pre>";
-			//var_dump($k);
-			//var_dump($score);
 		}
 		$finish->fchecked = $score;
 		$finish->where(array('fid'=>$res_fid))->save();
-		$this->success('提交成功', '/Home/Index/questionbank');
+		//$this->success('提交成功', '/Home/Index/questionbank');
 	}
 	public function e(){
 		$eid = I('get.eid');
