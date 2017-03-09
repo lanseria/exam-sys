@@ -80,7 +80,7 @@ class IndexController extends Controller {
 		}
 		$finish->fchecked = $score;
 		$finish->where(array('fid'=>$res_fid))->save();
-		//$this->success('提交成功', '/Home/Index/questionbank');
+		$this->success('提交成功', '/Home/Index/questionbank');
 	}
 	public function e(){
 		$eid = I('get.eid');
