@@ -51,7 +51,7 @@ class IndexController extends Controller {
 			if($data['rtype']=='D'){
 				$istrue = true;
 				foreach ($v as $key => $value) {
-					$q = D('question')->where(array('qid'=>$data['qid']))->getField('qans');
+					$q = D('question')->where(array('qorder'=>$data['qorder']))->getField('qans');
 					if(strpos($q, $value) === false){
 						$istrue = false;
 					}
