@@ -77,6 +77,9 @@ class IndexController extends Controller {
 					//echo "failed";
 				}
 			}
+			//echo "<pre>";
+			//var_dump($k);
+			//var_dump($score);
 		}
 		$finish->fchecked = $score;
 		$finish->where(array('fid'=>$res_fid))->save();
