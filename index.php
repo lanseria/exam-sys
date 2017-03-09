@@ -15,9 +15,17 @@
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
+<<<<<<< HEAD
 define('APP_DEBUG',true);
 // 定义应用目录
 define('APP_PATH','./Application/');
+=======
+define('APP_DEBUG',false);
+
+// 定义应用目录
+define('APP_PATH','./Application/');
+error_reporting(0);
+>>>>>>> 7ba46129d4b4d3dc2e470c8d710b2acdfd0dc16d
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 
