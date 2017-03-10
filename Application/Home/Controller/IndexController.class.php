@@ -15,6 +15,7 @@ class IndexController extends Controller {
 		$Record = D('record');
 		$data = array();
 		$data['eid'] = $post['eid'];
+		$this->is_failure_es($data['eid'], 1);
 		$data['uid'] = $post['uid'];
 		$finish = D('finish');
 		$data['fchecked'] = 0;
@@ -84,6 +85,7 @@ class IndexController extends Controller {
 	}
 	public function e(){
 		$eid = I('get.eid');
+		$this->is_failure_es($eid, 0);
 		if(empty($eid)){
 			$eid = 1;
 		}
@@ -118,8 +120,6 @@ class IndexController extends Controller {
 				$this->display();
 			}
 		}
-
-
 	}
 	public function rank($eid='')
 	{	
@@ -133,6 +133,8 @@ class IndexController extends Controller {
 	}
 	public function questionbank(){
 		$exam = D('vqb')->select();
+		$nowdate = date('Y-m-d H:i:s');
+		$this->assign('nowdate', $nowdate);
 		$this->assign('exam', $exam);
 		$this->assign('ac_questionbank','active');
 		$this->display();
@@ -163,11 +165,27 @@ class IndexController extends Controller {
 			}else{
 				$this->error('提交失败', '/Home/Index/contact');
 			}
-			
 		}else{
 			$this->assign('ac_contact','active');
 			$this->display();
 		}
-
+	}
+	public function is_failure_es($eid="", $ispost=0){
+		if ($ispost==1) {
+			$sub = 900;
+		}
+		if ($eid==null) {
+			$this->error('发生错误','questionbank', 3);
+		}
+		$eendtime = D('exam')->where(array('eid'=>$eid))->getField('eendtime');
+		$sub = strtotime($eendtime)-time();
+		// echo "<pre>";
+		// var_dump($sub);
+		// var_dump($eendtime);
+		// var_dump(strtotime($eendtime));
+		// exit;
+		if ($sub < 0) {
+			$this->error('考试已过期,请勿再试','questionbank', 3);
+		}
 	}
 }
