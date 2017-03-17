@@ -159,6 +159,7 @@ class IndexController extends Controller {
 			$data['useremail'] = I('post.userEmail');
 			$data['userphone'] = I('post.userPhone');
 			$data['usermsg'] = I('post.userMsg');
+			$data['ctime'] = date('Y-m-d H:i:s', time());
 			if(D('contact')->create($data, 1)){
 				$res = D('contact')->add();
 				$this->success('提交成功', '/Home/Index/contact');

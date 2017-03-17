@@ -200,7 +200,7 @@
 						<div class="form-group">
 							<input type="password" class="form-control input-lg" id="eupwd" name="upwd" placeholder="密码">
 						</div>
-						<a href="#" class="pull-left" id="forgot-password">Forgot Your Password?</a>
+						<a href="{:U('Home/Index/contact')}" class="pull-left" id="forgot-password">Forgot Your Password?</a>
 						<div class="pull-right">
 							<button type="submit" class="btn btn-lg btn-config">Log In</button>
 						</div>
@@ -239,6 +239,15 @@
 <script type="text/javascript" src="__PUBLIC__/js/jquery.flexisel.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/jquery.autosize.min.js"></script>
 <script type="text/javascript">
+	 String.prototype.trim=function(){
+　　    return this.replace(/(^\s*)|(\s*$)/g, "");
+　　 }
+　　 String.prototype.ltrim=function(){
+　　    return this.replace(/(^\s*)/g,"");
+　　 }
+　　 String.prototype.rtrim=function(){
+　　    return this.replace(/(\s*$)/g,"");
+　　 }
 	$(window).load(function() {
 		$("#flexiselDemo1").flexisel();
 		$("#flexiselDemo2").flexisel({
@@ -310,51 +319,7 @@
 			}
 		});
 		$('textarea[class*=autosize]').autosize({append: "\n"});
-		$('form.form-group').submit(function(e){
-			var nullcount = 0;
-			var strs = '';
-			var rccount = $('p.rccount').length;
-			nullcount += rccount;
-			$('input:radio:checked').each(function(){
-				if(!$(this).attr('checked')){
-					nullcount--;
-				}
-			})
-			$('input:checkbox:checked').each(function(){
-				if(!$(this).attr('checked')){
-					nullcount--;
-				}
-			})
-			$('form.form-group input').each(function(){
-				if($(this).val()==''){
-					nullcount++;
-				}
-			});
-			$('form.form-group textarea').each(function(){
-				if($(this).val()==''){
-					nullcount++;
-				}
-			});
-			if(nullcount>0){
-				alert('你还有'+nullcount+'选项没有填写，请检查后再提交。');
-				return false;
-			}
-			
-		});
-		// $('#formToConfirm').click(function(){
-		// 	$('input').each(function(){
-		// 		if($(this).val()==''){
-		// 			alert('Please Input something');
-		// 			return false;
-		// 		}
-		// 	});
-		// 	$('textarea').each(function(){
-		// 		if($(this).val()==''){
-		// 			alert('Please Input something');
-		// 			return false;
-		// 		}
-		// 	});
-		// });
+		
 		
 	});
 
