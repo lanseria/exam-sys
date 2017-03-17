@@ -48,9 +48,11 @@
                       <th class="center">留下的名字</th>
                       <th class="center">留下的邮箱</th>
                       <th class="center">手机号</th>
-                      <th>
+                      <th class="center">反馈内容
+                      </th>
+                      <th class="center">
                         <i class="icon-time bigger-110 hidden-480"></i>
-                        反馈内容
+                        时间
                       </th>
                       <th class="center">操作</th>
                     </tr>
@@ -60,7 +62,7 @@
                     <tr>
                       <td class="center">
                         <label>
-                          {$i}
+                          {$vo.cid}
                           <span class="lbl"></span>
                         </label>
                       </td>
@@ -70,15 +72,13 @@
                       <td>{$vo.useremail}</td>
                       <td class="hidden-480">{$vo.userphone}</td>
                       <td>{$vo.usermsg}</td>
+                      <td>{$vo.ctime}</td>
                       <td>
                         <div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-                          <a class="blue" href="#">
-                            <i class="icon-zoom-in bigger-130"></i>
-                          </a>
-                          <a class="green" href="#">
+                          <a class="green" href="mailto:{$vo.useremail}?subject=回复{$vo.username}用户的一封信&body=这里写入回复用户的内容">
                             <i class="icon-pencil bigger-130"></i>
                           </a>
-                          <a class="red" href="#">
+                          <a class="red" href="del?cid={$vo.cid}">
                             <i class="icon-trash bigger-130"></i>
                           </a>
                         </div>
@@ -89,21 +89,14 @@
                             </button>
                             <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
                               <li>
-                                <a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-                                  <span class="blue">
-                                    <i class="icon-zoom-in bigger-120"></i>
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                <a href="mailto:{$vo.useremail}?subject=回复{$vo.username}用户的一封信&body=这里写入回复用户的内容" class="tooltip-success" data-rel="tooltip" title="Edit">
                                   <span class="green">
                                     <i class="icon-edit bigger-120"></i>
                                   </span>
                                 </a>
                               </li>
                               <li>
-                                <a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
+                                <a href="del?cid={$vo.cid}" class="tooltip-error" data-rel="tooltip" title="Delete">
                                   <span class="red">
                                     <i class="icon-trash bigger-120"></i>
                                   </span>

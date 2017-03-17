@@ -13,7 +13,7 @@
 				<div id="map-canvas"></div>
 			</div>
 			<div class="contact-form">
-				<form method="post" action="__SELF__">
+				<form class="form-group" method="post" action="__SELF__">
 					<div>
 						<span><label>姓名</label></span>
 						<span><input name="userName" type="text" class="textbox"></span>
@@ -37,3 +37,17 @@
 			</div>	
 		</div>
 	</div>
+	<script type="text/javascript">
+	jQuery(document).ready(function(){
+		$('form.form-group').submit(function(e){
+			var userName = $('input[name="userName"]').val();
+			var userEmail = $('input[name="userEmail"]').val();
+			var userPhone = $('input[name="userPhone"]').val();
+			var userMsg = $('input[name="userMsg"]').val();
+			if (userName===''||userEmail===''||userPhone===''||userMsg==='') {
+				alert('请填写完整');
+				return false;
+			}
+		})
+	})
+	</script>

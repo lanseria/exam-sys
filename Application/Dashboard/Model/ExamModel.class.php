@@ -62,10 +62,9 @@ class ExamModel extends Model
 	}
 
 	//Update
-	public function Update_Exam($eid, $etitle, $edescription, $eimgurl, $estarttime, $eendtime){
+	public function Update_Exam($eid, $etitle, $edescription, $estarttime, $eendtime){
 		$data['etitle'] = $etitle;
 		$data['edescription'] = $edescription;
-		$data['eimgurl'] =  $eimgurl;
 		$data['estarttime'] = $estarttime;
 		$data['eendtime'] = $eendtime;
 		if($this->where(array('eid'=>$eid))->create($data)){

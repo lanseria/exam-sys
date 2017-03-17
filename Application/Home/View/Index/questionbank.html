@@ -11,12 +11,26 @@
 		<div class="blog">
 			<volist name="exam" id="examvo" empty="暂时没有数据">
 				<div class="blog_list">
-					<h2>{$examvo.etitle}</h2>
+					<h2>{$examvo.etitle}
+					<if condition="$examvo.eendtime gt $nowdate">
+						<span class="label label-info">可答题</span>
+					<else />
+						<span class="label label-warning">已过期</span>
+					</if>
+					</h2>
 					<h5><span class="glyphicon glyphicon-time" aria-hidden="true"></span>Start at {$examvo.estarttime} <span class="glyphicon glyphicon-time" aria-hidden="true"></span>End at {$examvo.eendtime}, Posted by&nbsp;<a href="index.html">{$examvo.urname}</a></h5>
 					<div class="blog_para">
-						<p class="para"><a  href="{:U('Home/Index/e')}?eid={$examvo.eid}"><img src="__PUBLIC__/images/exam_img/{$examvo.eimgurl}" alt=""></a>{$examvo.edescription}</p>
+					<if condition="$examvo.eendtime gt $nowdate">
+						<p class="para"><a href="{:U('Home/Index/e')}?eid={$examvo.eid}"><img src="__PUBLIC__/images/exam_img/{$examvo.eimgurl}" alt=""></a>{$examvo.edescription}</p>
+					<else />
+						<p class="para"><a href="#"><img src="__PUBLIC__/images/exam_img/{$examvo.eimgurl}" alt=""></a>{$examvo.edescription}</p>
+					</if>
 						<div class="read_more">
+						<if condition="$examvo.eendtime gt $nowdate">
 							<a class="btn" href="{:U('Home/Index/e')}?eid={$examvo.eid}">开始答题</a>
+						<else />
+							<a class="btn disabled" href="#">开始答题</a>
+						</if>
 						</div>
 						<div class="read_more">
 							<a class="btn" href="{:U('Home/Index/rank')}?eid={$examvo.eid}">排行</a>

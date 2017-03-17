@@ -79,6 +79,28 @@ class UserModel extends Model
         {
             return $this->where(array('ustunum' => $nickname))->save();
         }
+        return false;
+    }
+    public function inituser($uid)
+    {
+        $cond['uid'] = $uid;
+        $ustunum = $this->where($cond)->getField('ustunum');
+        var_dump($ustunum);
+        $data['rpwd'] = substr($ustunum, -6);
+        $data['upwd'] = $data['rpwd'];
+        //var_dump($data);
+        if ($this->create($data)) {
+            return $this->where($cond)->save();
+        }
+        return false;
+    }
+    public function deluser($uid)
+    {
+        $cond['uid'] = $uid;
+        D('record')->where($cond)->delete();
+        D('finish')->where($cond)->delete();
+        $res = $this->delete($uid);
+        return $res;
     }
     public function isValidUser($nickname, $pwd)
     {

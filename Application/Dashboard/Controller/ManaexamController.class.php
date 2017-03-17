@@ -2,6 +2,48 @@
 namespace Dashboard\Controller;
 use Think\Controller;
 class ManaexamController extends MainController {
+	public function editAnswer($aid=''){
+		
+	}
+	public function editQuestion($qid=''){
+		
+	}
+	public function editGroup($gid=''){
+
+	}
+	public function editExam($eid=''){
+		$exam = D('exam')->where(array('eid'=>$eid))->select();
+		$exam =  $exam[0];
+		if(IS_POST){
+			$exam = D('exam');
+			$r = $exam->Update_Exam($eid, I('post.etitle'), I('post.edescription'), I('post.estarttime'), I('post.eendtime'));
+			if($r){
+				$this->success("修改成功",'index.html', 3);
+			}
+			else{
+				$this->error("Failed", 'index.html', 3);
+			}
+		}else{
+			$group = D('groups')->where(array('eid'=>$eid))->select();
+			$this->assign('groups', $group);
+			// echo "<pre>";
+			// var_dump($group);
+
+			$this->assign('exam', $exam);
+
+			$estarttime1 = explode(" ", $exam['estarttime'])[0];
+			$estarttime2 = explode(" ", $exam['estarttime'])[1];
+			$eendtime1 = explode(" ", $exam['eendtime'])[0];
+			$eendtime2 = explode(" ", $exam['eendtime'])[1];
+			$this->assign('estarttime1', $estarttime1);
+			$this->assign('estarttime2', $estarttime2);
+			$this->assign('eendtime1', $eendtime1);
+			$this->assign('eendtime2', $eendtime2);
+
+			$this->display();
+			
+		}
+	}
 	public function e($fid='')
 	{
 		$finish = D('finish')->where(array('fid'=>$fid))->select();

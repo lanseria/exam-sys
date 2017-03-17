@@ -73,6 +73,39 @@
 	</div>
 </div>
 <script>
+$(document).ready(function() {
+	$('form.form-group').submit(function(e){
+			var nullcount = 0;
+			var strs = '';
+			var rccount = $('p.rccount').length;
+			nullcount += rccount;
+			$('input:radio:checked').each(function(){
+				if(!$(this).attr('checked')){
+					nullcount--;
+				}
+			})
+			$('input:checkbox:checked').each(function(){
+				if(!$(this).attr('checked')){
+					nullcount--;
+				}
+			})
+			$('form.form-group input').each(function(){
+				if($(this).val()==''){
+					nullcount++;
+				}
+			});
+			$('form.form-group textarea').each(function(){
+				if($(this).val()==''){
+					nullcount++;
+				}
+			});
+			if(nullcount>0){
+				alert('你还有'+nullcount+'选项没有填写，请检查后再提交。');
+				return false;
+			}
+			
+		});
+})
 	/*****************************************************************************
 	 * 为字符串类型增加中文长度的属性
 	 * 例如: alert("hey~马可菠萝·诺顿.".gbkLength());
@@ -83,11 +116,11 @@
 	{
 	var result = 0;
 	for(var i = 0; i < this.length; i ++)
-	if(this.charAt(i).charCodeAt(this.charAt(i)) > 127)
-	result += 2;
-	else
-	result += 1;
-	return result;
+		if(this.charAt(i).charCodeAt(this.charAt(i)) > 127)
+			result += 2;
+		else
+			result += 1;
+		return result;
 	}
 	document.onselectstart = new Function("event.returnValue=false;"); //禁止选择,也就是无法复制 
 	document.oncontextmenu = new Function("event.returnValue=false;");
