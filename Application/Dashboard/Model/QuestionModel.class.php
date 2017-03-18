@@ -28,4 +28,23 @@ class QuestionModel extends RelationModel{
 			return false;
 		}
 	}
+	//Update
+	public function Update_question($qid, $qorder, $question, $qans){
+		$data['qorder'] = $qorder;
+		$data['question'] = $question;
+		$data['qans'] = $qans;
+		// var_dump($data);
+		// exit;
+		if($this->where(array('qid'=>$qid))->create($data)){
+			if($this->save()){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		else{
+			return false;
+		}
+	}
 }

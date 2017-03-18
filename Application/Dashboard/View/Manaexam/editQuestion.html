@@ -11,7 +11,7 @@
                     <i class="icon-home home-icon"></i>
                     <a href="#">Dashboard</a>
                   </li>
-                  <li class="active">修改主题</li>
+                  <li class="active">修改题目</li>
                 </ul><!-- .breadcrumb -->
 
                 <div class="nav-search" id="nav-search">
@@ -27,10 +27,10 @@
               <div class="page-content">
                 <div class="page-header">
                   <h1>
-                    修改主题
+                    修改题目
                     <small>
                       <i class="icon-double-angle-right"></i>
-                      1.修改主题
+                      {$question.question}
                     </small>
                   </h1>
                 </div><!-- /.page-header -->
@@ -62,7 +62,7 @@
                                 <li class="active">
                                   <a data-toggle="tab" href="#edit-password">
                                     <i class="blue icon-key bigger-125"></i>
-                                    修改考试主题
+                                    修改题目
                                   </a>
                                 </li>
                               </ul>
@@ -72,78 +72,33 @@
                                   <div class="space-10"></div>
 
                                   <div class="form-group">
-                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass1">考试主题:</label>
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-qorder">题目序号</label>
                                     <div class="col-sm-10">
-                                      <input class="form-control" style="width: 90%;"  type="text" id="form-field-etitle" name="etitle" value="{$exam.etitle}" />
+                                      <input class="form-control" style="width: 90%;"  type="text" id="form-field-qorder" name="qorder" value="{$question.qorder}" />
                                     </div>
                                   </div>
                                   <div class="space-4"></div>
                                   <div class="form-group">
-                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">描述本场考试:</label>
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-question">描述题目:</label>
                                     <div class="col-sm-10">
-                                      <textarea class="form-control autosize-transition" name="edescription">{$exam.edescription}</textarea>
+                                      <textarea class="form-control autosize-transition" name="question">{$question.question}</textarea>
                                     </div>
                                   </div>
                                   <div class="space-4"></div>
                                   <div class="form-group">
-                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">展示图片:</label>
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-qans">组答案</label>
                                     <div class="col-sm-10">
-                                    	<img class="editable img-responsive" src="__PUBLIC__/images/exam_img/{$exam.eimgurl}" alt="{$exam.etitle}" / >
+                                      <input class="form-control" style="width: 90%;"  type="text" id="form-field-qans" name="qans" value="{$question.qans}" />
                                     </div>
                                   </div>
-                                  <div class="space-4"></div>
+
                                   <div class="form-group">
-                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">开始时间:</label>
-                                    <div class="col-sm-5">
-                                      <div class="row">
-                                        <div class="col-xs-12 col-sm-10">
-                                          <div class="input-group">
-                                            <input class="form-control date-picker" id="id-date-picker-1" name="estarttime1" type="text" data-date-format="yyyy-mm-dd" value="{$estarttime1}" />
-                                            <span class="input-group-addon">
-                                              <i class="icon-calendar bigger-110"></i>
-                                            </span>
-                                          </div>
-                                          <input type="hidden" name="estarttime">
-                                          <div class="input-group bootstrap-timepicker">
-                                            <input id="timepicker1" type="text" class="form-control" name="estarttime2" value="{$estarttime2}"/>
-                                            <span class="input-group-addon">
-                                              <i class="icon-time bigger-110"></i>
-                                            </span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="space-4"></div>
-                                  <div class="form-group">
-                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">结束时间:</label>
-                                    <div class="col-sm-5">
-                                      <div class="row">
-                                        <div class="col-xs-12 col-sm-10">
-                                          <div class="input-group">
-                                            <input class="form-control date-picker" id="id-date-picker-2" type="text" name="eendtime1" data-date-format="yyyy-mm-dd" value="{$eendtime1}" />
-                                            <span class="input-group-addon">
-                                              <i class="icon-calendar bigger-110"></i>
-                                            </span>
-                                          </div>
-                                          <input type="hidden" name="eendtime">
-                                          <div class="input-group bootstrap-timepicker">
-                                            <input id="timepicker2" type="text" class="form-control" name="eendtime2" value="{$eendtime2}" />
-                                            <span class="input-group-addon">
-                                              <i class="icon-time bigger-110"></i>
-                                            </span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="form-group">
-                                	<label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">组修改:</label>
+                                	<label class="col-sm-2 control-label no-padding-right" for="form-field-pass2">该题选项修改:</label>
                                   	<div class="btn-group col-sm-10">
-                                  		<volist name="groups" id="vo">
-                                  			<a href="__MODULE__/Manaexam/editGroup.html?gid={$vo.gid}" class="btn btn-white btn-sm btn-primary">{$vo.gname}</a>
+                                  		<volist name="ans" id="vo">
+                                  			<a href="__MODULE__/Manaexam/editAnswer.html?aid={$vo.aid}" class="btn btn-white btn-sm btn-primary">{$vo.aorder}.{$vo.answer}</a>
                                   		</volist>
-									</div>
+									                  </div>
                                   </div>
                                 </div>
                               </div>
