@@ -50,4 +50,23 @@ class GroupsModel extends RelationModel{
 			return false;
 		}
 	}
+	//Update
+	public function Update_Groups($gid, $gname, $gdescription, $gscore){
+		$data['gname'] = $gname;
+		$data['gdescription'] = $gdescription;
+		$data['gscore'] = $gscore;
+		// var_dump($data);
+		// exit;
+		if($this->where(array('gid'=>$gid))->create($data)){
+			if($this->save()){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		else{
+			return false;
+		}
+	}
 }

@@ -3,13 +3,70 @@ namespace Dashboard\Controller;
 use Think\Controller;
 class ManaexamController extends MainController {
 	public function editAnswer($aid=''){
-		
+		$cond['aid']=$aid;
+		$answer = D('answer')->where($cond)->select();
+		$answer = $answer[0];
+		if (IS_POST) {
+			$answer = D('answer');
+			// echo "<pre>";
+			// var_dump(I('post.'));
+			$r = $answer->Update_answer($qid, I('post.aorder'), I('post.answer'));
+			if($r){
+				$this->success("修改成功");
+			}
+			else{
+				$this->error("Failed");
+			}
+		}else{
+			$this->assign('answer', $answer);
+			$this->display();
+		}
 	}
 	public function editQuestion($qid=''){
-		
+		$cond['qid']=$qid;
+		$question = D('question')->where($cond)->select();
+		$question = $question[0];
+		if (IS_POST) {
+			$question = D('question');
+			// echo "<pre>";
+			// var_dump(I('post.'));
+			$r = $question->Update_question($qid, I('post.qorder'), I('post.question'), I('post.qans'));
+			if($r){
+				$this->success("修改成功");
+			}
+			else{
+				$this->error("Failed");
+			}
+		}else{
+			$answer = D('answer');
+			$ans = $answer->where($cond)->select();
+			$this->assign('ans', $ans);
+			$this->assign('question', $question);
+			$this->display();
+		}
 	}
 	public function editGroup($gid=''){
-
+		$cond['gid']=$gid;
+		$group = D('groups')->where($cond)->select();
+		$group = $group[0];
+		if (IS_POST) {
+			$group = D('groups');
+			// echo "<pre>";
+			// var_dump(I('post.'));
+			$r = $group->Update_Groups($gid, I('post.gname'), I('post.gdescription'), I('post.gscore'));
+			if($r){
+				$this->success("修改成功");
+			}
+			else{
+				$this->error("Failed");
+			}
+		}else{
+			$question = D('question');
+			$ques = $question->where($cond)->select();
+			$this->assign('ques', $ques);
+			$this->assign('group', $group);
+			$this->display();
+		}
 	}
 	public function editExam($eid=''){
 		$exam = D('exam')->where(array('eid'=>$eid))->select();
