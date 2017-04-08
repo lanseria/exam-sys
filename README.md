@@ -17,7 +17,7 @@
 2. 项目前端搭建:
 
 - 使用`jQuery`和`Bootsrap`完成网站前端JS脚本和样式处理;
-- 使用`validate.js`完成对账号以及选项的判断;
+- 使用`jQuery.min.js`完成对账号以及选项的判断;
 - 前后端的数据请求交互通过Ajax完成;
 
 3.本地环境的搭建 : 
@@ -31,9 +31,9 @@
 
 [![项目主页](https://raw.github.com/Lanseria/es/master/docs/images/index.png)](http://es.limonplayer.cn/)
 
-[![项目部分截图](https://raw.github.com/Lanseria/es/master/docs/images/index.png)](http://es.limonplayer.cn/)
+[![项目部分截图](https://raw.github.com/Lanseria/es/master/docs/images/detail1.png)](http://es.limonplayer.cn/)
 
-
+[![项目部分截图](https://raw.github.com/Lanseria/es/master/docs/images/detail2.png)](http://es.limonplayer.cn/)
 
 ### 详细功能
 
