@@ -48,3 +48,7 @@ Temporary Items
 
 #Thinkphp
 Runtime/
+
+#upload
+Public/csv/
+Public/images/exam_img/
