@@ -50,5 +50,5 @@ Temporary Items
 Runtime/
 
 #upload
-Public/csv/
-Public/images/exam_img/
+Public/csv/*.csv
+Public/images/exam_img/*.jpg
