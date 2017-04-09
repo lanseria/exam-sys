@@ -50,5 +50,7 @@ Temporary Items
 Runtime/
 
 #upload
-Public/csv/*.csv
-Public/images/exam_img/*.jpg
+!Public/csv/README.md
+!Public/images/exam_img/README.md
+Public/csv/
+Public/images/exam_img/
