@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql_es
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: es
+    volumes:
+      - ./db/es.sql:/docker-entrypoint-initdb.d/1.es.sql
+  web:
+    build: .
+    container_name: web_es
+    links:
+     - mysql
+    ports:
+     - "8080:80"
+    volumes:
+     - ./:/var/www/html
