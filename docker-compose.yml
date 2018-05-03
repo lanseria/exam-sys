@@ -13,8 +13,9 @@ services:
     build: .
     container_name: web_es
     links:
-     - mysql
+      - mysql
     ports:
-     - "8080:80"
+      - "8080:80"
     volumes:
-     - ./:/var/www/html
+      - ./:/var/www/html
+     
